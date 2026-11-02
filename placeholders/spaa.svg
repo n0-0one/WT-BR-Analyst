@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" width="240" height="120" fill="none">
+  <rect width="240" height="120" fill="#121214" rx="16"/>
+  <pattern id="dotgrid-spaa" width="12" height="12" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#27272A"/>
+  </pattern>
+  <rect width="240" height="120" fill="url(#dotgrid-spaa)"/>
+  <!-- Radar Dish -->
+  <path d="M125 18 A 16 16 0 0 0 145 34" stroke="#D71921" stroke-width="2.5" fill="none"/>
+  <line x1="135" y1="26" x2="135" y2="40" stroke="#8E8E93" stroke-width="2"/>
+  <!-- Twin Autocannons pointing upwards -->
+  <line x1="110" y1="46" x2="70" y2="20" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <line x1="115" y1="50" x2="75" y2="24" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="70" cy="20" r="3" fill="#D71921"/>
+  <!-- Turret -->
+  <rect x="110" y="42" width="50" height="18" rx="4" fill="#1C1C1F" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Hull -->
+  <path d="M55 60 L185 60 L195 72 L45 72 Z" fill="#1C1C1F" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Tracks -->
+  <rect x="42" y="74" width="158" height="24" rx="12" fill="#121214" stroke="#8E8E93" stroke-width="2"/>
+  <!-- Wheels -->
+  <circle cx="58" cy="86" r="8" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="82" cy="86" r="8" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="106" cy="86" r="8" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="130" cy="86" r="8" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="154" cy="86" r="8" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="178" cy="86" r="8" stroke="#FFFFFF" stroke-width="2"/>
+</svg>
