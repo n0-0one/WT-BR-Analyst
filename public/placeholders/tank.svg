@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" width="240" height="120" fill="none">
+  <rect width="240" height="120" fill="#121214" rx="16"/>
+  <pattern id="dotgrid" width="12" height="12" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#27272A"/>
+  </pattern>
+  <rect width="240" height="120" fill="url(#dotgrid)"/>
+  <!-- Cannon -->
+  <line x1="20" y1="46" x2="110" y2="46" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <rect x="20" y="43" width="10" height="6" fill="#D71921"/>
+  <!-- Turret -->
+  <path d="M100 46 L115 32 L160 32 L172 46 Z" fill="#1C1C1F" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="140" cy="38" r="3" fill="#D71921"/>
+  <!-- Hull -->
+  <path d="M60 52 L190 52 L205 70 L50 70 Z" fill="#1C1C1F" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Tracks -->
+  <rect x="42" y="72" width="168" height="26" rx="13" fill="#121214" stroke="#8E8E93" stroke-width="2"/>
+  <!-- Road Wheels -->
+  <circle cx="58" cy="85" r="9" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="82" cy="85" r="9" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="106" cy="85" r="9" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="130" cy="85" r="9" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="154" cy="85" r="9" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="178" cy="85" r="9" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="196" cy="85" r="7" stroke="#D71921" stroke-width="2"/>
+</svg>

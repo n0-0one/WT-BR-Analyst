@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" width="240" height="120" fill="none">
+  <rect width="240" height="120" fill="#121214" rx="16"/>
+  <pattern id="dotgrid-heli" width="12" height="12" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#27272A"/>
+  </pattern>
+  <rect width="240" height="120" fill="url(#dotgrid-heli)"/>
+  <!-- Main Rotor Blades -->
+  <line x1="30" y1="28" x2="190" y2="28" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="110" cy="28" r="4" fill="#D71921"/>
+  <line x1="110" y1="28" x2="110" y2="40" stroke="#8E8E93" stroke-width="3"/>
+  <!-- Fuselage -->
+  <path d="M50 62 Q 70 42 120 42 L 155 52 L 205 60 L 205 66 L 155 68 L 110 74 Q 60 76 50 62 Z" fill="#1C1C1F" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Canopy Glass -->
+  <path d="M54 58 Q 70 46 95 46 L 95 62 Z" fill="#D71921" fill-opacity="0.3" stroke="#D71921" stroke-width="1.5"/>
+  <!-- Weapon Pylon Stub Wings -->
+  <rect x="105" y="60" width="28" height="6" rx="2" fill="#8E8E93"/>
+  <circle cx="112" cy="68" r="2.5" fill="#D71921"/>
+  <circle cx="126" cy="68" r="2.5" fill="#D71921"/>
+  <!-- Tail Rotor -->
+  <line x1="205" y1="48" x2="205" y2="78" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <!-- Landing Skids -->
+  <line x1="65" y1="88" x2="140" y2="88" stroke="#8E8E93" stroke-width="3" stroke-linecap="round"/>
+  <line x1="80" y1="74" x2="75" y2="88" stroke="#8E8E93" stroke-width="2"/>
+  <line x1="125" y1="72" x2="130" y2="88" stroke="#8E8E93" stroke-width="2"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" width="240" height="120" fill="none">
+  <rect width="240" height="120" fill="#121214" rx="16"/>
+  <pattern id="dotgrid-air" width="12" height="12" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#27272A"/>
+  </pattern>
+  <rect width="240" height="120" fill="url(#dotgrid-air)"/>
+  <!-- Fuselage -->
+  <path d="M25 60 Q 70 50 140 50 L 210 57 L 215 63 L 140 70 Q 70 70 25 60 Z" fill="#1C1C1F" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Nose Probe -->
+  <line x1="10" y1="60" x2="25" y2="60" stroke="#D71921" stroke-width="3" stroke-linecap="round"/>
+  <!-- Cockpit Canopy -->
+  <path d="M55 52 Q 80 44 105 52 Z" fill="#D71921" fill-opacity="0.3" stroke="#D71921" stroke-width="1.5"/>
+  <!-- Delta / Swept Wings -->
+  <path d="M95 50 L 145 20 L 165 24 L 145 50 Z" fill="#1C1C1F" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M95 70 L 145 100 L 165 96 L 145 70 Z" fill="#1C1C1F" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Vertical Stabilizers / Twin Tails -->
+  <path d="M185 50 L 210 32 L 218 34 L 205 52 Z" fill="#1C1C1F" stroke="#8E8E93" stroke-width="1.5"/>
+  <path d="M185 70 L 210 88 L 218 86 L 205 68 Z" fill="#1C1C1F" stroke="#8E8E93" stroke-width="1.5"/>
+  <!-- Jet Exhaust Afterburner Ring -->
+  <circle cx="215" cy="60" r="4" stroke="#D71921" stroke-width="2"/>
+</svg>
