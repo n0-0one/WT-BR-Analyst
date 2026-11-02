@@ -28,6 +28,8 @@ export type VehicleClass =
 
 export type VehicleBranch = "aviation" | "army" | "helicopters" | "fleet";
 
+export type ImageFolder = "tanks" | "aircrafts" | "ships";
+
 export interface Vehicle {
   id: string;
   name: string;
@@ -41,6 +43,8 @@ export interface Vehicle {
   };
   vehicleClass: VehicleClass;
   branch: VehicleBranch;
+  imageFolder: ImageFolder;
+  imageId: string;
   isPremium?: boolean;
   isSquadron?: boolean;
   isEvent?: boolean;
@@ -55,6 +59,39 @@ export type EcosystemCategory =
   | "buff_in_disguise"
   | "untouched_winner"
   | "biggest_loser";
+
+export interface PerformanceTelemetry {
+  winRateBefore: number; // e.g. 49.1
+  winRateAfter: number; // e.g. 57.4
+  winRateDelta: number; // e.g. +8.3
+  kdBefore: number; // e.g. 1.15
+  kdAfter: number; // e.g. 1.72
+  kdDelta: number; // e.g. +0.57
+  playRateDelta: number; // e.g. +38%
+  telemetrySource: string; // "StatShark / Community Post-Patch Telemetry"
+}
+
+export type MetaWallType =
+  | "fox3_arh_wall"
+  | "sam_radar_belt"
+  | "ground_decompression_13_3"
+  | "untouched_anchor"
+  | "compression_victim";
+
+export interface MetaWallShift {
+  wallType: MetaWallType;
+  title: string;
+  description: string;
+}
+
+export interface CommunityIntelligence {
+  consensusVerdict: string;
+  communityTags: string[]; // ["📈 StatShark Telemetry", "🎥 YouTube Meta Consensus", "💬 r/Warthunder & Forum"]
+  threatEscapedCount: number;
+  threatAddedCount: number;
+  preyLostCount: number;
+  preyGainedCount: number;
+}
 
 export interface EcosystemThreatDetail {
   count: number;
@@ -98,7 +135,12 @@ export interface BRChange {
   notes?: string;
   rbGroundBefore?: number;
   rbGroundAfter?: number;
+  imageFolder?: ImageFolder;
+  imageId?: string;
   ecosystemShift?: EcosystemShift;
+  telemetry?: PerformanceTelemetry;
+  metaWall?: MetaWallShift;
+  community?: CommunityIntelligence;
 }
 
 export interface PatchMetadata {

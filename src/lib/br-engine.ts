@@ -4,31 +4,21 @@
  * 1.0, 1.3, 1.7, 2.0, ..., 13.7, 14.0, 14.3, 14.7, 15.0.
  */
 
-export const WT_BR_VALUES: readonly number[] = (() => {
-  const values: number[] = [];
-  for (let rank = 0; rank <= 42; rank++) {
-    const whole = Math.floor(rank / 3) + 1;
-    const remainder = rank % 3;
-    let br: number;
-    if (remainder === 0) {
-      br = whole;
-    } else if (remainder === 1) {
-      br = whole + 0.3;
-    } else {
-      br = whole + 0.7;
-    }
-    values.push(Number(br.toFixed(1)));
-  }
-  return Object.freeze(values);
-})();
+export const WT_BR_TABLE: readonly number[] = [
+  1.0, 1.3, 1.7, 2.0, 2.3, 2.7, 3.0, 3.3, 3.7, 4.0,
+  4.3, 4.7, 5.0, 5.3, 5.7, 6.0, 6.3, 6.7, 7.0, 7.3,
+  7.7, 8.0, 8.3, 8.7, 9.0, 9.3, 9.7, 10.0, 10.3, 10.7,
+  11.0, 11.3, 11.7, 12.0, 12.3, 12.7, 13.0, 13.3, 13.7, 14.0, 14.3, 14.7, 15.0
+];
+
+export const WT_BR_VALUES: readonly number[] = WT_BR_TABLE;
 
 /**
  * Maps game internal economicRank (0..42) to exact War Thunder Battle Rating.
  */
-export function economicRankToBR(rank: number): number {
-  if (rank < 0) return WT_BR_VALUES[0] ?? 1.0;
-  if (rank >= WT_BR_VALUES.length) return WT_BR_VALUES[WT_BR_VALUES.length - 1] ?? 15.0;
-  return WT_BR_VALUES[rank] ?? 1.0;
+export function economicRankToBR(rank: number | undefined): number {
+  if (rank === undefined || rank < 0) return 1.0;
+  return WT_BR_TABLE[Math.min(rank, WT_BR_TABLE.length - 1)] ?? 1.0;
 }
 
 /**

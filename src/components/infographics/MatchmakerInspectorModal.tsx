@@ -1,17 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { GameMode, Vehicle } from "@/types";
 import {
   NATIONS,
   toRomanNumeral,
   VEHICLE_CLASS_LABELS,
-  getVehicleImageUrl,
-  getVehicleSecondaryImageUrl,
-  getVehiclePlaceholderUrl,
 } from "@/lib/constants";
 import { formatBR, WT_BR_VALUES } from "@/lib/br-engine";
 import { MatchmakerWindowBar } from "./MatchmakerWindowBar";
+import { VehicleImage } from "../vehicles/VehicleImage";
 import { X, ExternalLink, Shield, Crosshair, ArrowUp, ArrowDown } from "lucide-react";
 
 interface MatchmakerInspectorModalProps {
@@ -27,8 +25,6 @@ export function MatchmakerInspectorModal({
   allVehicles,
   onClose,
 }: MatchmakerInspectorModalProps) {
-  const [imgErrorCount, setImgErrorCount] = useState(0);
-
   if (!vehicle) return null;
 
   const nation = NATIONS.find((n) => n.id === vehicle.nation);
@@ -54,14 +50,6 @@ export function MatchmakerInspectorModal({
       return br < currentBR && br >= floorBR && v.nation !== vehicle.nation;
     })
     .slice(0, 8);
-
-  // Multi-CDN image
-  let imageSrc = getVehicleImageUrl(vehicle.id);
-  if (imgErrorCount === 1) {
-    imageSrc = getVehicleSecondaryImageUrl(vehicle.id);
-  } else if (imgErrorCount >= 2) {
-    imageSrc = getVehiclePlaceholderUrl(vehicle.vehicleClass);
-  }
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
@@ -104,11 +92,9 @@ export function MatchmakerInspectorModal({
           {/* Top Banner: Vehicle Render + Official BR Matrix */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <div className="h-44 rounded-xl bg-gradient-to-b from-[#1E2733] to-[#121922] border border-[#2E4259] p-4 flex items-center justify-center relative overflow-hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={imageSrc}
+              <VehicleImage
+                vehicle={vehicle}
                 alt={vehicle.name}
-                onError={() => setImgErrorCount((prev) => prev + 1)}
                 className="max-h-full max-w-full object-contain filter drop-shadow-xl"
               />
             </div>
@@ -124,20 +110,17 @@ export function MatchmakerInspectorModal({
                   <span className="text-slate-400">Arcade (AB):</span>
                   <span className="font-bold text-white text-sm">{formatBR(vehicle.br.ab)}</span>
                 </div>
-
                 <div className="bg-[#17202B] p-2 rounded border border-[#2E4259] flex items-center justify-between">
                   <span className="text-slate-400">Realistic (Air RB):</span>
                   <span className="font-bold text-white text-sm">{formatBR(vehicle.br.rb)}</span>
                 </div>
-
-                <div className="bg-[#17202B] p-2 rounded border border-[#2E4259] flex items-center justify-between">
-                  <span className="text-slate-400">Ground RB:</span>
-                  <span className="font-bold text-[#F5B841] text-sm">
-                    {formatBR(splitGroundBR ?? vehicle.br.rb)}
-                  </span>
-                </div>
-
-                <div className="bg-[#17202B] p-2 rounded border border-[#2E4259] flex items-center justify-between">
+                {splitGroundBR && (
+                  <div className="bg-[#1F281E] p-2 rounded border border-emerald-500/30 flex items-center justify-between col-span-2">
+                    <span className="text-emerald-400 font-semibold">Ground RB (Combined):</span>
+                    <span className="font-bold text-emerald-300 text-sm">{formatBR(splitGroundBR)}</span>
+                  </div>
+                )}
+                <div className="bg-[#17202B] p-2 rounded border border-[#2E4259] flex items-center justify-between col-span-2">
                   <span className="text-slate-400">Simulator (SB):</span>
                   <span className="font-bold text-white text-sm">{formatBR(vehicle.br.sb)}</span>
                 </div>
@@ -153,7 +136,7 @@ export function MatchmakerInspectorModal({
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-[#38BDF8] hover:underline"
                 >
-                  <span>Official Wiki Page</span>
+                  <span>Official Wiki Dossier</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </div>

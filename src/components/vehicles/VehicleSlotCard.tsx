@@ -1,17 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import clsx from "clsx";
 import { GameMode, Vehicle } from "@/types";
-import {
-  NATIONS,
-  toRomanNumeral,
-  VEHICLE_CLASS_LABELS,
-  getVehicleImageUrl,
-  getVehicleSecondaryImageUrl,
-  getVehiclePlaceholderUrl,
-} from "@/lib/constants";
-import { formatBR, formatSplitBR } from "@/lib/br-engine";
+import { NATIONS, toRomanNumeral, VEHICLE_CLASS_LABELS } from "@/lib/constants";
+import { formatBR } from "@/lib/br-engine";
+import { VehicleImage } from "./VehicleImage";
 
 interface VehicleSlotCardProps {
   vehicle: Vehicle;
@@ -28,8 +22,6 @@ export function VehicleSlotCard({
   highlightDelta,
   className,
 }: VehicleSlotCardProps) {
-  const [imgErrorCount, setImgErrorCount] = useState(0);
-
   const nation = NATIONS.find((n) => n.id === vehicle.nation);
   const classInfo = VEHICLE_CLASS_LABELS[vehicle.vehicleClass];
 
@@ -49,14 +41,6 @@ export function VehicleSlotCard({
   } else if (vehicle.isEvent) {
     slotClass = "wt-slot-event text-fuchsia-200";
     badgeBorder = "border-[#6E3B64] bg-[#261523] text-fuchsia-300";
-  }
-
-  // Multi-CDN Image Fallback
-  let imageSrc = getVehicleImageUrl(vehicle.id);
-  if (imgErrorCount === 1) {
-    imageSrc = getVehicleSecondaryImageUrl(vehicle.id);
-  } else if (imgErrorCount >= 2) {
-    imageSrc = getVehiclePlaceholderUrl(vehicle.vehicleClass);
   }
 
   return (
@@ -107,14 +91,11 @@ export function VehicleSlotCard({
         </div>
       </div>
 
-      {/* Center Vehicle Render */}
+      {/* Center Vehicle Render with 5-stage Multi-CDN Cascade */}
       <div className="relative h-20 w-full my-1.5 flex items-center justify-center overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={imageSrc}
+        <VehicleImage
+          vehicle={vehicle}
           alt={vehicle.name}
-          onError={() => setImgErrorCount((prev) => prev + 1)}
-          loading="lazy"
           className="max-h-full max-w-full object-contain filter drop-shadow-md transition-transform duration-200 group-hover:scale-105"
         />
       </div>

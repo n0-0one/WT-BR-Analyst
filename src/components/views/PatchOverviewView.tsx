@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import clsx from "clsx";
 import { BRChange, GameMode, PatchMetadata, Vehicle } from "@/types";
 import { HeatmapWidget } from "../infographics/HeatmapWidget";
 import { VehicleSlotCard } from "../vehicles/VehicleSlotCard";
@@ -13,6 +14,8 @@ import {
   ArrowRight,
   ShieldCheck,
   Flame,
+  Zap,
+  Activity,
 } from "lucide-react";
 
 interface PatchOverviewViewProps {
@@ -24,6 +27,72 @@ interface PatchOverviewViewProps {
   onNavigateTab: (tab: "winners-losers" | "tech-tree" | "lineup-checker" | "lineup-builder" | "full-table") => void;
 }
 
+function SpotlightVehicleEntry({
+  change,
+  vehicle,
+  activeMode,
+  onClick,
+}: {
+  change: BRChange;
+  vehicle: Vehicle;
+  activeMode: GameMode;
+  onClick: () => void;
+}) {
+  const tel = change.telemetry;
+  const meta = change.metaWall;
+  const isPositiveWR = tel && tel.winRateDelta >= 0;
+  const isPositiveKD = tel && tel.kdDelta >= 0;
+
+  return (
+    <div className="flex flex-col gap-1.5 p-1.5 rounded-xl bg-[#11161D]/60 border border-[#2E4259]/60 hover:border-[#3B82F6]/50 transition-all">
+      <VehicleSlotCard
+        vehicle={vehicle}
+        activeMode={activeMode}
+        highlightDelta={
+          change.brBefore !== change.brAfter
+            ? { before: change.brBefore, after: change.brAfter }
+            : undefined
+        }
+        onClick={onClick}
+      />
+      {tel && (
+        <div className="flex items-center justify-between px-2 py-1 rounded bg-[#171E27] border border-[#2E4259] text-[10px] font-mono">
+          <div className="flex items-center gap-1">
+            <span className="text-slate-400">WR:</span>
+            <span className="text-white font-bold">{tel.winRateAfter}%</span>
+            <span
+              className={clsx(
+                "px-1 py-0.2 rounded font-bold",
+                isPositiveWR ? "bg-emerald-500/20 text-emerald-400" : "bg-red-500/20 text-red-400"
+              )}
+            >
+              {isPositiveWR ? `+${tel.winRateDelta}%` : `${tel.winRateDelta}%`}
+            </span>
+          </div>
+          <div className="flex items-center gap-1">
+            <span className="text-slate-400">K/D:</span>
+            <span className="text-white font-bold">{tel.kdAfter}</span>
+            <span
+              className={clsx(
+                "font-bold",
+                isPositiveKD ? "text-emerald-400" : "text-red-400"
+              )}
+            >
+              {isPositiveKD ? `+${tel.kdDelta}` : `${tel.kdDelta}`}
+            </span>
+          </div>
+        </div>
+      )}
+      {meta && (
+        <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-[#11161D] border border-[#38BDF8]/30 text-[#38BDF8] text-[9.5px] font-mono truncate">
+          <Zap className="w-2.5 h-2.5 shrink-0 text-[#38BDF8]" />
+          <span className="truncate">{meta.title}</span>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export function PatchOverviewView({
   metadata,
   changes,
@@ -32,7 +101,8 @@ export function PatchOverviewView({
   onSelectVehicle,
   onNavigateTab,
 }: PatchOverviewViewProps) {
-  const modeChanges = changes.filter((c) => c.mode === activeMode);
+  const targetMode = activeMode === "rbGround" ? "rb" : activeMode;
+  const modeChanges = changes.filter((c) => c.mode === targetMode);
 
   // Filter 4 Analytical Categories
   const directWinners = modeChanges.filter((c) => c.ecosystemShift?.category === "direct_winner").slice(0, 3);
@@ -129,11 +199,11 @@ export function PatchOverviewView({
                 const v = vehicleMap.get(c.vehicleId);
                 if (!v) return null;
                 return (
-                  <VehicleSlotCard
+                  <SpotlightVehicleEntry
                     key={c.vehicleId}
+                    change={c}
                     vehicle={v}
                     activeMode={activeMode}
-                    highlightDelta={{ before: c.brBefore, after: c.brAfter }}
                     onClick={() => onSelectVehicle(v)}
                   />
                 );
@@ -160,11 +230,11 @@ export function PatchOverviewView({
                 const v = vehicleMap.get(c.vehicleId);
                 if (!v) return null;
                 return (
-                  <VehicleSlotCard
+                  <SpotlightVehicleEntry
                     key={c.vehicleId}
+                    change={c}
                     vehicle={v}
                     activeMode={activeMode}
-                    highlightDelta={{ before: c.brBefore, after: c.brAfter }}
                     onClick={() => onSelectVehicle(v)}
                   />
                 );
@@ -191,8 +261,9 @@ export function PatchOverviewView({
                 const v = vehicleMap.get(c.vehicleId);
                 if (!v) return null;
                 return (
-                  <VehicleSlotCard
+                  <SpotlightVehicleEntry
                     key={c.vehicleId}
+                    change={c}
                     vehicle={v}
                     activeMode={activeMode}
                     onClick={() => onSelectVehicle(v)}
@@ -221,11 +292,11 @@ export function PatchOverviewView({
                 const v = vehicleMap.get(c.vehicleId);
                 if (!v) return null;
                 return (
-                  <VehicleSlotCard
+                  <SpotlightVehicleEntry
                     key={c.vehicleId}
+                    change={c}
                     vehicle={v}
                     activeMode={activeMode}
-                    highlightDelta={{ before: c.brBefore, after: c.brAfter }}
                     onClick={() => onSelectVehicle(v)}
                   />
                 );

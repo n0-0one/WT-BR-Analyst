@@ -69,12 +69,13 @@ export function WTHeader({
           </div>
 
           {/* Mode Switcher Pill */}
-          <div className="flex items-center bg-[#171E27] p-1 rounded-lg border border-[#2E4259]">
+          <div className="flex items-center bg-[#171E27] p-1 rounded-lg border border-[#2E4259] overflow-x-auto scrollbar-none">
             {(
               [
-                { id: "rb", label: "Realistic (RB)" },
-                { id: "ab", label: "Arcade (AB)" },
-                { id: "sb", label: "Sim (SB)" },
+                { id: "rbGround", label: "Ground RB (Combined)" },
+                { id: "rb", label: "Air RB" },
+                { id: "ab", label: "Arcade" },
+                { id: "sb", label: "Sim" },
               ] as const
             ).map((m) => {
               const isActive = activeMode === m.id;
@@ -84,7 +85,7 @@ export function WTHeader({
                   onClick={() => onModeChange(m.id)}
                   type="button"
                   className={clsx(
-                    "px-2.5 py-1 text-xs font-semibold rounded transition-all",
+                    "px-2.5 py-1 text-xs font-semibold rounded transition-all whitespace-nowrap",
                     isActive
                       ? "bg-gradient-to-b from-[#F57C00] to-[#E65100] text-white shadow"
                       : "text-slate-400 hover:text-white hover:bg-slate-800/50"

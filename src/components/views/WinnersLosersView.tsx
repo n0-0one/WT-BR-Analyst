@@ -18,13 +18,15 @@ import {
   ArrowRight,
   Plane,
   Crosshair,
-  Shield,
   ShieldAlert,
   ChevronDown,
   ChevronUp,
+  Activity,
+  Award,
+  Zap,
 } from "lucide-react";
 
-type FilterTab = "all_winners" | "direct_winner" | "buff_in_disguise" | "untouched_winner" | "biggest_loser" | "cas_spaa" | "all";
+type FilterTab = "all_winners" | "biggest_loser" | "buff_in_disguise" | "untouched_winner" | "cas_spaa" | "all";
 
 interface WinnersLosersViewProps {
   changes: BRChange[];
@@ -49,34 +51,42 @@ export function WinnersLosersView({
 
   const vehicleMap = useMemo(() => new Map<string, Vehicle>(vehicles.map((v) => [v.id, v])), [vehicles]);
 
-  const modeChanges = useMemo(() => changes.filter((c) => c.mode === activeMode), [changes, activeMode]);
+  // If user selected "rbGround" in header, map to "rb" changes because Ground RB uses rb ratings with rbGround splits
+  const targetMode = activeMode === "rbGround" ? "rb" : activeMode;
+  const modeChanges = useMemo(() => changes.filter((c) => c.mode === targetMode), [changes, targetMode]);
 
   // Counts for tab badges
   const counts = useMemo(() => {
-    let direct = 0;
+    let allWinners = 0;
+    let losers = 0;
     let disguise = 0;
     let untouched = 0;
-    let losers = 0;
     let cas = 0;
 
     for (const c of modeChanges) {
       const cat = c.ecosystemShift?.category;
-      if (cat === "direct_winner") direct++;
-      else if (cat === "buff_in_disguise") disguise++;
-      else if (cat === "untouched_winner") untouched++;
-      else if (cat === "biggest_loser") losers++;
-
-      if (c.branch === "aviation" || c.branch === "helicopters" || c.vehicleClass === "spaa") {
+      if (cat === "direct_winner" || cat === "buff_in_disguise" || cat === "untouched_winner" || c.direction === "buff") {
+        allWinners++;
+      }
+      if (cat === "biggest_loser" || c.direction === "nerf") {
+        losers++;
+      }
+      if (cat === "buff_in_disguise" || c.metaWall?.wallType === "ground_decompression_13_3" || c.metaWall?.wallType === "fox3_arh_wall") {
+        disguise++;
+      }
+      if (cat === "untouched_winner" || c.metaWall?.wallType === "untouched_anchor") {
+        untouched++;
+      }
+      if (c.branch === "aviation" || c.branch === "helicopters" || c.vehicleClass === "spaa" || c.metaWall?.wallType === "sam_radar_belt" || c.metaWall?.wallType === "fox3_arh_wall") {
         cas++;
       }
     }
 
     return {
-      allWinners: direct + disguise + untouched,
-      direct,
+      allWinners,
+      losers,
       disguise,
       untouched,
-      losers,
       cas,
       total: modeChanges.length,
     };
@@ -88,17 +98,24 @@ export function WinnersLosersView({
       // Tab filter
       if (activeTab === "all_winners") {
         const cat = c.ecosystemShift?.category;
-        if (cat !== "direct_winner" && cat !== "buff_in_disguise" && cat !== "untouched_winner") return false;
-      } else if (activeTab === "direct_winner") {
-        if (c.ecosystemShift?.category !== "direct_winner") return false;
-      } else if (activeTab === "buff_in_disguise") {
-        if (c.ecosystemShift?.category !== "buff_in_disguise") return false;
-      } else if (activeTab === "untouched_winner") {
-        if (c.ecosystemShift?.category !== "untouched_winner") return false;
+        if (cat !== "direct_winner" && cat !== "buff_in_disguise" && cat !== "untouched_winner" && c.direction !== "buff") {
+          return false;
+        }
       } else if (activeTab === "biggest_loser") {
-        if (c.ecosystemShift?.category !== "biggest_loser") return false;
+        const cat = c.ecosystemShift?.category;
+        if (cat !== "biggest_loser" && c.direction !== "nerf") return false;
+      } else if (activeTab === "buff_in_disguise") {
+        if (c.ecosystemShift?.category !== "buff_in_disguise" && c.metaWall?.wallType !== "ground_decompression_13_3" && c.metaWall?.wallType !== "fox3_arh_wall") {
+          return false;
+        }
+      } else if (activeTab === "untouched_winner") {
+        if (c.ecosystemShift?.category !== "untouched_winner" && c.metaWall?.wallType !== "untouched_anchor") {
+          return false;
+        }
       } else if (activeTab === "cas_spaa") {
-        if (c.branch !== "aviation" && c.branch !== "helicopters" && c.vehicleClass !== "spaa") return false;
+        if (c.branch !== "aviation" && c.branch !== "helicopters" && c.vehicleClass !== "spaa" && c.metaWall?.wallType !== "sam_radar_belt" && c.metaWall?.wallType !== "fox3_arh_wall") {
+          return false;
+        }
       }
 
       // Nation filter
@@ -114,7 +131,8 @@ export function WinnersLosersView({
         const matchesId = c.vehicleId.toLowerCase().includes(q);
         const matchesNotes = c.notes?.toLowerCase().includes(q);
         const matchesSummary = c.ecosystemShift?.summary.toLowerCase().includes(q);
-        if (!matchesName && !matchesId && !matchesNotes && !matchesSummary) return false;
+        const matchesVerdict = c.community?.consensusVerdict.toLowerCase().includes(q);
+        if (!matchesName && !matchesId && !matchesNotes && !matchesSummary && !matchesVerdict) return false;
       }
 
       return true;
@@ -133,22 +151,24 @@ export function WinnersLosersView({
           <div className="flex items-center gap-2 mb-1.5">
             <span className="w-2.5 h-2.5 rounded-full bg-[#E65100]" />
             <h2 className="text-xl font-bold tracking-wide uppercase text-white flex items-center gap-2">
-              <span>WINNERS & LOSERS</span>
-              <span className="text-[#F57C00]">ECOSYSTEM INDEX</span>
+              <span>BIGGEST WINNERS & LOSERS</span>
+              <span className="text-[#F57C00]">META INTELLIGENCE</span>
             </h2>
           </div>
-          <p className="text-xs font-mono text-slate-300">
-            Categorizing true competitive shifts: direct BR drops, decompression buffs in disguise, untouched kings, and trapped vehicles.
+          <p className="text-xs font-mono text-slate-300 max-w-2xl">
+            Scoped strictly to the latest Battle Rating decompression patch. Enriched with StatShark post-patch performance shifts (Win Rate & K/D) and community consensus from YouTube, Reddit r/Warthunder, and official forums.
           </p>
         </div>
 
         {/* Quick stat pill */}
-        <div className="flex items-center gap-2 font-mono text-xs">
-          <span className="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold">
-            {counts.allWinners} WINNERS
+        <div className="flex items-center gap-2 font-mono text-xs shrink-0">
+          <span className="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold flex items-center gap-1.5">
+            <TrendingUp className="w-3.5 h-3.5" />
+            <span>{counts.allWinners} WINNERS</span>
           </span>
-          <span className="px-3 py-1.5 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 font-bold">
-            {counts.losers} LOSERS
+          <span className="px-3 py-1.5 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 font-bold flex items-center gap-1.5">
+            <TrendingDown className="w-3.5 h-3.5" />
+            <span>{counts.losers} LOSERS</span>
           </span>
         </div>
       </div>
@@ -156,12 +176,12 @@ export function WinnersLosersView({
       {/* Category Navigation Tabs */}
       <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
         {[
-          { id: "all_winners", label: "All Winners", count: counts.allWinners, icon: <Trophy className="w-4 h-4 text-emerald-400" /> },
-          { id: "buff_in_disguise", label: "Buffs in Disguise", count: counts.disguise, icon: <Sparkles className="w-4 h-4 text-[#38BDF8]" /> },
-          { id: "untouched_winner", label: "Untouched Kings", count: counts.untouched, icon: <Crown className="w-4 h-4 text-[#F5B841]" /> },
-          { id: "biggest_loser", label: "Biggest Losers", count: counts.losers, icon: <TrendingDown className="w-4 h-4 text-red-400" /> },
-          { id: "cas_spaa", label: "CAS vs SPAA Shifts", count: counts.cas, icon: <Plane className="w-4 h-4 text-purple-400" /> },
-          { id: "all", label: "All Changes", count: counts.total, icon: <Filter className="w-4 h-4 text-slate-400" /> },
+          { id: "all_winners", label: "🏆 All Patch Winners", count: counts.allWinners },
+          { id: "biggest_loser", label: "💀 All Patch Losers", count: counts.losers },
+          { id: "buff_in_disguise", label: "🎭 Buffs in Disguise", count: counts.disguise },
+          { id: "untouched_winner", label: "🛡️ Untouched Meta Winners", count: counts.untouched },
+          { id: "cas_spaa", label: "✈️ Air & CAS vs. SPAA Shifts", count: counts.cas },
+          { id: "all", label: "🌐 All Patch Changes", count: counts.total },
         ].map((tab) => {
           const isActive = activeTab === tab.id;
           return (
@@ -176,12 +196,13 @@ export function WinnersLosersView({
                   : "bg-[#171E27] border-[#2E4259] text-slate-300 hover:text-white hover:border-[#4A6B8F]"
               )}
             >
-              {tab.icon}
               <span>{tab.label}</span>
-              <span className={clsx(
-                "px-1.5 py-0.2 rounded-full text-[10px] font-mono",
-                isActive ? "bg-blue-500/20 text-blue-300" : "bg-slate-800 text-slate-400"
-              )}>
+              <span
+                className={clsx(
+                  "px-1.5 py-0.2 rounded-full text-[10px] font-mono font-bold",
+                  isActive ? "bg-blue-500/20 text-blue-300" : "bg-slate-800 text-slate-400"
+                )}
+              >
                 {tab.count}
               </span>
             </button>
@@ -198,7 +219,7 @@ export function WinnersLosersView({
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search vehicles, BR shifts, notes..."
+            placeholder="Search by vehicle name, Fox-3, SAM belt, or tactical reasons..."
             className="w-full pl-9 pr-3 py-1.5 bg-[#11161D] border border-[#2E4259] rounded-lg text-xs font-mono text-white placeholder-slate-500 focus:outline-none focus:border-[#3B82F6]"
           />
         </div>
@@ -275,7 +296,7 @@ export function WinnersLosersView({
           <ShieldAlert className="w-10 h-10 text-slate-500" />
           <h3 className="text-base font-bold text-white">No vehicles found</h3>
           <p className="text-xs font-mono text-slate-400 max-w-sm">
-            Try adjusting your search criteria, nation filter, or selecting a different ecosystem category.
+            Try adjusting your search criteria, nation filter, or selecting a different category.
           </p>
         </div>
       ) : (
@@ -284,11 +305,17 @@ export function WinnersLosersView({
             const vehicle = vehicleMap.get(change.vehicleId);
             const isExpanded = !!expandedThreats[change.vehicleId];
             const shift = change.ecosystemShift;
+            const tel = change.telemetry;
+            const com = change.community;
+            const meta = change.metaWall;
+
+            const isPositiveWR = tel && tel.winRateDelta >= 0;
+            const isPositiveKD = tel && tel.kdDelta >= 0;
 
             return (
               <div
                 key={`${change.vehicleId}-${change.mode}`}
-                className="rounded-2xl bg-[#171E27] border border-[#2E4259] hover:border-[#3B82F6]/60 transition-all p-4 flex flex-col gap-3 shadow-lg group"
+                className="rounded-2xl bg-[#171E27] border border-[#2E4259] hover:border-[#3B82F6]/60 transition-all p-4 flex flex-col gap-3.5 shadow-lg group"
               >
                 {/* Top Row: Vehicle Slot Card + Category Badge */}
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
@@ -344,6 +371,63 @@ export function WinnersLosersView({
                   </div>
                 </div>
 
+                {/* Tactical Meta-Wall Highlight Badge */}
+                {meta && (
+                  <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#11161D] border border-[#38BDF8]/40 text-[#38BDF8] text-xs font-mono font-semibold">
+                    <Zap className="w-3.5 h-3.5 text-[#38BDF8] shrink-0" />
+                    <span className="truncate">{meta.title}</span>
+                  </div>
+                )}
+
+                {/* Post-Patch StatShark Telemetry Bar */}
+                {tel && (
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 bg-[#121922] border border-[#2E4259] p-2.5 rounded-xl font-mono text-xs">
+                    {/* Win Rate Shift */}
+                    <div className="flex flex-col">
+                      <span className="text-[10px] text-slate-400 uppercase">WIN RATE SHIFT</span>
+                      <div className="flex items-center gap-1.5 mt-0.5">
+                        <span className="text-white font-bold">{tel.winRateAfter}%</span>
+                        <span
+                          className={clsx(
+                            "px-1.5 py-0.2 rounded text-[11px] font-bold flex items-center",
+                            isPositiveWR
+                              ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
+                              : "bg-red-500/20 text-red-400 border border-red-500/30"
+                          )}
+                        >
+                          {isPositiveWR ? `+${tel.winRateDelta}% ▲` : `${tel.winRateDelta}% ▼`}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* K/D Shift */}
+                    <div className="flex flex-col">
+                      <span className="text-[10px] text-slate-400 uppercase">K/D RATIO</span>
+                      <div className="flex items-center gap-1.5 mt-0.5">
+                        <span className="text-white font-bold">{tel.kdAfter}</span>
+                        <span
+                          className={clsx(
+                            "px-1.5 py-0.2 rounded text-[11px] font-bold flex items-center",
+                            isPositiveKD
+                              ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
+                              : "bg-red-500/20 text-red-400 border border-red-500/30"
+                          )}
+                        >
+                          {isPositiveKD ? `+${tel.kdDelta} ▲` : `${tel.kdDelta} ▼`}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Battles / Popularity */}
+                    <div className="flex flex-col col-span-2 sm:col-span-1">
+                      <span className="text-[10px] text-slate-400 uppercase">BATTLES PLAYED</span>
+                      <span className="text-slate-200 font-bold mt-0.5">
+                        {tel.playRateDelta > 0 ? `+${tel.playRateDelta}% since patch` : `${tel.playRateDelta}% since patch`}
+                      </span>
+                    </div>
+                  </div>
+                )}
+
                 {/* Matchmaker Window Infographic Bar */}
                 <MatchmakerWindowBar
                   br={change.brAfter}
@@ -351,11 +435,24 @@ export function WinnersLosersView({
                   ecosystemShift={shift}
                 />
 
-                {/* Analytical Reasoning Summary */}
-                {shift && (
-                  <div className="rounded-lg bg-[#11161D] border border-[#2E4259] p-2.5 text-xs font-mono text-slate-300">
-                    <span className="font-semibold text-white">Tactical Analysis: </span>
-                    {shift.summary}
+                {/* Community Consensus Verdict Banner & Tags */}
+                {com && (
+                  <div className="rounded-xl bg-[#11161D] border border-[#2E4259] p-3 flex flex-col gap-2">
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      {com.communityTags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="px-2 py-0.5 rounded text-[10px] font-mono bg-[#1E2733] border border-[#2E4259] text-slate-300"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    <p className="text-xs font-mono text-slate-300 leading-relaxed">
+                      <strong className="text-white">Community Verdict: </strong>
+                      {com.consensusVerdict}
+                    </p>
                   </div>
                 )}
 
@@ -369,9 +466,9 @@ export function WinnersLosersView({
                     >
                       <span className="flex items-center gap-1.5">
                         <Crosshair className="w-3.5 h-3.5 text-[#38BDF8]" />
-                        <span>Threat Pool Breakdown</span>
+                        <span>Matchmaker Threat Breakdown</span>
                         <span className="text-[10px] text-slate-500">
-                          ({shift.threatsEscapedAbove.count} escaped, {shift.newThreatsAddedAbove.count} added)
+                          ({shift.threatsEscapedAbove.count} threats escaped, {shift.newThreatsAddedAbove.count} threats added)
                         </span>
                       </span>
                       {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
@@ -382,7 +479,7 @@ export function WinnersLosersView({
                         {/* Escaped Threats */}
                         <div className="flex flex-col gap-1">
                           <span className="text-emerald-400 font-semibold flex items-center gap-1">
-                            <span>Escaped Threats Above:</span>
+                            <span>Threats Escaped Above:</span>
                             <span>({shift.threatsEscapedAbove.count})</span>
                           </span>
                           {shift.threatsEscapedAbove.examples.length > 0 ? (
@@ -399,7 +496,7 @@ export function WinnersLosersView({
                         {/* New Threats Added */}
                         <div className="flex flex-col gap-1">
                           <span className="text-red-400 font-semibold flex items-center gap-1">
-                            <span>New Threats Added:</span>
+                            <span>New Threats Added Above:</span>
                             <span>({shift.newThreatsAddedAbove.count})</span>
                           </span>
                           {shift.newThreatsAddedAbove.examples.length > 0 ? (
@@ -417,7 +514,7 @@ export function WinnersLosersView({
                   </div>
                 )}
 
-                {/* Inspect Button */}
+                {/* Inspect Full Pool Button */}
                 {vehicle && (
                   <button
                     onClick={() => onSelectVehicle(vehicle)}

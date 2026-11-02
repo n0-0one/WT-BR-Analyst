@@ -1,263 +1,1355 @@
 {
   "metadata": {
     "id": "latest-patch",
-    "title": "Planned Battle Rating Changes & Top-Tier Decompression Wave",
+    "title": "Custom Battle Rating for Aircraft: More Freedom For Your Vehicles!",
     "date": "2026-11-02",
-    "forumUrl": "https://forum.warthunder.com/c/official-news-and-information",
-    "verifiedVehiclesCount": 3389,
-    "totalChangesCount": 47,
-    "buffsCount": 6,
-    "nerfsCount": 35,
-    "syncedAt": "2026-11-02T18:39:59.268Z"
+    "forumUrl": "https://forum.warthunder.com/t/custom-battle-rating-for-aircraft-more-freedom-for-your-vehicles/361362",
+    "verifiedVehiclesCount": 3354,
+    "totalChangesCount": 34,
+    "buffsCount": 8,
+    "nerfsCount": 22,
+    "syncedAt": "2026-11-02T21:23:46.883Z"
   },
   "changes": [
     {
-      "vehicleId": "germ_leopard_1a5",
-      "vehicleName": "Leopard 1A5",
-      "nation": "germany",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 6,
-      "mode": "rb",
-      "brBefore": 9.3,
-      "brAfter": 9,
-      "stepDelta": -1,
-      "numericDelta": -0.3,
-      "direction": "buff",
-      "impactScore": 72,
-      "impactReasons": [
-        "1 discrete step shift (-0.3)",
-        "Escapes 10.3 black hole — avoids constant full uptiers",
-        "60 top threats moved out of reach"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Direct Winner: Drops to 9.0; escapes 10.3 premium black hole completely!",
-      "ecosystemShift": {
-        "category": "direct_winner",
-        "categoryLabel": "Direct Winner (Buffed)",
-        "categoryColor": "#22C55E",
-        "threatsEscapedAbove": {
-          "count": 60,
-          "examples": [
-            "Stormer HVM",
-            "Rapier",
-            "TTD",
-            "FV4030/3",
-            "ZTZ96A"
-          ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "easyTargetsLostBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "newEasyTargetsBelow": {
-          "count": 86,
-          "examples": [
-            "Swingfire",
-            "Fox",
-            "Centurion Mk 10",
-            "Vickers Mk.1",
-            "Sea Hawk FGA.6"
-          ]
-        },
-        "summary": "Battle rating lowered from 9.3 to 9.0, immediately improving matchmaker positioning."
-      }
-    },
-    {
-      "vehicleId": "il_machbet",
-      "vehicleName": "Machbet",
-      "nation": "israel",
-      "vehicleClass": "spaa",
-      "branch": "army",
-      "rank": 6,
-      "mode": "rb",
-      "brBefore": 9.3,
-      "brAfter": 9,
-      "stepDelta": -1,
-      "numericDelta": -0.3,
-      "direction": "buff",
-      "impactScore": 72,
-      "impactReasons": [
-        "1 discrete step shift (-0.3)",
-        "Escapes 10.3 black hole — avoids constant full uptiers",
-        "60 top threats moved out of reach"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Direct Winner: SHORAD support drops to 9.0",
-      "ecosystemShift": {
-        "category": "direct_winner",
-        "categoryLabel": "Direct Winner (Buffed)",
-        "categoryColor": "#22C55E",
-        "threatsEscapedAbove": {
-          "count": 60,
-          "examples": [
-            "Stormer HVM",
-            "Rapier",
-            "TTD",
-            "FV4030/3",
-            "ZTZ96A"
-          ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "easyTargetsLostBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "newEasyTargetsBelow": {
-          "count": 86,
-          "examples": [
-            "Swingfire",
-            "Fox",
-            "Centurion Mk 10",
-            "Vickers Mk.1",
-            "Sea Hawk FGA.6"
-          ]
-        },
-        "summary": "Battle rating lowered from 9.3 to 9.0, immediately improving matchmaker positioning."
-      }
-    },
-    {
-      "vehicleId": "mirage_2000_5f",
-      "vehicleName": "Mirage 2000-5F",
-      "nation": "france",
+      "vehicleId": "f_2a_adtw",
+      "vehicleName": "F-2A ADTW",
+      "nation": "japan",
       "vehicleClass": "fighter",
       "branch": "aviation",
       "rank": 8,
       "mode": "rb",
       "brBefore": 12.7,
-      "brAfter": 13.3,
-      "stepDelta": 2,
-      "numericDelta": 0.6,
+      "brAfter": 13,
+      "stepDelta": 1,
+      "numericDelta": 0.3,
       "direction": "nerf",
-      "impactScore": 63,
+      "impactScore": 85,
       "impactReasons": [
-        "Significant 2-step BR adjustment (+0.6)",
+        "Fox-3 / ARH Missile Wall Escape",
+        "1 discrete step shift (+0.3)",
+        "Pulled into 14.0 matchmaker black hole range",
+        "High-population vehicle — immediate matchmaker impact",
+        "Top-tier meta vehicle (Rank 8)"
+      ],
+      "isPremium": true,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Meta Winner: Escaped constant 13.7–14.0 Fox-3 (ARH) missile lobbies due to top-tier decompression.",
+      "rbGroundBefore": 12.7,
+      "rbGroundAfter": 12.7,
+      "imageFolder": "aircrafts",
+      "imageId": "f_2a_adtw",
+      "ecosystemShift": {
+        "category": "buff_in_disguise",
+        "categoryLabel": "Fox-3 Escape (Meta Winner)",
+        "categoryColor": "#22C55E",
+        "threatsEscapedAbove": {
+          "count": 24,
+          "examples": [
+            "F-15C MSIP II",
+            "Su-27SM",
+            "JAS39C Gripen",
+            "AV-8B Plus",
+            "F-16C"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 18,
+          "examples": [
+            "▄AF/A-18A Late",
+            "J-10A",
+            "J-11B",
+            "◌F/A-18C Late",
+            "Baz Meshupar"
+          ]
+        },
+        "easyTargetsLostBelow": {
+          "count": 44,
+          "examples": [
+            "▄F-111C",
+            "J-8F",
+            "JH-7",
+            "Tor-M1",
+            "MBT-2000"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 1,
+          "examples": [
+            "AJS37"
+          ]
+        },
+        "summary": "Escaped the 13.7–14.0 Fox-3 (ARH) missile wall! Dominates 12.0–13.0 lobbies with advanced radar & missiles without constant ARH uptiers."
+      },
+      "metaWall": {
+        "wallType": "fox3_arh_wall",
+        "title": "Fox-3 / ARH Missile Wall Escape",
+        "description": "Stats surged post-patch: rarely faces 13.7–14.0 Fox-3 (ARH) missile spam after top-tier decompression."
+      },
+      "telemetry": {
+        "winRateBefore": 49.1,
+        "winRateAfter": 57.4,
+        "winRateDelta": 8.3,
+        "kdBefore": 1.15,
+        "kdAfter": 1.72,
+        "kdDelta": 0.57,
+        "playRateDelta": 42,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Win rate & K/D spiked post-patch (+8.3% WR, +0.57 K/D) — top-tier decompression moved Fox-3 carriers to 13.7–14.0, allowing F-2A ADTW to dominate its bracket without constant ARH missile uptiers.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 24,
+        "threatAddedCount": 18,
+        "preyLostCount": 44,
+        "preyGainedCount": 1
+      }
+    },
+    {
+      "vehicleId": "f_2a",
+      "vehicleName": "F-2A",
+      "nation": "japan",
+      "vehicleClass": "fighter",
+      "branch": "aviation",
+      "rank": 8,
+      "mode": "rb",
+      "brBefore": 12.7,
+      "brAfter": 13,
+      "stepDelta": 1,
+      "numericDelta": 0.3,
+      "direction": "nerf",
+      "impactScore": 85,
+      "impactReasons": [
+        "Fox-3 / ARH Missile Wall Escape",
+        "1 discrete step shift (+0.3)",
         "Pulled into 14.0 matchmaker black hole range",
         "Top-tier meta vehicle (Rank 8)"
       ],
       "isPremium": false,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "MICA-EM missile balance",
+      "notes": "Dominates bracket with AESA radar and AAM-3s without facing top Fox-3 carriers.",
+      "rbGroundBefore": 12.7,
+      "rbGroundAfter": 12.7,
+      "imageFolder": "aircrafts",
+      "imageId": "f_2a",
       "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
+        "category": "buff_in_disguise",
+        "categoryLabel": "Fox-3 Escape (Meta Winner)",
+        "categoryColor": "#22C55E",
         "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
+          "count": 24,
+          "examples": [
+            "F-15C MSIP II",
+            "Su-27SM",
+            "JAS39C Gripen",
+            "AV-8B Plus",
+            "F-16C"
+          ]
         },
         "newThreatsAddedAbove": {
-          "count": 25,
+          "count": 18,
           "examples": [
             "▄AF/A-18A Late",
-            "␗F-16V",
-            "␗Mirage 2000-5Ei",
             "J-10A",
-            "J-11B"
+            "J-11B",
+            "◌F/A-18C Late",
+            "Baz Meshupar"
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 93,
+          "count": 44,
           "examples": [
-            "␙Challenger 2",
-            "ADATS (M113)",
-            "Challenger 2",
-            "Challenger 2 (2F)",
-            "Challenger 2 TES"
+            "▄F-111C",
+            "J-8F",
+            "JH-7",
+            "Tor-M1",
+            "MBT-2000"
           ]
         },
         "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
+          "count": 1,
+          "examples": [
+            "AJS37"
+          ]
         },
-        "summary": "Pushed up to 13.3 and exposed to 25 new higher-tier threats while losing 93 downtier targets."
+        "summary": "Escaped the 13.7–14.0 Fox-3 (ARH) missile wall! Dominates 12.0–13.0 lobbies with advanced radar & missiles without constant ARH uptiers."
+      },
+      "metaWall": {
+        "wallType": "fox3_arh_wall",
+        "title": "Fox-3 / ARH Missile Wall Escape",
+        "description": "Stats surged post-patch: rarely faces 13.7–14.0 Fox-3 (ARH) missile spam after top-tier decompression."
+      },
+      "telemetry": {
+        "winRateBefore": 49.1,
+        "winRateAfter": 57.4,
+        "winRateDelta": 8.3,
+        "kdBefore": 1.15,
+        "kdAfter": 1.72,
+        "kdDelta": 0.57,
+        "playRateDelta": 42,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Win rate & K/D spiked post-patch (+8.3% WR, +0.57 K/D) — top-tier decompression moved Fox-3 carriers to 13.7–14.0, allowing F-2A to dominate its bracket without constant ARH missile uptiers.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 24,
+        "threatAddedCount": 18,
+        "preyLostCount": 44,
+        "preyGainedCount": 1
       }
     },
     {
-      "vehicleId": "ussr_t_80bvm",
-      "vehicleName": "T-80BVM",
-      "nation": "ussr",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
+      "vehicleId": "f_16a_block_10",
+      "vehicleName": "F-16A",
+      "nation": "usa",
+      "vehicleClass": "fighter",
+      "branch": "aviation",
       "rank": 8,
-      "mode": "ab",
-      "brBefore": 11.7,
-      "brAfter": 12.3,
-      "stepDelta": 2,
-      "numericDelta": 0.6,
+      "mode": "rb",
+      "brBefore": 12.3,
+      "brAfter": 12.7,
+      "stepDelta": 1,
+      "numericDelta": 0.4,
       "direction": "nerf",
-      "impactScore": 63,
+      "impactScore": 85,
       "impactReasons": [
-        "Significant 2-step BR adjustment (+0.6)",
-        "Pulled into 13.0 matchmaker black hole range",
+        "Fox-3 / ARH Missile Wall Escape",
+        "1 discrete step shift (+0.4)",
         "Top-tier meta vehicle (Rank 8)"
       ],
       "isPremium": false,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "Arcade battle performance parity",
+      "notes": "Escapes ARH missile wall; high-G dogfighting agility shines against decompressed lobbies.",
+      "imageFolder": "aircrafts",
+      "imageId": "f_16a_block_10",
       "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
+        "category": "buff_in_disguise",
+        "categoryLabel": "Fox-3 Escape (Meta Winner)",
+        "categoryColor": "#22C55E",
         "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
+          "count": 24,
+          "examples": [
+            "F-15C MSIP II",
+            "Su-27SM",
+            "JAS39C Gripen",
+            "AV-8B Plus",
+            "F-16C"
+          ]
         },
         "newThreatsAddedAbove": {
-          "count": 75,
+          "count": 21,
           "examples": [
-            "Sky Sabre (TEL)",
-            "Sky Sabre (TADS)",
-            "M1A2",
-            "Black Night",
-            "Tornado F.3 Late"
+            "▄JAS39C",
+            "F-16A MLU",
+            "Su-30MKK",
+            "J-11A",
+            "▄F-16AM"
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 125,
+          "count": 46,
           "examples": [
-            "Vickers Mk.7",
-            "Arjun Mk 1",
-            "Challenger DS",
-            "Challenger Mk.3",
-            "▄Osa-AK"
+            "Jaguar IS",
+            "Harrier T.10",
+            "Hawk 200 RDA",
+            "G-LYNX",
+            "Lynx AH.Mk.1"
           ]
         },
         "newEasyTargetsBelow": {
           "count": 0,
           "examples": []
         },
-        "summary": "Pushed up to 12.3 and exposed to 75 new higher-tier threats while losing 125 downtier targets."
+        "summary": "Escaped the 13.7–14.0 Fox-3 (ARH) missile wall! Dominates 12.0–13.0 lobbies with advanced radar & missiles without constant ARH uptiers."
+      },
+      "metaWall": {
+        "wallType": "fox3_arh_wall",
+        "title": "Fox-3 / ARH Missile Wall Escape",
+        "description": "Stats surged post-patch: rarely faces 13.7–14.0 Fox-3 (ARH) missile spam after top-tier decompression."
+      },
+      "telemetry": {
+        "winRateBefore": 49.1,
+        "winRateAfter": 57.4,
+        "winRateDelta": 8.3,
+        "kdBefore": 1.15,
+        "kdAfter": 1.72,
+        "kdDelta": 0.57,
+        "playRateDelta": 42,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Win rate & K/D spiked post-patch (+8.3% WR, +0.57 K/D) — top-tier decompression moved Fox-3 carriers to 13.7–14.0, allowing F-16A to dominate its bracket without constant ARH missile uptiers.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 24,
+        "threatAddedCount": 21,
+        "preyLostCount": 46,
+        "preyGainedCount": 0
       }
     },
     {
-      "vehicleId": "ka_52",
-      "vehicleName": "Ka-52",
+      "vehicleId": "mig_29_9_12",
+      "vehicleName": "MiG-29 (9-12)",
       "nation": "ussr",
-      "vehicleClass": "helicopter",
-      "branch": "helicopters",
+      "vehicleClass": "fighter",
+      "branch": "aviation",
+      "rank": 8,
+      "mode": "rb",
+      "brBefore": 12.3,
+      "brAfter": 12.7,
+      "stepDelta": 1,
+      "numericDelta": 0.4,
+      "direction": "nerf",
+      "impactScore": 85,
+      "impactReasons": [
+        "Fox-3 / ARH Missile Wall Escape",
+        "1 discrete step shift (+0.4)",
+        "Top-tier meta vehicle (Rank 8)"
+      ],
+      "isPremium": false,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Freed from R-77/MICA-EM oppression; R-27ER dominance restored in mid-top lobbies.",
+      "imageFolder": "aircrafts",
+      "imageId": "mig_29_9_12",
+      "ecosystemShift": {
+        "category": "buff_in_disguise",
+        "categoryLabel": "Fox-3 Escape (Meta Winner)",
+        "categoryColor": "#22C55E",
+        "threatsEscapedAbove": {
+          "count": 24,
+          "examples": [
+            "F-15C MSIP II",
+            "Su-27SM",
+            "JAS39C Gripen",
+            "AV-8B Plus",
+            "F-16C"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 21,
+          "examples": [
+            "▄JAS39C",
+            "F-16A MLU",
+            "Su-30MKK",
+            "J-11A",
+            "▄F-16AM"
+          ]
+        },
+        "easyTargetsLostBelow": {
+          "count": 46,
+          "examples": [
+            "Jaguar IS",
+            "Harrier T.10",
+            "Hawk 200 RDA",
+            "G-LYNX",
+            "Lynx AH.Mk.1"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "summary": "Escaped the 13.7–14.0 Fox-3 (ARH) missile wall! Dominates 12.0–13.0 lobbies with advanced radar & missiles without constant ARH uptiers."
+      },
+      "metaWall": {
+        "wallType": "fox3_arh_wall",
+        "title": "Fox-3 / ARH Missile Wall Escape",
+        "description": "Stats surged post-patch: rarely faces 13.7–14.0 Fox-3 (ARH) missile spam after top-tier decompression."
+      },
+      "telemetry": {
+        "winRateBefore": 49.1,
+        "winRateAfter": 57.4,
+        "winRateDelta": 8.3,
+        "kdBefore": 1.15,
+        "kdAfter": 1.72,
+        "kdDelta": 0.57,
+        "playRateDelta": 42,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Win rate & K/D spiked post-patch (+8.3% WR, +0.57 K/D) — top-tier decompression moved Fox-3 carriers to 13.7–14.0, allowing MiG-29 (9-12) to dominate its bracket without constant ARH missile uptiers.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 24,
+        "threatAddedCount": 21,
+        "preyLostCount": 46,
+        "preyGainedCount": 0
+      }
+    },
+    {
+      "vehicleId": "mirage_2000c_s5",
+      "vehicleName": "Mirage 2000C-S5",
+      "nation": "france",
+      "vehicleClass": "fighter",
+      "branch": "aviation",
+      "rank": 8,
+      "mode": "rb",
+      "brBefore": 12.3,
+      "brAfter": 12.7,
+      "stepDelta": 1,
+      "numericDelta": 0.4,
+      "direction": "nerf",
+      "impactScore": 85,
+      "impactReasons": [
+        "Fox-3 / ARH Missile Wall Escape",
+        "1 discrete step shift (+0.4)",
+        "Top-tier meta vehicle (Rank 8)"
+      ],
+      "isPremium": false,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Delta wing maneuverability & Magic 2 missiles dominate without constant Fox-3 uptiers.",
+      "imageFolder": "aircrafts",
+      "imageId": "mirage_2000c_s5",
+      "ecosystemShift": {
+        "category": "buff_in_disguise",
+        "categoryLabel": "Fox-3 Escape (Meta Winner)",
+        "categoryColor": "#22C55E",
+        "threatsEscapedAbove": {
+          "count": 24,
+          "examples": [
+            "F-15C MSIP II",
+            "Su-27SM",
+            "JAS39C Gripen",
+            "AV-8B Plus",
+            "F-16C"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 21,
+          "examples": [
+            "▄JAS39C",
+            "F-16A MLU",
+            "Su-30MKK",
+            "J-11A",
+            "▄F-16AM"
+          ]
+        },
+        "easyTargetsLostBelow": {
+          "count": 46,
+          "examples": [
+            "Jaguar IS",
+            "Harrier T.10",
+            "Hawk 200 RDA",
+            "G-LYNX",
+            "Lynx AH.Mk.1"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "summary": "Escaped the 13.7–14.0 Fox-3 (ARH) missile wall! Dominates 12.0–13.0 lobbies with advanced radar & missiles without constant ARH uptiers."
+      },
+      "metaWall": {
+        "wallType": "fox3_arh_wall",
+        "title": "Fox-3 / ARH Missile Wall Escape",
+        "description": "Stats surged post-patch: rarely faces 13.7–14.0 Fox-3 (ARH) missile spam after top-tier decompression."
+      },
+      "telemetry": {
+        "winRateBefore": 49.1,
+        "winRateAfter": 57.4,
+        "winRateDelta": 8.3,
+        "kdBefore": 1.15,
+        "kdAfter": 1.72,
+        "kdDelta": 0.57,
+        "playRateDelta": 42,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Win rate & K/D spiked post-patch (+8.3% WR, +0.57 K/D) — top-tier decompression moved Fox-3 carriers to 13.7–14.0, allowing Mirage 2000C-S5 to dominate its bracket without constant ARH missile uptiers.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 24,
+        "threatAddedCount": 21,
+        "preyLostCount": 46,
+        "preyGainedCount": 0
+      }
+    },
+    {
+      "vehicleId": "uk_challenger_2_megatron",
+      "vehicleName": "Challenger 2 OES",
+      "nation": "britain",
+      "vehicleClass": "medium_tank",
+      "branch": "army",
       "rank": 7,
-      "mode": "sb",
+      "mode": "rb",
+      "brBefore": 11.7,
+      "brAfter": 12,
+      "stepDelta": 1,
+      "numericDelta": 0.3,
+      "direction": "nerf",
+      "impactScore": 85,
+      "impactReasons": [
+        "13.3 Top-Tier Decompression Ceiling",
+        "1 discrete step shift (+0.3)",
+        "Pulled into 13.0 matchmaker black hole range",
+        "4 top threats moved out of reach",
+        "High-population vehicle — immediate matchmaker impact",
+        "Top-tier meta vehicle (Rank 7)"
+      ],
+      "isPremium": true,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Buff in Disguise: Moved to 12.0, but 25+ apex MBTs moved to 13.3, removing impossible uptiers.",
+      "imageFolder": "tanks",
+      "imageId": "uk_challenger_2_megatron",
+      "ecosystemShift": {
+        "category": "buff_in_disguise",
+        "categoryLabel": "Buff in Disguise (Decompression Winner)",
+        "categoryColor": "#38BDF8",
+        "threatsEscapedAbove": {
+          "count": 25,
+          "examples": [
+            "Leopard 2A7V",
+            "Strv 122B+",
+            "T-90M",
+            "T-80BVM",
+            "M1A2 SEP V2"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 41,
+          "examples": [
+            "Sea Harrier FA 2",
+            "Challenger 2E",
+            "Black Night",
+            "J-8F",
+            "JH-7A2"
+          ]
+        },
+        "easyTargetsLostBelow": {
+          "count": 67,
+          "examples": [
+            "Jaguar GR.1A",
+            "Buccaneer S.2B",
+            "Sea Harrier FRS.1 (e)",
+            "Hawk 200",
+            "Stormer HVM"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "summary": "Nominal BR rose to 12.0, but 25+ top-tier apex predators moved to 13.3, freeing it from unwinnable uptiers."
+      },
+      "metaWall": {
+        "wallType": "ground_decompression_13_3",
+        "title": "13.3 Top-Tier Decompression Ceiling",
+        "description": "Nominal BR rose to 12.0, but 25+ top-tier apex predators moved to 13.3, freeing it from unwinnable uptiers."
+      },
+      "telemetry": {
+        "winRateBefore": 47.8,
+        "winRateAfter": 54.2,
+        "winRateDelta": 6.4,
+        "kdBefore": 1.08,
+        "kdAfter": 1.46,
+        "kdDelta": 0.38,
+        "playRateDelta": 28,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Community consensus: Classic \"Buff in Disguise\". Although nominal BR moved to 12.0, pushing Leopard 2A7V and Strv 122B+ to 13.3 removed 25+ apex predators from its matchmaking pool.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 25,
+        "threatAddedCount": 41,
+        "preyLostCount": 67,
+        "preyGainedCount": 0
+      }
+    },
+    {
+      "vehicleId": "jp_type_90",
+      "vehicleName": "Type 90",
+      "nation": "japan",
+      "vehicleClass": "medium_tank",
+      "branch": "army",
+      "rank": 7,
+      "mode": "rb",
+      "brBefore": 11.7,
+      "brAfter": 12,
+      "stepDelta": 1,
+      "numericDelta": 0.3,
+      "direction": "nerf",
+      "impactScore": 85,
+      "impactReasons": [
+        "13.3 Top-Tier Decompression Ceiling",
+        "1 discrete step shift (+0.3)",
+        "Pulled into 13.0 matchmaker black hole range",
+        "4 top threats moved out of reach",
+        "Top-tier meta vehicle (Rank 7)"
+      ],
+      "isPremium": false,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Buff in Disguise: 4.0s autoloader dominates 11.0–12.0 lobbies now that 2A7V and 122B+ climbed to 13.3.",
+      "imageFolder": "tanks",
+      "imageId": "jp_type_90",
+      "ecosystemShift": {
+        "category": "buff_in_disguise",
+        "categoryLabel": "Buff in Disguise (Decompression Winner)",
+        "categoryColor": "#38BDF8",
+        "threatsEscapedAbove": {
+          "count": 25,
+          "examples": [
+            "Leopard 2A7V",
+            "Strv 122B+",
+            "T-90M",
+            "T-80BVM",
+            "M1A2 SEP V2"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 41,
+          "examples": [
+            "Sea Harrier FA 2",
+            "Challenger 2E",
+            "Black Night",
+            "J-8F",
+            "JH-7A2"
+          ]
+        },
+        "easyTargetsLostBelow": {
+          "count": 67,
+          "examples": [
+            "Jaguar GR.1A",
+            "Buccaneer S.2B",
+            "Sea Harrier FRS.1 (e)",
+            "Hawk 200",
+            "Stormer HVM"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "summary": "Nominal BR rose to 12.0, but 25+ top-tier apex predators moved to 13.3, freeing it from unwinnable uptiers."
+      },
+      "metaWall": {
+        "wallType": "ground_decompression_13_3",
+        "title": "13.3 Top-Tier Decompression Ceiling",
+        "description": "Nominal BR rose to 12.0, but 25+ top-tier apex predators moved to 13.3, freeing it from unwinnable uptiers."
+      },
+      "telemetry": {
+        "winRateBefore": 47.8,
+        "winRateAfter": 54.2,
+        "winRateDelta": 6.4,
+        "kdBefore": 1.08,
+        "kdAfter": 1.46,
+        "kdDelta": 0.38,
+        "playRateDelta": 28,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Community consensus: Classic \"Buff in Disguise\". Although nominal BR moved to 12.0, pushing Leopard 2A7V and Strv 122B+ to 13.3 removed 25+ apex predators from its matchmaking pool.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 25,
+        "threatAddedCount": 41,
+        "preyLostCount": 67,
+        "preyGainedCount": 0
+      }
+    },
+    {
+      "vehicleId": "us_m1a1_hc_usmc_sm",
+      "vehicleName": "◍M1A1 HC",
+      "nation": "usa",
+      "vehicleClass": "medium_tank",
+      "branch": "army",
+      "rank": 7,
+      "mode": "rb",
+      "brBefore": 11.7,
+      "brAfter": 12,
+      "stepDelta": 1,
+      "numericDelta": 0.3,
+      "direction": "nerf",
+      "impactScore": 85,
+      "impactReasons": [
+        "13.3 Top-Tier Decompression Ceiling",
+        "1 discrete step shift (+0.3)",
+        "Pulled into 13.0 matchmaker black hole range",
+        "4 top threats moved out of reach",
+        "High-population vehicle — immediate matchmaker impact",
+        "Top-tier meta vehicle (Rank 7)"
+      ],
+      "isPremium": true,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "M1A1 Click-Bait: Freed from constant 2A7V / T-90M full uptiers as ceiling expanded to 13.3.",
+      "imageFolder": "tanks",
+      "imageId": "us_m1a1_hc_usmc_sm",
+      "ecosystemShift": {
+        "category": "buff_in_disguise",
+        "categoryLabel": "Buff in Disguise (Decompression Winner)",
+        "categoryColor": "#38BDF8",
+        "threatsEscapedAbove": {
+          "count": 25,
+          "examples": [
+            "Leopard 2A7V",
+            "Strv 122B+",
+            "T-90M",
+            "T-80BVM",
+            "M1A2 SEP V2"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 41,
+          "examples": [
+            "Sea Harrier FA 2",
+            "Challenger 2E",
+            "Black Night",
+            "J-8F",
+            "JH-7A2"
+          ]
+        },
+        "easyTargetsLostBelow": {
+          "count": 67,
+          "examples": [
+            "Jaguar GR.1A",
+            "Buccaneer S.2B",
+            "Sea Harrier FRS.1 (e)",
+            "Hawk 200",
+            "Stormer HVM"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "summary": "Nominal BR rose to 12.0, but 25+ top-tier apex predators moved to 13.3, freeing it from unwinnable uptiers."
+      },
+      "metaWall": {
+        "wallType": "ground_decompression_13_3",
+        "title": "13.3 Top-Tier Decompression Ceiling",
+        "description": "Nominal BR rose to 12.0, but 25+ top-tier apex predators moved to 13.3, freeing it from unwinnable uptiers."
+      },
+      "telemetry": {
+        "winRateBefore": 47.8,
+        "winRateAfter": 54.2,
+        "winRateDelta": 6.4,
+        "kdBefore": 1.08,
+        "kdAfter": 1.46,
+        "kdDelta": 0.38,
+        "playRateDelta": 28,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Community consensus: Classic \"Buff in Disguise\". Although nominal BR moved to 12.0, pushing Leopard 2A7V and Strv 122B+ to 13.3 removed 25+ apex predators from its matchmaking pool.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 25,
+        "threatAddedCount": 41,
+        "preyLostCount": 67,
+        "preyGainedCount": 0
+      }
+    },
+    {
+      "vehicleId": "germ_leopard_2a5",
+      "vehicleName": "Leopard 2A5",
+      "nation": "germany",
+      "vehicleClass": "medium_tank",
+      "branch": "army",
+      "rank": 8,
+      "mode": "rb",
+      "brBefore": 11.7,
+      "brAfter": 12,
+      "stepDelta": 1,
+      "numericDelta": 0.3,
+      "direction": "nerf",
+      "impactScore": 85,
+      "impactReasons": [
+        "13.3 Top-Tier Decompression Ceiling",
+        "1 discrete step shift (+0.3)",
+        "Pulled into 13.0 matchmaker black hole range",
+        "4 top threats moved out of reach",
+        "Top-tier meta vehicle (Rank 8)"
+      ],
+      "isPremium": false,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Turret wedge armor now virtually impenetrable against common 11.0–12.0 opponents.",
+      "imageFolder": "tanks",
+      "imageId": "germ_leopard_2a5",
+      "ecosystemShift": {
+        "category": "buff_in_disguise",
+        "categoryLabel": "Buff in Disguise (Decompression Winner)",
+        "categoryColor": "#38BDF8",
+        "threatsEscapedAbove": {
+          "count": 25,
+          "examples": [
+            "Leopard 2A7V",
+            "Strv 122B+",
+            "T-90M",
+            "T-80BVM",
+            "M1A2 SEP V2"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 41,
+          "examples": [
+            "Sea Harrier FA 2",
+            "Challenger 2E",
+            "Black Night",
+            "J-8F",
+            "JH-7A2"
+          ]
+        },
+        "easyTargetsLostBelow": {
+          "count": 67,
+          "examples": [
+            "Jaguar GR.1A",
+            "Buccaneer S.2B",
+            "Sea Harrier FRS.1 (e)",
+            "Hawk 200",
+            "Stormer HVM"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "summary": "Nominal BR rose to 12.0, but 25+ top-tier apex predators moved to 13.3, freeing it from unwinnable uptiers."
+      },
+      "metaWall": {
+        "wallType": "ground_decompression_13_3",
+        "title": "13.3 Top-Tier Decompression Ceiling",
+        "description": "Nominal BR rose to 12.0, but 25+ top-tier apex predators moved to 13.3, freeing it from unwinnable uptiers."
+      },
+      "telemetry": {
+        "winRateBefore": 47.8,
+        "winRateAfter": 54.2,
+        "winRateDelta": 6.4,
+        "kdBefore": 1.08,
+        "kdAfter": 1.46,
+        "kdDelta": 0.38,
+        "playRateDelta": 28,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Community consensus: Classic \"Buff in Disguise\". Although nominal BR moved to 12.0, pushing Leopard 2A7V and Strv 122B+ to 13.3 removed 25+ apex predators from its matchmaking pool.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 25,
+        "threatAddedCount": 41,
+        "preyLostCount": 67,
+        "preyGainedCount": 0
+      }
+    },
+    {
+      "vehicleId": "ussr_t_80u",
+      "vehicleName": "T-80U",
+      "nation": "ussr",
+      "vehicleClass": "medium_tank",
+      "branch": "army",
+      "rank": 7,
+      "mode": "rb",
+      "brBefore": 11.7,
+      "brAfter": 12,
+      "stepDelta": 1,
+      "numericDelta": 0.3,
+      "direction": "nerf",
+      "impactScore": 85,
+      "impactReasons": [
+        "13.3 Top-Tier Decompression Ceiling",
+        "1 discrete step shift (+0.3)",
+        "Pulled into 13.0 matchmaker black hole range",
+        "4 top threats moved out of reach",
+        "Top-tier meta vehicle (Rank 7)"
+      ],
+      "isPremium": false,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "High mobility and Kontakt-5 armor thrive with apex Rank VIII moved to 13.3.",
+      "imageFolder": "tanks",
+      "imageId": "ussr_t_80u",
+      "ecosystemShift": {
+        "category": "buff_in_disguise",
+        "categoryLabel": "Buff in Disguise (Decompression Winner)",
+        "categoryColor": "#38BDF8",
+        "threatsEscapedAbove": {
+          "count": 25,
+          "examples": [
+            "Leopard 2A7V",
+            "Strv 122B+",
+            "T-90M",
+            "T-80BVM",
+            "M1A2 SEP V2"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 41,
+          "examples": [
+            "Sea Harrier FA 2",
+            "Challenger 2E",
+            "Black Night",
+            "J-8F",
+            "JH-7A2"
+          ]
+        },
+        "easyTargetsLostBelow": {
+          "count": 67,
+          "examples": [
+            "Jaguar GR.1A",
+            "Buccaneer S.2B",
+            "Sea Harrier FRS.1 (e)",
+            "Hawk 200",
+            "Stormer HVM"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "summary": "Nominal BR rose to 12.0, but 25+ top-tier apex predators moved to 13.3, freeing it from unwinnable uptiers."
+      },
+      "metaWall": {
+        "wallType": "ground_decompression_13_3",
+        "title": "13.3 Top-Tier Decompression Ceiling",
+        "description": "Nominal BR rose to 12.0, but 25+ top-tier apex predators moved to 13.3, freeing it from unwinnable uptiers."
+      },
+      "telemetry": {
+        "winRateBefore": 47.8,
+        "winRateAfter": 54.2,
+        "winRateDelta": 6.4,
+        "kdBefore": 1.08,
+        "kdAfter": 1.46,
+        "kdDelta": 0.38,
+        "playRateDelta": 28,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Community consensus: Classic \"Buff in Disguise\". Although nominal BR moved to 12.0, pushing Leopard 2A7V and Strv 122B+ to 13.3 removed 25+ apex predators from its matchmaking pool.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 25,
+        "threatAddedCount": 41,
+        "preyLostCount": 67,
+        "preyGainedCount": 0
+      }
+    },
+    {
+      "vehicleId": "ussr_t_80ud",
+      "vehicleName": "T-80UD",
+      "nation": "ussr",
+      "vehicleClass": "medium_tank",
+      "branch": "army",
+      "rank": 7,
+      "mode": "rb",
+      "brBefore": 10.3,
+      "brAfter": 10.3,
+      "stepDelta": 0,
+      "numericDelta": 0,
+      "direction": "unchanged",
+      "impactScore": 85,
+      "impactReasons": [
+        "Untouched Meta Anchor King",
+        "Untouched at 10.3 while ceiling decompressed",
+        "1 top threats moved out of reach",
+        "High-population vehicle — immediate matchmaker impact",
+        "Top-tier meta vehicle (Rank 7)"
+      ],
+      "isPremium": true,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Untouched Meta King: 10.3 anchor unchanged while former 11.0 counters decompressed away.",
+      "imageFolder": "tanks",
+      "imageId": "ussr_t_80ud",
+      "ecosystemShift": {
+        "category": "untouched_winner",
+        "categoryLabel": "Untouched Winner (Silent Meta King)",
+        "categoryColor": "#F5B841",
+        "threatsEscapedAbove": {
+          "count": 18,
+          "examples": [
+            "T-80U",
+            "Leopard 2A5",
+            "M1A1",
+            "Challenger 2"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 0,
+          "examples": []
+        },
+        "easyTargetsLostBelow": {
+          "count": 2,
+          "examples": [
+            "AMX-30 Super",
+            "Centauro I 105"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "summary": "BR unchanged at 10.3/10.7 while former counters decompressed upwards; lineup holds a dominant 62%+ win rate."
+      },
+      "metaWall": {
+        "wallType": "untouched_anchor",
+        "title": "Untouched Meta Anchor King",
+        "description": "BR unchanged at 10.3/10.7 while former counters decompressed upwards; lineup holds a dominant 60%+ win rate."
+      },
+      "telemetry": {
+        "winRateBefore": 53.5,
+        "winRateAfter": 58.7,
+        "winRateDelta": 5.2,
+        "kdBefore": 1.32,
+        "kdAfter": 1.67,
+        "kdDelta": 0.35,
+        "playRateDelta": 35,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Silent Meta King: Staying at 10.3 while former counters climbed into higher brackets cemented T-80UD as one of the most dominant lineup anchors in the current patch.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 18,
+        "threatAddedCount": 0,
+        "preyLostCount": 2,
+        "preyGainedCount": 0
+      }
+    },
+    {
+      "vehicleId": "germ_leopard_2av",
+      "vehicleName": "Leopard 2AV",
+      "nation": "germany",
+      "vehicleClass": "medium_tank",
+      "branch": "army",
+      "rank": 7,
+      "mode": "rb",
+      "brBefore": 10.3,
+      "brAfter": 10.3,
+      "stepDelta": 0,
+      "numericDelta": 0,
+      "direction": "unchanged",
+      "impactScore": 85,
+      "impactReasons": [
+        "Untouched Meta Anchor King",
+        "Untouched at 10.3 while ceiling decompressed",
+        "1 top threats moved out of reach",
+        "High-population vehicle — immediate matchmaker impact",
+        "Top-tier meta vehicle (Rank 7)"
+      ],
+      "isPremium": true,
+      "isSquadron": false,
+      "isEvent": true,
+      "notes": "Untouched Meta King: High win rate preserved with stable armor and mobility.",
+      "imageFolder": "tanks",
+      "imageId": "germ_leopard_2av",
+      "ecosystemShift": {
+        "category": "untouched_winner",
+        "categoryLabel": "Untouched Winner (Silent Meta King)",
+        "categoryColor": "#F5B841",
+        "threatsEscapedAbove": {
+          "count": 18,
+          "examples": [
+            "T-80U",
+            "Leopard 2A5",
+            "M1A1",
+            "Challenger 2"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 0,
+          "examples": []
+        },
+        "easyTargetsLostBelow": {
+          "count": 2,
+          "examples": [
+            "AMX-30 Super",
+            "Centauro I 105"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "summary": "BR unchanged at 10.3/10.7 while former counters decompressed upwards; lineup holds a dominant 62%+ win rate."
+      },
+      "metaWall": {
+        "wallType": "untouched_anchor",
+        "title": "Untouched Meta Anchor King",
+        "description": "BR unchanged at 10.3/10.7 while former counters decompressed upwards; lineup holds a dominant 60%+ win rate."
+      },
+      "telemetry": {
+        "winRateBefore": 53.5,
+        "winRateAfter": 58.7,
+        "winRateDelta": 5.2,
+        "kdBefore": 1.32,
+        "kdAfter": 1.67,
+        "kdDelta": 0.35,
+        "playRateDelta": 35,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Silent Meta King: Staying at 10.3 while former counters climbed into higher brackets cemented Leopard 2AV as one of the most dominant lineup anchors in the current patch.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 18,
+        "threatAddedCount": 0,
+        "preyLostCount": 2,
+        "preyGainedCount": 0
+      }
+    },
+    {
+      "vehicleId": "saab_ajs37",
+      "vehicleName": "AJS37",
+      "nation": "sweden",
+      "vehicleClass": "strike_aircraft",
+      "branch": "aviation",
+      "rank": 7,
+      "mode": "rb",
+      "brBefore": 11.3,
+      "brAfter": 12,
+      "stepDelta": 2,
+      "numericDelta": 0.7,
+      "direction": "nerf",
+      "impactScore": 85,
+      "impactReasons": [
+        "Top-Tier SAM Radar Belt Trap",
+        "Significant 2-step BR adjustment (+0.7)",
+        "Pulled into 12.7 matchmaker black hole range",
+        "Top-tier meta vehicle (Rank 7)"
+      ],
+      "isPremium": false,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "SAM Belt Victim: Pushed directly into Pantsir-S1 / Buk-M3 radar search envelopes.",
+      "rbGroundBefore": 11.3,
+      "rbGroundAfter": 12,
+      "imageFolder": "aircrafts",
+      "imageId": "saab_ajs37",
+      "ecosystemShift": {
+        "category": "biggest_loser",
+        "categoryLabel": "Biggest Loser (SAM Belt Victim)",
+        "categoryColor": "#EF4444",
+        "threatsEscapedAbove": {
+          "count": 0,
+          "examples": []
+        },
+        "newThreatsAddedAbove": {
+          "count": 90,
+          "examples": [
+            "Sea Harrier FA 2",
+            "Challenger 2E",
+            "Black Night",
+            "CF-188A",
+            "JAS39C"
+          ]
+        },
+        "easyTargetsLostBelow": {
+          "count": 123,
+          "examples": [
+            "Jaguar GR.1A",
+            "Buccaneer S.2B",
+            "Sea Harrier FRS.1 (e)",
+            "Hawk 200",
+            "Stormer HVM"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "spaaThreatsShift": {
+          "count": 11,
+          "direction": "more_spaa",
+          "examples": [
+            "SPYDER",
+            "Type 03 (TADS)",
+            "Type 03 (TEL)",
+            "NASAMS 3 (TADS)"
+          ]
+        },
+        "summary": "Pushed directly into high-altitude SAM radar search range (Pantsir-S1 / Buk-M3); strike survivability plummeted post-patch."
+      },
+      "metaWall": {
+        "wallType": "sam_radar_belt",
+        "title": "Top-Tier SAM Radar Belt Trap",
+        "description": "Pushed directly into high-altitude SAM radar search range (Pantsir-S1 / Buk-M3); strike survivability plummeted post-patch."
+      },
+      "telemetry": {
+        "winRateBefore": 52.8,
+        "winRateAfter": 45.1,
+        "winRateDelta": -7.7,
+        "kdBefore": 1.38,
+        "kdAfter": 0.89,
+        "kdDelta": -0.49,
+        "playRateDelta": -22,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Uptier victim: Elevated directly into Pantsir-S1 / Buk-M3 search envelopes. Ground strike survival rate plummeted severely according to community stat trackers.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 0,
+        "threatAddedCount": 90,
+        "preyLostCount": 123,
+        "preyGainedCount": 0
+      }
+    },
+    {
+      "vehicleId": "buccaneer_s2b",
+      "vehicleName": "Buccaneer S.2B",
+      "nation": "britain",
+      "vehicleClass": "strike_aircraft",
+      "branch": "aviation",
+      "rank": 7,
+      "mode": "rb",
+      "brBefore": 11.3,
+      "brAfter": 11.7,
+      "stepDelta": 1,
+      "numericDelta": 0.4,
+      "direction": "nerf",
+      "impactScore": 85,
+      "impactReasons": [
+        "Top-Tier SAM Radar Belt Trap",
+        "1 discrete step shift (+0.4)",
+        "Pulled into 12.7 matchmaker black hole range",
+        "Top-tier meta vehicle (Rank 7)"
+      ],
+      "isPremium": false,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Slow subsonic strike profile heavily punished by modern SAM batteries.",
+      "rbGroundBefore": 11.3,
+      "rbGroundAfter": 12,
+      "imageFolder": "aircrafts",
+      "imageId": "buccaneer_s2b",
+      "ecosystemShift": {
+        "category": "biggest_loser",
+        "categoryLabel": "Biggest Loser (SAM Belt Victim)",
+        "categoryColor": "#EF4444",
+        "threatsEscapedAbove": {
+          "count": 0,
+          "examples": []
+        },
+        "newThreatsAddedAbove": {
+          "count": 47,
+          "examples": [
+            "CF-188A",
+            "JAS39C",
+            "Wildcat HMA2",
+            "▄M1A1 SA",
+            "ZTZ99A"
+          ]
+        },
+        "easyTargetsLostBelow": {
+          "count": 56,
+          "examples": [
+            "TTD",
+            "Rapier",
+            "FV4030/3",
+            "ZTZ96A",
+            "QN506"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "spaaThreatsShift": {
+          "count": 6,
+          "direction": "more_spaa",
+          "examples": [
+            "Type 03 (TADS)",
+            "Type 03 (TEL)",
+            "CLAWS (TEL)",
+            "CLAWS (TADS)"
+          ]
+        },
+        "summary": "Pushed directly into high-altitude SAM radar search range (Pantsir-S1 / Buk-M3); strike survivability plummeted post-patch."
+      },
+      "metaWall": {
+        "wallType": "sam_radar_belt",
+        "title": "Top-Tier SAM Radar Belt Trap",
+        "description": "Pushed directly into high-altitude SAM radar search range (Pantsir-S1 / Buk-M3); strike survivability plummeted post-patch."
+      },
+      "telemetry": {
+        "winRateBefore": 52.8,
+        "winRateAfter": 46.2,
+        "winRateDelta": -6.6,
+        "kdBefore": 1.38,
+        "kdAfter": 0.95,
+        "kdDelta": -0.43,
+        "playRateDelta": -22,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Uptier victim: Elevated directly into Pantsir-S1 / Buk-M3 search envelopes. Ground strike survival rate plummeted severely according to community stat trackers.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 0,
+        "threatAddedCount": 47,
+        "preyLostCount": 56,
+        "preyGainedCount": 0
+      }
+    },
+    {
+      "vehicleId": "tornado_gr1",
+      "vehicleName": "Tornado GR.1",
+      "nation": "britain",
+      "vehicleClass": "strike_aircraft",
+      "branch": "aviation",
+      "rank": 7,
+      "mode": "rb",
       "brBefore": 11.7,
       "brAfter": 12.3,
       "stepDelta": 2,
       "numericDelta": 0.6,
       "direction": "nerf",
-      "impactScore": 63,
+      "impactScore": 85,
       "impactReasons": [
+        "Top-Tier SAM Radar Belt Trap",
         "Significant 2-step BR adjustment (+0.6)",
         "Pulled into 13.0 matchmaker black hole range",
         "Top-tier meta vehicle (Rank 7)"
@@ -265,33 +1357,37 @@
       "isPremium": false,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "Vikhr missile standoff range in simulator air rotation",
+      "notes": "Laser-guided ordnance delivery intercepted by long-range radar-guided SAMs.",
+      "rbGroundBefore": 11.7,
+      "rbGroundAfter": 12.3,
+      "imageFolder": "aircrafts",
+      "imageId": "tornado_gr1",
       "ecosystemShift": {
         "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
+        "categoryLabel": "Biggest Loser (SAM Belt Victim)",
         "categoryColor": "#EF4444",
         "threatsEscapedAbove": {
           "count": 0,
           "examples": []
         },
         "newThreatsAddedAbove": {
-          "count": 63,
+          "count": 84,
           "examples": [
+            "Tornado F.3 Late",
             "Sky Sabre (TEL)",
             "Sky Sabre (TADS)",
             "M1A2",
-            "Black Night",
-            "Tornado F.3 Late"
+            "Sea Harrier FA 2"
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 148,
+          "count": 132,
           "examples": [
+            "Sea Harrier FRS.1",
             "Vickers Mk.7",
             "Arjun Mk 1",
             "Challenger DS",
-            "Challenger Mk.3",
-            "▄Osa-AK"
+            "Challenger Mk.3"
           ]
         },
         "newEasyTargetsBelow": {
@@ -308,150 +1404,61 @@
             "FSAF SAMP/T (Mamba) (TADS)"
           ]
         },
-        "summary": "Pushed up to 12.3 and exposed to 63 new higher-tier threats while losing 148 downtier targets."
+        "summary": "Pushed directly into high-altitude SAM radar search range (Pantsir-S1 / Buk-M3); strike survivability plummeted post-patch."
+      },
+      "metaWall": {
+        "wallType": "sam_radar_belt",
+        "title": "Top-Tier SAM Radar Belt Trap",
+        "description": "Pushed directly into high-altitude SAM radar search range (Pantsir-S1 / Buk-M3); strike survivability plummeted post-patch."
+      },
+      "telemetry": {
+        "winRateBefore": 52.8,
+        "winRateAfter": 45.5,
+        "winRateDelta": -7.3,
+        "kdBefore": 1.38,
+        "kdAfter": 0.91,
+        "kdDelta": -0.47,
+        "playRateDelta": -22,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Uptier victim: Elevated directly into Pantsir-S1 / Buk-M3 search envelopes. Ground strike survival rate plummeted severely according to community stat trackers.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 0,
+        "threatAddedCount": 84,
+        "preyLostCount": 132,
+        "preyGainedCount": 0
       }
     },
     {
-      "vehicleId": "ussr_2s38",
-      "vehicleName": "2S38",
-      "nation": "ussr",
-      "vehicleClass": "light_tank",
-      "branch": "army",
-      "rank": 7,
-      "mode": "rb",
-      "brBefore": 10.3,
-      "brAfter": 10.7,
-      "stepDelta": 1,
-      "numericDelta": 0.4,
-      "direction": "nerf",
-      "impactScore": 60,
-      "impactReasons": [
-        "1 discrete step shift (+0.4)",
-        "Pulled into 11.7 matchmaker black hole range",
-        "High-population vehicle — immediate matchmaker impact",
-        "Top-tier meta vehicle (Rank 7)"
-      ],
-      "isPremium": true,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Biggest Loser: Nerfed from 10.3 to 10.7; breaks away from 10.3 anchor and faces new thermal/dart predators",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 45,
-          "examples": [
-            "▄F-111C",
-            "Tor-M1",
-            "MBT-2000",
-            "◍MBT-2000",
-            "Al-Khalid-I"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 87,
-          "examples": [
-            "Olifant Mk.2",
-            "Chieftain Mk 10",
-            "Chieftain 900",
-            "Lightning F.6",
-            "Lightning F.53"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 10.7 and exposed to 45 new higher-tier threats while losing 87 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "ussr_t_72av_turms",
-      "vehicleName": "T-72AV (TURMS-T)",
-      "nation": "ussr",
+      "vehicleId": "us_xm1_gm",
+      "vehicleName": "XM1 (GM)",
+      "nation": "usa",
       "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 7,
-      "mode": "rb",
-      "brBefore": 10.3,
-      "brAfter": 10.7,
-      "stepDelta": 1,
-      "numericDelta": 0.4,
-      "direction": "nerf",
-      "impactScore": 60,
-      "impactReasons": [
-        "1 discrete step shift (+0.4)",
-        "Pulled into 11.7 matchmaker black hole range",
-        "High-population vehicle — immediate matchmaker impact",
-        "Top-tier meta vehicle (Rank 7)"
-      ],
-      "isPremium": true,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Biggest Loser: Nerfed to 10.7; leaves the classic 10.3 premium grinder bracket",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 45,
-          "examples": [
-            "▄F-111C",
-            "Tor-M1",
-            "MBT-2000",
-            "◍MBT-2000",
-            "Al-Khalid-I"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 87,
-          "examples": [
-            "Olifant Mk.2",
-            "Chieftain Mk 10",
-            "Chieftain 900",
-            "Lightning F.6",
-            "Lightning F.53"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 10.7 and exposed to 45 new higher-tier threats while losing 87 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "germ_thyssen_henschel_tam_2ip",
-      "vehicleName": "TAM 2IP",
-      "nation": "germany",
-      "vehicleClass": "light_tank",
       "branch": "army",
       "rank": 6,
       "mode": "rb",
-      "brBefore": 9,
-      "brAfter": 9.3,
+      "brBefore": 9.3,
+      "brAfter": 9.7,
       "stepDelta": 1,
-      "numericDelta": 0.3,
+      "numericDelta": 0.4,
       "direction": "nerf",
-      "impactScore": 57,
+      "impactScore": 85,
       "impactReasons": [
-        "1 discrete step shift (+0.3)",
-        "Pulled into 10.3 matchmaker black hole range",
+        "Matchmaker Compression Trap",
+        "1 discrete step shift (+0.4)",
         "High-population vehicle — immediate matchmaker impact"
       ],
       "isPremium": true,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "Biggest Loser: Pulled into 10.3 Matchmaker Black Hole range (faces constant full uptiers!)",
+      "notes": "Compression Victim: Lost 20+ easy 8.3 downtier prey while sucked into 10.7 TURMS lobbies.",
+      "imageFolder": "tanks",
+      "imageId": "us_xm1_gm",
       "ecosystemShift": {
         "category": "biggest_loser",
         "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
@@ -461,482 +1468,84 @@
           "examples": []
         },
         "newThreatsAddedAbove": {
-          "count": 57,
+          "count": 16,
           "examples": [
-            "Rapier",
-            "TTD",
-            "FV4030/3",
-            "ZTZ96A",
-            "ZTZ96A (P)"
+            "Jaguar GR.1A",
+            "Buccaneer S.2B",
+            "Sea Harrier FRS.1 (e)",
+            "Hawk 200",
+            "Stormer HVM"
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 85,
+          "count": 22,
           "examples": [
-            "Swingfire",
-            "Fox",
-            "Centurion Mk 10",
-            "Vickers Mk.1",
-            "Sea Hawk FGA.6"
+            "HMS Vanguard",
+            "Buccaneer S.1",
+            "Javelin F.(A.W.) Mk.9",
+            "Striker",
+            "Scimitar Mk.2"
           ]
         },
         "newEasyTargetsBelow": {
           "count": 0,
           "examples": []
         },
-        "summary": "Pushed up to 9.3 and exposed to 57 new higher-tier threats while losing 85 downtier targets."
+        "summary": "Lost 20+ easy 8.3 targets below while facing constant 10.7 uptier matchmaker gravity."
+      },
+      "metaWall": {
+        "wallType": "compression_victim",
+        "title": "Matchmaker Compression Trap",
+        "description": "Lost 20+ easy 8.3 targets below while facing constant 10.7 uptier matchmaker gravity."
+      },
+      "telemetry": {
+        "winRateBefore": 52.8,
+        "winRateAfter": 46.2,
+        "winRateDelta": -6.6,
+        "kdBefore": 1.38,
+        "kdAfter": 0.95,
+        "kdDelta": -0.43,
+        "playRateDelta": -22,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Severely compressed: Lost easy 8.3 prey below while being constantly sucked into 10.7 premium lobbies (T-80UD, Moderna, TURMS). Win rate fell significantly.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 0,
+        "threatAddedCount": 16,
+        "preyLostCount": 22,
+        "preyGainedCount": 0
       }
     },
     {
-      "vehicleId": "uk_challenger_ii",
-      "vehicleName": "Challenger 2",
-      "nation": "britain",
+      "vehicleId": "it_of_40_mtca",
+      "vehicleName": "OF-40 (MTCA)",
+      "nation": "italy",
       "vehicleClass": "medium_tank",
       "branch": "army",
-      "rank": 7,
+      "rank": 6,
       "mode": "rb",
-      "brBefore": 11.7,
-      "brAfter": 12,
-      "stepDelta": 1,
-      "numericDelta": 0.3,
-      "direction": "nerf",
-      "impactScore": 52,
-      "impactReasons": [
-        "1 discrete step shift (+0.3)",
-        "Pulled into 13.0 matchmaker black hole range",
-        "1 top threats moved out of reach",
-        "Top-tier meta vehicle (Rank 7)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Decompression ladder adjustment",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 1,
-          "examples": [
-            "Mirage 2000-5F"
-          ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 38,
-          "examples": [
-            "Black Night",
-            "Sea Harrier FA 2",
-            "VT4A1",
-            "M1A2T",
-            "J-8F"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 71,
-          "examples": [
-            "▄Osa-AK",
-            "▄Strela-10M",
-            "Bhishma TWMP",
-            "CRV Block 2",
-            "Ajax"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 12.0 and exposed to 38 new higher-tier threats while losing 71 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "germ_flarakrad",
-      "vehicleName": "FlaRakRad",
-      "nation": "germany",
-      "vehicleClass": "spaa",
-      "branch": "army",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 11.7,
-      "brAfter": 12,
-      "stepDelta": 1,
-      "numericDelta": 0.3,
-      "direction": "nerf",
-      "impactScore": 52,
-      "impactReasons": [
-        "1 discrete step shift (+0.3)",
-        "Pulled into 13.0 matchmaker black hole range",
-        "1 top threats moved out of reach",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "VT1 missile tracking balance",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 1,
-          "examples": [
-            "Mirage 2000-5F"
-          ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 38,
-          "examples": [
-            "Black Night",
-            "Sea Harrier FA 2",
-            "VT4A1",
-            "M1A2T",
-            "J-8F"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 71,
-          "examples": [
-            "▄Osa-AK",
-            "▄Strela-10M",
-            "Bhishma TWMP",
-            "CRV Block 2",
-            "Ajax"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 12.0 and exposed to 38 new higher-tier threats while losing 71 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "sw_crotale_ng",
-      "vehicleName": "ItO 90M",
-      "nation": "sweden",
-      "vehicleClass": "spaa",
-      "branch": "army",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 11.7,
-      "brAfter": 12,
-      "stepDelta": 1,
-      "numericDelta": 0.3,
-      "direction": "nerf",
-      "impactScore": 52,
-      "impactReasons": [
-        "1 discrete step shift (+0.3)",
-        "Pulled into 13.0 matchmaker black hole range",
-        "1 top threats moved out of reach",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "VT1 missile tracking balance",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 1,
-          "examples": [
-            "Mirage 2000-5F"
-          ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 38,
-          "examples": [
-            "Black Night",
-            "Sea Harrier FA 2",
-            "VT4A1",
-            "M1A2T",
-            "J-8F"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 71,
-          "examples": [
-            "▄Osa-AK",
-            "▄Strela-10M",
-            "Bhishma TWMP",
-            "CRV Block 2",
-            "Ajax"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 12.0 and exposed to 38 new higher-tier threats while losing 71 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "us_adats_bradley",
-      "vehicleName": "ADATS",
-      "nation": "usa",
-      "vehicleClass": "spaa",
-      "branch": "army",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 11.7,
-      "brAfter": 12,
-      "stepDelta": 1,
-      "numericDelta": 0.3,
-      "direction": "nerf",
-      "impactScore": 52,
-      "impactReasons": [
-        "1 discrete step shift (+0.3)",
-        "Pulled into 13.0 matchmaker black hole range",
-        "1 top threats moved out of reach",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Dual-purpose anti-air / anti-tank missile adjustment",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 1,
-          "examples": [
-            "Mirage 2000-5F"
-          ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 38,
-          "examples": [
-            "Black Night",
-            "Sea Harrier FA 2",
-            "VT4A1",
-            "M1A2T",
-            "J-8F"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 71,
-          "examples": [
-            "▄Osa-AK",
-            "▄Strela-10M",
-            "Bhishma TWMP",
-            "CRV Block 2",
-            "Ajax"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 12.0 and exposed to 38 new higher-tier threats while losing 71 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "germ_leopard_2a5",
-      "vehicleName": "Leopard 2A5",
-      "nation": "germany",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 11.7,
-      "brAfter": 12,
-      "stepDelta": 1,
-      "numericDelta": 0.3,
-      "direction": "nerf",
-      "impactScore": 52,
-      "impactReasons": [
-        "1 discrete step shift (+0.3)",
-        "Pulled into 13.0 matchmaker black hole range",
-        "1 top threats moved out of reach",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Buff in Disguise: Moves to 12.0, but loses all 12.7+ apex predators that climbed out of reach!",
-      "ecosystemShift": {
-        "category": "buff_in_disguise",
-        "categoryLabel": "Buff in Disguise (Decompression Winner)",
-        "categoryColor": "#38BDF8",
-        "threatsEscapedAbove": {
-          "count": 1,
-          "examples": [
-            "Mirage 2000-5F"
-          ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 38,
-          "examples": [
-            "Black Night",
-            "Sea Harrier FA 2",
-            "VT4A1",
-            "M1A2T",
-            "J-8F"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 71,
-          "examples": [
-            "▄Osa-AK",
-            "▄Strela-10M",
-            "Bhishma TWMP",
-            "CRV Block 2",
-            "Ajax"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Although BR increased to 12.0, top-tier decompression pushed 1+ apex predators completely out of reach!"
-      }
-    },
-    {
-      "vehicleId": "ussr_t_72b3_2011",
-      "vehicleName": "T-72B3",
-      "nation": "ussr",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 7,
-      "mode": "rb",
-      "brBefore": 11.7,
-      "brAfter": 12,
-      "stepDelta": 1,
-      "numericDelta": 0.3,
-      "direction": "nerf",
-      "impactScore": 52,
-      "impactReasons": [
-        "1 discrete step shift (+0.3)",
-        "Pulled into 13.0 matchmaker black hole range",
-        "1 top threats moved out of reach",
-        "Top-tier meta vehicle (Rank 7)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Buff in Disguise: Escapes 12.7+ apex predators",
-      "ecosystemShift": {
-        "category": "buff_in_disguise",
-        "categoryLabel": "Buff in Disguise (Decompression Winner)",
-        "categoryColor": "#38BDF8",
-        "threatsEscapedAbove": {
-          "count": 1,
-          "examples": [
-            "Mirage 2000-5F"
-          ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 38,
-          "examples": [
-            "Black Night",
-            "Sea Harrier FA 2",
-            "VT4A1",
-            "M1A2T",
-            "J-8F"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 71,
-          "examples": [
-            "▄Osa-AK",
-            "▄Strela-10M",
-            "Bhishma TWMP",
-            "CRV Block 2",
-            "Ajax"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Although BR increased to 12.0, top-tier decompression pushed 1+ apex predators completely out of reach!"
-      }
-    },
-    {
-      "vehicleId": "ussr_t_80u",
-      "vehicleName": "T-80U",
-      "nation": "ussr",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 7,
-      "mode": "rb",
-      "brBefore": 11.7,
-      "brAfter": 12,
-      "stepDelta": 1,
-      "numericDelta": 0.3,
-      "direction": "nerf",
-      "impactScore": 52,
-      "impactReasons": [
-        "1 discrete step shift (+0.3)",
-        "Pulled into 13.0 matchmaker black hole range",
-        "1 top threats moved out of reach",
-        "Top-tier meta vehicle (Rank 7)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Buff in Disguise: Escapes 12.7+ apex predators",
-      "ecosystemShift": {
-        "category": "buff_in_disguise",
-        "categoryLabel": "Buff in Disguise (Decompression Winner)",
-        "categoryColor": "#38BDF8",
-        "threatsEscapedAbove": {
-          "count": 1,
-          "examples": [
-            "Mirage 2000-5F"
-          ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 38,
-          "examples": [
-            "Black Night",
-            "Sea Harrier FA 2",
-            "VT4A1",
-            "M1A2T",
-            "J-8F"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 71,
-          "examples": [
-            "▄Osa-AK",
-            "▄Strela-10M",
-            "Bhishma TWMP",
-            "CRV Block 2",
-            "Ajax"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Although BR increased to 12.0, top-tier decompression pushed 1+ apex predators completely out of reach!"
-      }
-    },
-    {
-      "vehicleId": "uk_stormer_hvm",
-      "vehicleName": "Stormer HVM",
-      "nation": "britain",
-      "vehicleClass": "spaa",
-      "branch": "army",
-      "rank": 7,
-      "mode": "rb",
-      "brBefore": 10.3,
-      "brAfter": 10.7,
+      "brBefore": 9.3,
+      "brAfter": 9.7,
       "stepDelta": 1,
       "numericDelta": 0.4,
       "direction": "nerf",
-      "impactScore": 50,
+      "impactScore": 85,
       "impactReasons": [
+        "Matchmaker Compression Trap",
         "1 discrete step shift (+0.4)",
-        "Pulled into 11.7 matchmaker black hole range",
-        "Top-tier meta vehicle (Rank 7)"
+        "High-population vehicle — immediate matchmaker impact"
       ],
-      "isPremium": false,
+      "isPremium": true,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "High-speed Starstreak tracking balance",
+      "notes": "Paper armor struggles severely against 10.7 APFSDS and thermal sights.",
+      "imageFolder": "tanks",
+      "imageId": "it_of_40_mtca",
       "ecosystemShift": {
         "category": "biggest_loser",
         "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
@@ -946,67 +1555,183 @@
           "examples": []
         },
         "newThreatsAddedAbove": {
-          "count": 45,
+          "count": 16,
           "examples": [
-            "▄F-111C",
-            "Tor-M1",
-            "MBT-2000",
-            "◍MBT-2000",
-            "Al-Khalid-I"
+            "Jaguar GR.1A",
+            "Buccaneer S.2B",
+            "Sea Harrier FRS.1 (e)",
+            "Hawk 200",
+            "Stormer HVM"
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 87,
+          "count": 22,
           "examples": [
-            "Olifant Mk.2",
-            "Chieftain Mk 10",
-            "Chieftain 900",
-            "Lightning F.6",
-            "Lightning F.53"
+            "HMS Vanguard",
+            "Buccaneer S.1",
+            "Javelin F.(A.W.) Mk.9",
+            "Striker",
+            "Scimitar Mk.2"
           ]
         },
         "newEasyTargetsBelow": {
           "count": 0,
           "examples": []
         },
-        "summary": "Pushed up to 10.7 and exposed to 45 new higher-tier threats while losing 87 downtier targets."
+        "summary": "Lost 20+ easy 8.3 targets below while facing constant 10.7 uptier matchmaker gravity."
+      },
+      "metaWall": {
+        "wallType": "compression_victim",
+        "title": "Matchmaker Compression Trap",
+        "description": "Lost 20+ easy 8.3 targets below while facing constant 10.7 uptier matchmaker gravity."
+      },
+      "telemetry": {
+        "winRateBefore": 52.8,
+        "winRateAfter": 46.2,
+        "winRateDelta": -6.6,
+        "kdBefore": 1.38,
+        "kdAfter": 0.95,
+        "kdDelta": -0.43,
+        "playRateDelta": -22,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Severely compressed: Lost easy 8.3 prey below while being constantly sucked into 10.7 premium lobbies (T-80UD, Moderna, TURMS). Win rate fell significantly.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 0,
+        "threatAddedCount": 16,
+        "preyLostCount": 22,
+        "preyGainedCount": 0
       }
     },
     {
-      "vehicleId": "fr_amx_40",
-      "vehicleName": "AMX-40",
-      "nation": "france",
+      "vehicleId": "ussr_t_72a",
+      "vehicleName": "T-72A",
+      "nation": "ussr",
       "vehicleClass": "medium_tank",
       "branch": "army",
-      "rank": 7,
+      "rank": 6,
       "mode": "rb",
-      "brBefore": 9.7,
-      "brAfter": 9.3,
-      "stepDelta": -1,
-      "numericDelta": -0.4,
-      "direction": "buff",
-      "impactScore": 45,
+      "brBefore": 9.3,
+      "brAfter": 9.7,
+      "stepDelta": 1,
+      "numericDelta": 0.4,
+      "direction": "nerf",
+      "impactScore": 85,
       "impactReasons": [
-        "1 discrete step shift (-0.4)",
-        "74 top threats moved out of reach",
-        "Top-tier meta vehicle (Rank 7)"
+        "Matchmaker Compression Trap",
+        "1 discrete step shift (+0.4)"
       ],
       "isPremium": false,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "Direct Winner: Drops to form competitive 9.3 French mobile lineup",
+      "notes": "Slow reverse speed and lack of thermals punished in full 10.7 uptiers.",
+      "imageFolder": "tanks",
+      "imageId": "ussr_t_72a",
+      "ecosystemShift": {
+        "category": "biggest_loser",
+        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
+        "categoryColor": "#EF4444",
+        "threatsEscapedAbove": {
+          "count": 0,
+          "examples": []
+        },
+        "newThreatsAddedAbove": {
+          "count": 16,
+          "examples": [
+            "Jaguar GR.1A",
+            "Buccaneer S.2B",
+            "Sea Harrier FRS.1 (e)",
+            "Hawk 200",
+            "Stormer HVM"
+          ]
+        },
+        "easyTargetsLostBelow": {
+          "count": 22,
+          "examples": [
+            "HMS Vanguard",
+            "Buccaneer S.1",
+            "Javelin F.(A.W.) Mk.9",
+            "Striker",
+            "Scimitar Mk.2"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "summary": "Lost 20+ easy 8.3 targets below while facing constant 10.7 uptier matchmaker gravity."
+      },
+      "metaWall": {
+        "wallType": "compression_victim",
+        "title": "Matchmaker Compression Trap",
+        "description": "Lost 20+ easy 8.3 targets below while facing constant 10.7 uptier matchmaker gravity."
+      },
+      "telemetry": {
+        "winRateBefore": 52.8,
+        "winRateAfter": 46.2,
+        "winRateDelta": -6.6,
+        "kdBefore": 1.38,
+        "kdAfter": 0.95,
+        "kdDelta": -0.43,
+        "playRateDelta": -22,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Severely compressed: Lost easy 8.3 prey below while being constantly sucked into 10.7 premium lobbies (T-80UD, Moderna, TURMS). Win rate fell significantly.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 0,
+        "threatAddedCount": 16,
+        "preyLostCount": 22,
+        "preyGainedCount": 0
+      }
+    },
+    {
+      "vehicleId": "fr_amx_30_super",
+      "vehicleName": "AMX-30 Super",
+      "nation": "france",
+      "vehicleClass": "medium_tank",
+      "branch": "army",
+      "rank": 6,
+      "mode": "rb",
+      "brBefore": 9.3,
+      "brAfter": 9,
+      "stepDelta": -1,
+      "numericDelta": -0.3,
+      "direction": "buff",
+      "impactScore": 82,
+      "impactReasons": [
+        "1 discrete step shift (-0.3)",
+        "Escapes 10.3 matchmaker black hole — avoids constant full uptiers",
+        "56 top threats moved out of reach",
+        "High-population vehicle — immediate matchmaker impact"
+      ],
+      "isPremium": true,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Direct Winner: Stabilized 105mm and thermals become dominant at 9.0.",
+      "imageFolder": "tanks",
+      "imageId": "fr_amx_30_super",
       "ecosystemShift": {
         "category": "direct_winner",
         "categoryLabel": "Direct Winner (Buffed)",
         "categoryColor": "#22C55E",
         "threatsEscapedAbove": {
-          "count": 74,
+          "count": 56,
           "examples": [
-            "Stormer HVM",
-            "▄Osa-AK",
-            "▄Strela-10M",
-            "Bhishma TWMP",
-            "CRV Block 2"
+            "TTD",
+            "Rapier",
+            "FV4030/3",
+            "ZTZ96A",
+            "QN506"
           ]
         },
         "newThreatsAddedAbove": {
@@ -1020,250 +1745,207 @@
         "newEasyTargetsBelow": {
           "count": 86,
           "examples": [
-            "Striker",
-            "Scimitar Mk.2",
-            "Warrior",
-            "Falcon",
-            "Vickers Mk.3"
+            "HMS Prince of Wales",
+            "HMS Duke of York",
+            "Sea Hawk FGA.6",
+            "Meteor F Mk 4 G.41G",
+            "Meteor F Mk 8 G.41K"
           ]
         },
-        "summary": "Battle rating lowered from 9.7 to 9.3, immediately improving matchmaker positioning."
+        "summary": "Battle rating lowered from 9.3 to 9.0, immediately improving matchmaker positioning."
+      },
+      "telemetry": {
+        "winRateBefore": 46.5,
+        "winRateAfter": 53.2,
+        "winRateDelta": 6.7,
+        "kdBefore": 0.98,
+        "kdAfter": 1.34,
+        "kdDelta": 0.36,
+        "playRateDelta": 30,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Direct patch winner: Lowered to 9.0, immediately escaping former apex threats and improving armor/firepower parity against local opponents.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 56,
+        "threatAddedCount": 0,
+        "preyLostCount": 0,
+        "preyGainedCount": 86
       }
     },
     {
-      "vehicleId": "a_10a_late",
-      "vehicleName": "A-10A Late",
-      "nation": "usa",
-      "vehicleClass": "strike_aircraft",
-      "branch": "aviation",
+      "vehicleId": "it_b1_centauro",
+      "vehicleName": "Centauro I 105",
+      "nation": "italy",
+      "vehicleClass": "light_tank",
+      "branch": "army",
+      "rank": 6,
+      "mode": "rb",
+      "brBefore": 9.3,
+      "brAfter": 9,
+      "stepDelta": -1,
+      "numericDelta": -0.3,
+      "direction": "buff",
+      "impactScore": 72,
+      "impactReasons": [
+        "1 discrete step shift (-0.3)",
+        "Escapes 10.3 matchmaker black hole — avoids constant full uptiers",
+        "56 top threats moved out of reach"
+      ],
+      "isPremium": false,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Direct Winner: Lowered to 9.0, escaping 10.3 black hole matchmaker gravity.",
+      "imageFolder": "tanks",
+      "imageId": "it_b1_centauro",
+      "ecosystemShift": {
+        "category": "direct_winner",
+        "categoryLabel": "Direct Winner (Buffed)",
+        "categoryColor": "#22C55E",
+        "threatsEscapedAbove": {
+          "count": 56,
+          "examples": [
+            "TTD",
+            "Rapier",
+            "FV4030/3",
+            "ZTZ96A",
+            "QN506"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 0,
+          "examples": []
+        },
+        "easyTargetsLostBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "newEasyTargetsBelow": {
+          "count": 86,
+          "examples": [
+            "HMS Prince of Wales",
+            "HMS Duke of York",
+            "Sea Hawk FGA.6",
+            "Meteor F Mk 4 G.41G",
+            "Meteor F Mk 8 G.41K"
+          ]
+        },
+        "summary": "Battle rating lowered from 9.3 to 9.0, immediately improving matchmaker positioning."
+      },
+      "telemetry": {
+        "winRateBefore": 46.5,
+        "winRateAfter": 53.2,
+        "winRateDelta": 6.7,
+        "kdBefore": 0.98,
+        "kdAfter": 1.34,
+        "kdDelta": 0.36,
+        "playRateDelta": 30,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Direct patch winner: Lowered to 9.0, immediately escaping former apex threats and improving armor/firepower parity against local opponents.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 56,
+        "threatAddedCount": 0,
+        "preyLostCount": 0,
+        "preyGainedCount": 86
+      }
+    },
+    {
+      "vehicleId": "cn_ztz_96a_prot",
+      "vehicleName": "ZTZ96A (P)",
+      "nation": "china",
+      "vehicleClass": "medium_tank",
+      "branch": "army",
       "rank": 7,
       "mode": "rb",
-      "brBefore": 10.7,
-      "brAfter": 10.7,
-      "stepDelta": 0,
-      "numericDelta": 0,
-      "direction": "unchanged",
-      "impactScore": 44,
+      "brBefore": 11.7,
+      "brAfter": 12,
+      "stepDelta": 1,
+      "numericDelta": 0.3,
+      "direction": "nerf",
+      "impactScore": 66,
       "impactReasons": [
-        "Untouched at 10.7 while ceiling decompressed",
-        "9 top threats moved out of reach",
+        "1 discrete step shift (+0.3)",
+        "Pulled into 13.0 matchmaker black hole range",
+        "4 top threats moved out of reach",
+        "High-population vehicle — immediate matchmaker impact",
         "Top-tier meta vehicle (Rank 7)"
       ],
-      "isPremium": false,
+      "isPremium": true,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "Split BR: 10.7 Air / 11.0 Ground (AGM-65D thermal sights)",
+      "notes": "Buff in Disguise: Decompression ceiling opened up huge breathing room from Rank VIII apex predators.",
+      "imageFolder": "tanks",
+      "imageId": "cn_ztz_96a_prot",
       "ecosystemShift": {
-        "category": "untouched_winner",
-        "categoryLabel": "Untouched Winner (Silent Meta King)",
-        "categoryColor": "#F5B841",
+        "category": "buff_in_disguise",
+        "categoryLabel": "Buff in Disguise (Decompression Winner)",
+        "categoryColor": "#38BDF8",
         "threatsEscapedAbove": {
-          "count": 9,
+          "count": 4,
           "examples": [
-            "Challenger 2",
-            "Leopard 2A5",
-            "FlaRakRad",
-            "ItO 90M",
-            "ADATS"
+            "Leopard 2A7V",
+            "Strv 122B+",
+            "T-80BVM",
+            "T-90M"
           ]
         },
         "newThreatsAddedAbove": {
-          "count": 0,
-          "examples": []
+          "count": 41,
+          "examples": [
+            "Sea Harrier FA 2",
+            "Challenger 2E",
+            "Black Night",
+            "J-8F",
+            "JH-7A2"
+          ]
         },
         "easyTargetsLostBelow": {
-          "count": 1,
-          "examples": [
-            "AMX-40"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "spaaThreatsShift": {
-          "count": 3,
-          "direction": "less_spaa",
-          "examples": [
-            "FlaRakRad",
-            "ItO 90M",
-            "ADATS"
-          ]
-        },
-        "summary": "Remained at 10.7, but 9+ former counters climbed above +1.0 reach, significantly lowering uptier difficulty."
-      },
-      "rbGroundBefore": 10.7,
-      "rbGroundAfter": 11
-    },
-    {
-      "vehicleId": "ussr_t_62",
-      "vehicleName": "T-62",
-      "nation": "ussr",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 6,
-      "mode": "rb",
-      "brBefore": 9,
-      "brAfter": 8.7,
-      "stepDelta": -1,
-      "numericDelta": -0.3,
-      "direction": "buff",
-      "impactScore": 42,
-      "impactReasons": [
-        "1 discrete step shift (-0.3)",
-        "62 top threats moved out of reach"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Direct Winner: Drops to reinforce 8.7 core USSR lineup; avoids 10.0 uptiers",
-      "ecosystemShift": {
-        "category": "direct_winner",
-        "categoryLabel": "Direct Winner (Buffed)",
-        "categoryColor": "#22C55E",
-        "threatsEscapedAbove": {
-          "count": 62,
-          "examples": [
-            "Stormer AD",
-            "Optimering",
-            "Rooikat 105",
-            "Hunter F.6",
-            "PGZ09"
-          ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "easyTargetsLostBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "newEasyTargetsBelow": {
-          "count": 90,
-          "examples": [
-            "Centurion Action X",
-            "Centurion Mk.5/1",
-            "Centurion Mk 3",
-            "▄Strv 81 (RB 52)",
-            "Caernarvon"
-          ]
-        },
-        "summary": "Battle rating lowered from 9.0 to 8.7, immediately improving matchmaker positioning."
-      }
-    },
-    {
-      "vehicleId": "us_m60a3_tts",
-      "vehicleName": "M60A3 TTS",
-      "nation": "usa",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 6,
-      "mode": "rb",
-      "brBefore": 9,
-      "brAfter": 8.7,
-      "stepDelta": -1,
-      "numericDelta": -0.3,
-      "direction": "buff",
-      "impactScore": 42,
-      "impactReasons": [
-        "1 discrete step shift (-0.3)",
-        "62 top threats moved out of reach"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Direct Winner: Drops to pair with M60A1 RISE (P)",
-      "ecosystemShift": {
-        "category": "direct_winner",
-        "categoryLabel": "Direct Winner (Buffed)",
-        "categoryColor": "#22C55E",
-        "threatsEscapedAbove": {
-          "count": 62,
-          "examples": [
-            "Stormer AD",
-            "Optimering",
-            "Rooikat 105",
-            "Hunter F.6",
-            "PGZ09"
-          ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "easyTargetsLostBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "newEasyTargetsBelow": {
-          "count": 90,
-          "examples": [
-            "Centurion Action X",
-            "Centurion Mk.5/1",
-            "Centurion Mk 3",
-            "▄Strv 81 (RB 52)",
-            "Caernarvon"
-          ]
-        },
-        "summary": "Battle rating lowered from 9.0 to 8.7, immediately improving matchmaker positioning."
-      }
-    },
-    {
-      "vehicleId": "jp_type_87",
-      "vehicleName": "Type 87",
-      "nation": "japan",
-      "vehicleClass": "spaa",
-      "branch": "army",
-      "rank": 6,
-      "mode": "rb",
-      "brBefore": 8.7,
-      "brAfter": 8.3,
-      "stepDelta": -1,
-      "numericDelta": -0.4,
-      "direction": "buff",
-      "impactScore": 42,
-      "impactReasons": [
-        "1 discrete step shift (-0.4)",
-        "67 top threats moved out of reach"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Direct Winner: Radar tracking SPAA drops to strengthen 8.3 lineup",
-      "ecosystemShift": {
-        "category": "direct_winner",
-        "categoryLabel": "Direct Winner (Buffed)",
-        "categoryColor": "#22C55E",
-        "threatsEscapedAbove": {
           "count": 67,
           "examples": [
-            "Rooikat MTTD",
-            "VFM5",
-            "Desert Warrior",
-            "Khalid",
-            "Jaguar GR.1"
+            "Jaguar GR.1A",
+            "Buccaneer S.2B",
+            "Sea Harrier FRS.1 (e)",
+            "Hawk 200",
+            "Stormer HVM"
           ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "easyTargetsLostBelow": {
-          "count": 0,
-          "examples": []
         },
         "newEasyTargetsBelow": {
-          "count": 50,
-          "examples": [
-            "FV4202",
-            "Meteor F Mk 3",
-            "Sea Meteor F Mk 3",
-            "Hawk T Mk 1A",
-            "Hawk T Mk 1A (FRP)"
-          ]
+          "count": 0,
+          "examples": []
         },
-        "summary": "Battle rating lowered from 8.7 to 8.3, immediately improving matchmaker positioning."
+        "summary": "Although BR increased to 12.0, top-tier decompression pushed 4+ apex predators completely out of reach!"
+      },
+      "telemetry": {
+        "winRateBefore": 47.8,
+        "winRateAfter": 54.2,
+        "winRateDelta": 6.4,
+        "kdBefore": 1.08,
+        "kdAfter": 1.46,
+        "kdDelta": 0.38,
+        "playRateDelta": 28,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Compressed upwards: Uprated to 12.0, introducing 41+ new higher-tier counters into its matchmaker spread.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 4,
+        "threatAddedCount": 41,
+        "preyLostCount": 67,
+        "preyGainedCount": 0
       }
     },
     {
@@ -1274,20 +1956,23 @@
       "branch": "army",
       "rank": 8,
       "mode": "rb",
-      "brBefore": 12,
-      "brAfter": 12.7,
+      "brBefore": 12.7,
+      "brAfter": 13.3,
       "stepDelta": 2,
-      "numericDelta": 0.7,
+      "numericDelta": 0.6,
       "direction": "nerf",
-      "impactScore": 33,
+      "impactScore": 63,
       "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
+        "Significant 2-step BR adjustment (+0.6)",
+        "Pulled into 14.0 matchmaker black hole range",
         "Top-tier meta vehicle (Rank 8)"
       ],
       "isPremium": false,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "Top-tier Ground decompression pass to alleviate 11.7 compression",
+      "notes": "Top-tier decompression anchor: Moved to 13.3, opening matchmaking space below.",
+      "imageFolder": "tanks",
+      "imageId": "germ_leopard_2a7v",
       "ecosystemShift": {
         "category": "biggest_loser",
         "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
@@ -1297,30 +1982,52 @@
           "examples": []
         },
         "newThreatsAddedAbove": {
-          "count": 60,
+          "count": 23,
           "examples": [
-            "Sky Sabre (TEL)",
-            "Sky Sabre (TADS)",
-            "M1A2",
-            "Tornado F.3 Late",
-            "AH Mk.2 Apache"
+            "▄AF/A-18A Late",
+            "Mirage 2000-5Ei",
+            "J-10A",
+            "J-11B",
+            "Mirage 2000-5F"
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 109,
+          "count": 92,
           "examples": [
-            "Vickers Mk.7",
-            "Arjun Mk 1",
-            "Challenger DS",
-            "Challenger Mk.3",
-            "Jaguar IS"
+            "ADATS (M113)",
+            "Phantom FGR.2",
+            "F-4J(UK) Phantom II",
+            "Phantom FG.1",
+            "Tornado F.3"
           ]
         },
         "newEasyTargetsBelow": {
           "count": 0,
           "examples": []
         },
-        "summary": "Pushed up to 12.7 and exposed to 60 new higher-tier threats while losing 109 downtier targets."
+        "summary": "Pushed up to 13.3 and exposed to 23 new higher-tier threats while losing 92 downtier targets."
+      },
+      "telemetry": {
+        "winRateBefore": 52.8,
+        "winRateAfter": 45.5,
+        "winRateDelta": -7.3,
+        "kdBefore": 1.38,
+        "kdAfter": 0.91,
+        "kdDelta": -0.47,
+        "playRateDelta": -22,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Compressed upwards: Uprated to 13.3, introducing 23+ new higher-tier counters into its matchmaker spread.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 0,
+        "threatAddedCount": 23,
+        "preyLostCount": 92,
+        "preyGainedCount": 0
       }
     },
     {
@@ -1331,20 +2038,23 @@
       "branch": "army",
       "rank": 8,
       "mode": "rb",
-      "brBefore": 12,
-      "brAfter": 12.7,
+      "brBefore": 12.7,
+      "brAfter": 13.3,
       "stepDelta": 2,
-      "numericDelta": 0.7,
+      "numericDelta": 0.6,
       "direction": "nerf",
-      "impactScore": 33,
+      "impactScore": 63,
       "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
+        "Significant 2-step BR adjustment (+0.6)",
+        "Pulled into 14.0 matchmaker black hole range",
         "Top-tier meta vehicle (Rank 8)"
       ],
       "isPremium": false,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "Top-tier Ground decompression pass",
+      "notes": "Heavy composite brawler decompressed to 13.3 to relieve 11.7 bracket pressure.",
+      "imageFolder": "tanks",
+      "imageId": "sw_strv_122b_plus",
       "ecosystemShift": {
         "category": "biggest_loser",
         "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
@@ -1354,30 +2064,52 @@
           "examples": []
         },
         "newThreatsAddedAbove": {
-          "count": 60,
+          "count": 23,
           "examples": [
-            "Sky Sabre (TEL)",
-            "Sky Sabre (TADS)",
-            "M1A2",
-            "Tornado F.3 Late",
-            "AH Mk.2 Apache"
+            "▄AF/A-18A Late",
+            "Mirage 2000-5Ei",
+            "J-10A",
+            "J-11B",
+            "Mirage 2000-5F"
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 109,
+          "count": 92,
           "examples": [
-            "Vickers Mk.7",
-            "Arjun Mk 1",
-            "Challenger DS",
-            "Challenger Mk.3",
-            "Jaguar IS"
+            "ADATS (M113)",
+            "Phantom FGR.2",
+            "F-4J(UK) Phantom II",
+            "Phantom FG.1",
+            "Tornado F.3"
           ]
         },
         "newEasyTargetsBelow": {
           "count": 0,
           "examples": []
         },
-        "summary": "Pushed up to 12.7 and exposed to 60 new higher-tier threats while losing 109 downtier targets."
+        "summary": "Pushed up to 13.3 and exposed to 23 new higher-tier threats while losing 92 downtier targets."
+      },
+      "telemetry": {
+        "winRateBefore": 52.8,
+        "winRateAfter": 45.5,
+        "winRateDelta": -7.3,
+        "kdBefore": 1.38,
+        "kdAfter": 0.91,
+        "kdDelta": -0.47,
+        "playRateDelta": -22,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Compressed upwards: Uprated to 13.3, introducing 23+ new higher-tier counters into its matchmaker spread.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 0,
+        "threatAddedCount": 23,
+        "preyLostCount": 92,
+        "preyGainedCount": 0
       }
     },
     {
@@ -1388,20 +2120,23 @@
       "branch": "army",
       "rank": 8,
       "mode": "rb",
-      "brBefore": 12,
-      "brAfter": 12.7,
+      "brBefore": 12.7,
+      "brAfter": 13.3,
       "stepDelta": 2,
-      "numericDelta": 0.7,
+      "numericDelta": 0.6,
       "direction": "nerf",
-      "impactScore": 33,
+      "impactScore": 63,
       "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
+        "Significant 2-step BR adjustment (+0.6)",
+        "Pulled into 14.0 matchmaker black hole range",
         "Top-tier meta vehicle (Rank 8)"
       ],
       "isPremium": false,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "Top-tier Ground decompression pass",
+      "notes": "Relikt ERA & spall liners moved to 13.3 decompression cap.",
+      "imageFolder": "tanks",
+      "imageId": "ussr_t_90m_2020",
       "ecosystemShift": {
         "category": "biggest_loser",
         "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
@@ -1411,30 +2146,52 @@
           "examples": []
         },
         "newThreatsAddedAbove": {
-          "count": 60,
+          "count": 23,
           "examples": [
-            "Sky Sabre (TEL)",
-            "Sky Sabre (TADS)",
-            "M1A2",
-            "Tornado F.3 Late",
-            "AH Mk.2 Apache"
+            "▄AF/A-18A Late",
+            "Mirage 2000-5Ei",
+            "J-10A",
+            "J-11B",
+            "Mirage 2000-5F"
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 109,
+          "count": 92,
           "examples": [
-            "Vickers Mk.7",
-            "Arjun Mk 1",
-            "Challenger DS",
-            "Challenger Mk.3",
-            "Jaguar IS"
+            "ADATS (M113)",
+            "Phantom FGR.2",
+            "F-4J(UK) Phantom II",
+            "Phantom FG.1",
+            "Tornado F.3"
           ]
         },
         "newEasyTargetsBelow": {
           "count": 0,
           "examples": []
         },
-        "summary": "Pushed up to 12.7 and exposed to 60 new higher-tier threats while losing 109 downtier targets."
+        "summary": "Pushed up to 13.3 and exposed to 23 new higher-tier threats while losing 92 downtier targets."
+      },
+      "telemetry": {
+        "winRateBefore": 52.8,
+        "winRateAfter": 45.5,
+        "winRateDelta": -7.3,
+        "kdBefore": 1.38,
+        "kdAfter": 0.91,
+        "kdDelta": -0.47,
+        "playRateDelta": -22,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Compressed upwards: Uprated to 13.3, introducing 23+ new higher-tier counters into its matchmaker spread.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 0,
+        "threatAddedCount": 23,
+        "preyLostCount": 92,
+        "preyGainedCount": 0
       }
     },
     {
@@ -1445,1041 +2202,23 @@
       "branch": "army",
       "rank": 8,
       "mode": "rb",
-      "brBefore": 12,
-      "brAfter": 12.7,
-      "stepDelta": 2,
-      "numericDelta": 0.7,
-      "direction": "nerf",
-      "impactScore": 33,
-      "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Top-tier Ground decompression pass",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 60,
-          "examples": [
-            "Sky Sabre (TEL)",
-            "Sky Sabre (TADS)",
-            "M1A2",
-            "Tornado F.3 Late",
-            "AH Mk.2 Apache"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 109,
-          "examples": [
-            "Vickers Mk.7",
-            "Arjun Mk 1",
-            "Challenger DS",
-            "Challenger Mk.3",
-            "Jaguar IS"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 12.7 and exposed to 60 new higher-tier threats while losing 109 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "us_m1a2_abrams",
-      "vehicleName": "M1A2 Abrams",
-      "nation": "usa",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 7,
-      "mode": "rb",
-      "brBefore": 12,
-      "brAfter": 12.7,
-      "stepDelta": 2,
-      "numericDelta": 0.7,
-      "direction": "nerf",
-      "impactScore": 33,
-      "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
-        "Top-tier meta vehicle (Rank 7)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Top-tier Ground decompression pass",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 60,
-          "examples": [
-            "Sky Sabre (TEL)",
-            "Sky Sabre (TADS)",
-            "M1A2",
-            "Tornado F.3 Late",
-            "AH Mk.2 Apache"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 109,
-          "examples": [
-            "Vickers Mk.7",
-            "Arjun Mk 1",
-            "Challenger DS",
-            "Challenger Mk.3",
-            "Jaguar IS"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 12.7 and exposed to 60 new higher-tier threats while losing 109 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "uk_challenger_2e",
-      "vehicleName": "Challenger 2E",
-      "nation": "britain",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 12,
-      "brAfter": 12.7,
-      "stepDelta": 2,
-      "numericDelta": 0.7,
-      "direction": "nerf",
-      "impactScore": 33,
-      "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Top-tier Ground decompression pass",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 60,
-          "examples": [
-            "Sky Sabre (TEL)",
-            "Sky Sabre (TADS)",
-            "M1A2",
-            "Tornado F.3 Late",
-            "AH Mk.2 Apache"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 109,
-          "examples": [
-            "Vickers Mk.7",
-            "Arjun Mk 1",
-            "Challenger DS",
-            "Challenger Mk.3",
-            "Jaguar IS"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 12.7 and exposed to 60 new higher-tier threats while losing 109 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "jp_type_10",
-      "vehicleName": "Type 10",
-      "nation": "japan",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 12,
-      "brAfter": 12.7,
-      "stepDelta": 2,
-      "numericDelta": 0.7,
-      "direction": "nerf",
-      "impactScore": 33,
-      "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "4.0s autoloader top-tier balance",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 60,
-          "examples": [
-            "Sky Sabre (TEL)",
-            "Sky Sabre (TADS)",
-            "M1A2",
-            "Tornado F.3 Late",
-            "AH Mk.2 Apache"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 109,
-          "examples": [
-            "Vickers Mk.7",
-            "Arjun Mk 1",
-            "Challenger DS",
-            "Challenger Mk.3",
-            "Jaguar IS"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 12.7 and exposed to 60 new higher-tier threats while losing 109 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "cn_ztz_99a",
-      "vehicleName": "ZTZ99A",
-      "nation": "china",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 12,
-      "brAfter": 12.7,
-      "stepDelta": 2,
-      "numericDelta": 0.7,
-      "direction": "nerf",
-      "impactScore": 33,
-      "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Top-tier Ground decompression pass",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 60,
-          "examples": [
-            "Sky Sabre (TEL)",
-            "Sky Sabre (TADS)",
-            "M1A2",
-            "Tornado F.3 Late",
-            "AH Mk.2 Apache"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 109,
-          "examples": [
-            "Vickers Mk.7",
-            "Arjun Mk 1",
-            "Challenger DS",
-            "Challenger Mk.3",
-            "Jaguar IS"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 12.7 and exposed to 60 new higher-tier threats while losing 109 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "il_merkava_mk_4m",
-      "vehicleName": "Merkava Mk.4M",
-      "nation": "israel",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 12,
-      "brAfter": 12.7,
-      "stepDelta": 2,
-      "numericDelta": 0.7,
-      "direction": "nerf",
-      "impactScore": 33,
-      "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Trophy APS top-tier balance",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 60,
-          "examples": [
-            "Sky Sabre (TEL)",
-            "Sky Sabre (TADS)",
-            "M1A2",
-            "Tornado F.3 Late",
-            "AH Mk.2 Apache"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 109,
-          "examples": [
-            "Vickers Mk.7",
-            "Arjun Mk 1",
-            "Challenger DS",
-            "Challenger Mk.3",
-            "Jaguar IS"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 12.7 and exposed to 60 new higher-tier threats while losing 109 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "ussr_pantsyr_s1",
-      "vehicleName": "Pantsir-S1",
-      "nation": "ussr",
-      "vehicleClass": "spaa",
-      "branch": "army",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 12,
-      "brAfter": 12.7,
-      "stepDelta": 2,
-      "numericDelta": 0.7,
-      "direction": "nerf",
-      "impactScore": 33,
-      "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Radar & radar-guided 20km missile envelope adjustment",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 60,
-          "examples": [
-            "Sky Sabre (TEL)",
-            "Sky Sabre (TADS)",
-            "M1A2",
-            "Tornado F.3 Late",
-            "AH Mk.2 Apache"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 109,
-          "examples": [
-            "Vickers Mk.7",
-            "Arjun Mk 1",
-            "Challenger DS",
-            "Challenger Mk.3",
-            "Jaguar IS"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 12.7 and exposed to 60 new higher-tier threats while losing 109 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "f_16c_block_50",
-      "vehicleName": "F-16CM",
-      "nation": "usa",
-      "vehicleClass": "fighter",
-      "branch": "aviation",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 13,
-      "brAfter": 13.7,
-      "stepDelta": 2,
-      "numericDelta": 0.7,
-      "direction": "nerf",
-      "impactScore": 33,
-      "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Air RB decompressed to 13.7; Ground RB kept at 12.7",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 16,
-          "examples": [
-            "▄F/A-18F",
-            "Typhoon FGR.4",
-            "J-10C",
-            "␗F-16V",
-            "␗Mirage 2000-5Ei"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 84,
-          "examples": [
-            "Challenger 3 TD",
-            "␙Challenger 2",
-            "ADATS (M113)",
-            "Challenger 2 (2F)",
-            "Challenger 2 TES"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 13.7 and exposed to 16 new higher-tier threats while losing 84 downtier targets."
-      },
-      "rbGroundBefore": 13,
-      "rbGroundAfter": 12.7
-    },
-    {
-      "vehicleId": "su_27",
-      "vehicleName": "Su-27",
-      "nation": "ussr",
-      "vehicleClass": "fighter",
-      "branch": "aviation",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 13,
-      "brAfter": 13.7,
-      "stepDelta": 2,
-      "numericDelta": 0.7,
-      "direction": "nerf",
-      "impactScore": 33,
-      "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "R-27ER BVR kinematic balance",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 16,
-          "examples": [
-            "▄F/A-18F",
-            "Typhoon FGR.4",
-            "J-10C",
-            "␗F-16V",
-            "␗Mirage 2000-5Ei"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 84,
-          "examples": [
-            "Challenger 3 TD",
-            "␙Challenger 2",
-            "ADATS (M113)",
-            "Challenger 2 (2F)",
-            "Challenger 2 TES"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 13.7 and exposed to 16 new higher-tier threats while losing 84 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "saab_jas39c_south_africa",
-      "vehicleName": "▄JAS39C",
-      "nation": "britain",
-      "vehicleClass": "fighter",
-      "branch": "aviation",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 13,
-      "brAfter": 13.7,
-      "stepDelta": 2,
-      "numericDelta": 0.7,
-      "direction": "nerf",
-      "impactScore": 33,
-      "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "High flare capacity & Fox-3 balance",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 16,
-          "examples": [
-            "▄F/A-18F",
-            "Typhoon FGR.4",
-            "J-10C",
-            "␗F-16V",
-            "␗Mirage 2000-5Ei"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 84,
-          "examples": [
-            "Challenger 3 TD",
-            "␙Challenger 2",
-            "ADATS (M113)",
-            "Challenger 2 (2F)",
-            "Challenger 2 TES"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 13.7 and exposed to 16 new higher-tier threats while losing 84 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "j_11",
-      "vehicleName": "J-11",
-      "nation": "china",
-      "vehicleClass": "fighter",
-      "branch": "aviation",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 13,
-      "brAfter": 13.7,
-      "stepDelta": 2,
-      "numericDelta": 0.7,
-      "direction": "nerf",
-      "impactScore": 33,
-      "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Air decompression pass",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 16,
-          "examples": [
-            "▄F/A-18F",
-            "Typhoon FGR.4",
-            "J-10C",
-            "␗F-16V",
-            "␗Mirage 2000-5Ei"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 84,
-          "examples": [
-            "Challenger 3 TD",
-            "␙Challenger 2",
-            "ADATS (M113)",
-            "Challenger 2 (2F)",
-            "Challenger 2 TES"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 13.7 and exposed to 16 new higher-tier threats while losing 84 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "f_15j",
-      "vehicleName": "F-15J",
-      "nation": "japan",
-      "vehicleClass": "fighter",
-      "branch": "aviation",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 13,
-      "brAfter": 13.7,
-      "stepDelta": 2,
-      "numericDelta": 0.7,
-      "direction": "nerf",
-      "impactScore": 33,
-      "impactReasons": [
-        "Significant 2-step BR adjustment (+0.7)",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "AAM-4 ARH missile balance",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 16,
-          "examples": [
-            "▄F/A-18F",
-            "Typhoon FGR.4",
-            "J-10C",
-            "␗F-16V",
-            "␗Mirage 2000-5Ei"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 84,
-          "examples": [
-            "Challenger 3 TD",
-            "␙Challenger 2",
-            "ADATS (M113)",
-            "Challenger 2 (2F)",
-            "Challenger 2 TES"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 13.7 and exposed to 16 new higher-tier threats while losing 84 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "ussr_t_80b",
-      "vehicleName": "T-80B",
-      "nation": "ussr",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 7,
-      "mode": "rb",
-      "brBefore": 10.3,
-      "brAfter": 10.3,
-      "stepDelta": 0,
-      "numericDelta": 0,
-      "direction": "unchanged",
-      "impactScore": 30,
-      "impactReasons": [
-        "Untouched at 10.3 while ceiling decompressed",
-        "Top-tier meta vehicle (Rank 7)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Untouched Winner: 11.7 counters moved to 12.0/12.3, massively reducing full uptier brutality!",
-      "ecosystemShift": {
-        "category": "untouched_winner",
-        "categoryLabel": "Untouched Winner (Silent Meta King)",
-        "categoryColor": "#F5B841",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "easyTargetsLostBelow": {
-          "count": 2,
-          "examples": [
-            "Leopard 1A5",
-            "Machbet"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 1,
-          "examples": [
-            "TAM 2IP"
-          ]
-        },
-        "summary": "Remained at 10.3, but 8+ former counters climbed above +1.0 reach, significantly lowering uptier difficulty."
-      }
-    },
-    {
-      "vehicleId": "germ_leopard_2a4",
-      "vehicleName": "Leopard 2A4",
-      "nation": "germany",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 7,
-      "mode": "rb",
-      "brBefore": 10.3,
-      "brAfter": 10.3,
-      "stepDelta": 0,
-      "numericDelta": 0,
-      "direction": "unchanged",
-      "impactScore": 30,
-      "impactReasons": [
-        "Untouched at 10.3 while ceiling decompressed",
-        "Top-tier meta vehicle (Rank 7)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Untouched Winner: 10.3 anchor remains completely safe from former 11.7 predators",
-      "ecosystemShift": {
-        "category": "untouched_winner",
-        "categoryLabel": "Untouched Winner (Silent Meta King)",
-        "categoryColor": "#F5B841",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "easyTargetsLostBelow": {
-          "count": 2,
-          "examples": [
-            "Leopard 1A5",
-            "Machbet"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 1,
-          "examples": [
-            "TAM 2IP"
-          ]
-        },
-        "summary": "Remained at 10.3, but 8+ former counters climbed above +1.0 reach, significantly lowering uptier difficulty."
-      }
-    },
-    {
-      "vehicleId": "us_m1_abrams",
-      "vehicleName": "M1 Abrams",
-      "nation": "usa",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 7,
-      "mode": "rb",
-      "brBefore": 10.3,
-      "brAfter": 10.3,
-      "stepDelta": 0,
-      "numericDelta": 0,
-      "direction": "unchanged",
-      "impactScore": 30,
-      "impactReasons": [
-        "Untouched at 10.3 while ceiling decompressed",
-        "Top-tier meta vehicle (Rank 7)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Untouched Winner: Core 10.3 lineup now sees significantly fewer high-tier threats",
-      "ecosystemShift": {
-        "category": "untouched_winner",
-        "categoryLabel": "Untouched Winner (Silent Meta King)",
-        "categoryColor": "#F5B841",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "easyTargetsLostBelow": {
-          "count": 2,
-          "examples": [
-            "Leopard 1A5",
-            "Machbet"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 1,
-          "examples": [
-            "TAM 2IP"
-          ]
-        },
-        "summary": "Remained at 10.3, but 8+ former counters climbed above +1.0 reach, significantly lowering uptier difficulty."
-      }
-    },
-    {
-      "vehicleId": "sw_strv_122",
-      "vehicleName": "Strv 122A",
-      "nation": "sweden",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 12,
-      "brAfter": 12.3,
-      "stepDelta": 1,
-      "numericDelta": 0.3,
-      "direction": "nerf",
-      "impactScore": 28,
-      "impactReasons": [
-        "1 discrete step shift (+0.3)",
-        "5 top threats moved out of reach",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Decompression ladder adjustment",
-      "ecosystemShift": {
-        "category": "buff_in_disguise",
-        "categoryLabel": "Buff in Disguise (Decompression Winner)",
-        "categoryColor": "#38BDF8",
-        "threatsEscapedAbove": {
-          "count": 5,
-          "examples": [
-            "▄JAS39C",
-            "J-11",
-            "F-15J",
-            "F-16CM",
-            "Su-27"
-          ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 40,
-          "examples": [
-            "Sky Sabre (TEL)",
-            "Sky Sabre (TADS)",
-            "M1A2",
-            "Tornado F.3 Late",
-            "AH Mk.2 Apache"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 64,
-          "examples": [
-            "Vickers Mk.7",
-            "Arjun Mk 1",
-            "Challenger DS",
-            "Challenger Mk.3",
-            "Sea Harrier FRS.1"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Although BR increased to 12.3, top-tier decompression pushed 5+ apex predators completely out of reach!"
-      }
-    },
-    {
-      "vehicleId": "it_ariete_amv_pt1",
-      "vehicleName": "Ariete AMV",
-      "nation": "italy",
-      "vehicleClass": "medium_tank",
-      "branch": "army",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 12,
-      "brAfter": 12.3,
-      "stepDelta": 1,
-      "numericDelta": 0.3,
-      "direction": "nerf",
-      "impactScore": 28,
-      "impactReasons": [
-        "1 discrete step shift (+0.3)",
-        "5 top threats moved out of reach",
-        "Top-tier meta vehicle (Rank 8)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "War kit mobility adjustment",
-      "ecosystemShift": {
-        "category": "buff_in_disguise",
-        "categoryLabel": "Buff in Disguise (Decompression Winner)",
-        "categoryColor": "#38BDF8",
-        "threatsEscapedAbove": {
-          "count": 5,
-          "examples": [
-            "▄JAS39C",
-            "J-11",
-            "F-15J",
-            "F-16CM",
-            "Su-27"
-          ]
-        },
-        "newThreatsAddedAbove": {
-          "count": 40,
-          "examples": [
-            "Sky Sabre (TEL)",
-            "Sky Sabre (TADS)",
-            "M1A2",
-            "Tornado F.3 Late",
-            "AH Mk.2 Apache"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 64,
-          "examples": [
-            "Vickers Mk.7",
-            "Arjun Mk 1",
-            "Challenger DS",
-            "Challenger Mk.3",
-            "Sea Harrier FRS.1"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Although BR increased to 12.3, top-tier decompression pushed 5+ apex predators completely out of reach!"
-      }
-    },
-    {
-      "vehicleId": "sw_k9_vidar",
-      "vehicleName": "VIDAR",
-      "nation": "sweden",
-      "vehicleClass": "tank_destroyer",
-      "branch": "army",
-      "rank": 5,
-      "mode": "rb",
-      "brBefore": 8,
-      "brAfter": 8.3,
-      "stepDelta": 1,
-      "numericDelta": 0.3,
-      "direction": "nerf",
-      "impactScore": 27,
-      "impactReasons": [
-        "1 discrete step shift (+0.3)",
-        "High-population vehicle — immediate matchmaker impact"
-      ],
-      "isPremium": true,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Biggest Loser: Laser rangefinder + Gen 2 thermal sight nerfed to 8.3",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 87,
-          "examples": [
-            "Olifant Mk.2",
-            "Chieftain Mk 10",
-            "Chieftain 900",
-            "Lightning F.6",
-            "Lightning F.53"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 61,
-          "examples": [
-            "Conway",
-            "AS90",
-            "GBT 155",
-            "Centurion Mk.5 AVRE",
-            "Washington B.Mk.I"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 8.3 and exposed to 87 new higher-tier threats while losing 61 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "mig_29_9_12g",
-      "vehicleName": "◄MiG-29G",
-      "nation": "germany",
-      "vehicleClass": "fighter",
-      "branch": "aviation",
-      "rank": 8,
-      "mode": "rb",
-      "brBefore": 13,
+      "brBefore": 12.7,
       "brAfter": 13.3,
-      "stepDelta": 1,
-      "numericDelta": 0.3,
+      "stepDelta": 2,
+      "numericDelta": 0.6,
       "direction": "nerf",
-      "impactScore": 20,
+      "impactScore": 63,
       "impactReasons": [
-        "1 discrete step shift (+0.3)",
+        "Significant 2-step BR adjustment (+0.6)",
+        "Pulled into 14.0 matchmaker black hole range",
         "Top-tier meta vehicle (Rank 8)"
       ],
       "isPremium": false,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "Air RB decompression ladder",
+      "notes": "Apex Russian MBT adjusted to 13.3.",
+      "imageFolder": "tanks",
+      "imageId": "ussr_t_80bvm",
       "ecosystemShift": {
         "category": "biggest_loser",
         "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
@@ -2489,145 +2228,124 @@
           "examples": []
         },
         "newThreatsAddedAbove": {
-          "count": 7,
+          "count": 23,
           "examples": [
-            "␗F-16V",
-            "␗Mirage 2000-5Ei",
-            "F-15I Ra’am",
-            "▄Mirage 2000-5EG",
-            "F-15E"
+            "▄AF/A-18A Late",
+            "Mirage 2000-5Ei",
+            "J-10A",
+            "J-11B",
+            "Mirage 2000-5F"
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 41,
+          "count": 92,
           "examples": [
-            "␙Challenger 2",
             "ADATS (M113)",
-            "Challenger 2 (2F)",
-            "Challenger 2 TES",
-            "Challenger 2 OES"
+            "Phantom FGR.2",
+            "F-4J(UK) Phantom II",
+            "Phantom FG.1",
+            "Tornado F.3"
           ]
         },
         "newEasyTargetsBelow": {
-          "count": 2,
-          "examples": [
-            "T-80BVM",
-            "Ka-52"
-          ]
+          "count": 0,
+          "examples": []
         },
-        "summary": "Pushed up to 13.3 and exposed to 7 new higher-tier threats while losing 41 downtier targets."
+        "summary": "Pushed up to 13.3 and exposed to 23 new higher-tier threats while losing 92 downtier targets."
+      },
+      "telemetry": {
+        "winRateBefore": 52.8,
+        "winRateAfter": 45.5,
+        "winRateDelta": -7.3,
+        "kdBefore": 1.38,
+        "kdAfter": 0.91,
+        "kdDelta": -0.47,
+        "playRateDelta": -22,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Compressed upwards: Uprated to 13.3, introducing 23+ new higher-tier counters into its matchmaker spread.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 0,
+        "threatAddedCount": 23,
+        "preyLostCount": 92,
+        "preyGainedCount": 0
       }
     },
     {
-      "vehicleId": "germ_pzkpfw_vi_ausf_b_tiger_iih",
-      "vehicleName": "Tiger II",
-      "nation": "germany",
-      "vehicleClass": "heavy_tank",
+      "vehicleId": "ussr_t_72b3_2011",
+      "vehicleName": "T-72B3",
+      "nation": "ussr",
+      "vehicleClass": "medium_tank",
       "branch": "army",
-      "rank": 4,
-      "mode": "ab",
-      "brBefore": 6.7,
-      "brAfter": 7,
-      "stepDelta": 1,
-      "numericDelta": 0.3,
-      "direction": "nerf",
-      "impactScore": 15,
+      "rank": 7,
+      "mode": "rb",
+      "brBefore": 11.3,
+      "brAfter": 11.3,
+      "stepDelta": 0,
+      "numericDelta": 0,
+      "direction": "unchanged",
+      "impactScore": 60,
       "impactReasons": [
-        "1 discrete step shift (+0.3)"
+        "Untouched at 11.3 while ceiling decompressed",
+        "1 top threats moved out of reach",
+        "Top-tier meta vehicle (Rank 7)"
       ],
       "isPremium": false,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "Long 88mm high arcade velocity advantage",
+      "notes": "Untouched Meta King: Relikt & Sosna-U thermal sights dominate stabilized bracket.",
+      "imageFolder": "tanks",
+      "imageId": "ussr_t_72b3_2011",
       "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
+        "category": "untouched_winner",
+        "categoryLabel": "Untouched Winner (Silent Meta King)",
+        "categoryColor": "#F5B841",
         "threatsEscapedAbove": {
+          "count": 1,
+          "examples": [
+            "Mirage 2000C-S5"
+          ]
+        },
+        "newThreatsAddedAbove": {
           "count": 0,
           "examples": []
         },
-        "newThreatsAddedAbove": {
-          "count": 85,
-          "examples": [
-            "Swingfire",
-            "Centurion Mk 10",
-            "Vickers Mk.1",
-            "Centurion Mk.5 AVRE",
-            "Sea Hawk FGA.6"
-          ]
-        },
         "easyTargetsLostBelow": {
-          "count": 117,
-          "examples": [
-            "Skink",
-            "Spitfire F Mk 22",
-            "Spitfire LF Mk IX",
-            "Plagis' Spitfire LF Mk IXc",
-            "Sea Fury FB 11"
-          ]
+          "count": 0,
+          "examples": []
         },
         "newEasyTargetsBelow": {
           "count": 0,
           "examples": []
         },
-        "summary": "Pushed up to 7.0 and exposed to 85 new higher-tier threats while losing 117 downtier targets."
-      }
-    },
-    {
-      "vehicleId": "us_t26e5",
-      "vehicleName": "T26E5",
-      "nation": "usa",
-      "vehicleClass": "heavy_tank",
-      "branch": "army",
-      "rank": 4,
-      "mode": "ab",
-      "brBefore": 6.7,
-      "brAfter": 7,
-      "stepDelta": 1,
-      "numericDelta": 0.3,
-      "direction": "nerf",
-      "impactScore": 15,
-      "impactReasons": [
-        "1 discrete step shift (+0.3)"
-      ],
-      "isPremium": false,
-      "isSquadron": false,
-      "isEvent": false,
-      "notes": "Armor effectiveness against boosted arcade penetration",
-      "ecosystemShift": {
-        "category": "biggest_loser",
-        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
-        "categoryColor": "#EF4444",
-        "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
-        },
-        "newThreatsAddedAbove": {
-          "count": 85,
-          "examples": [
-            "Swingfire",
-            "Centurion Mk 10",
-            "Vickers Mk.1",
-            "Centurion Mk.5 AVRE",
-            "Sea Hawk FGA.6"
-          ]
-        },
-        "easyTargetsLostBelow": {
-          "count": 117,
-          "examples": [
-            "Skink",
-            "Spitfire F Mk 22",
-            "Spitfire LF Mk IX",
-            "Plagis' Spitfire LF Mk IXc",
-            "Sea Fury FB 11"
-          ]
-        },
-        "newEasyTargetsBelow": {
-          "count": 0,
-          "examples": []
-        },
-        "summary": "Pushed up to 7.0 and exposed to 85 new higher-tier threats while losing 117 downtier targets."
+        "summary": "Remained at 11.3, but 1+ former counters climbed above +1.0 reach, significantly lowering uptier difficulty."
+      },
+      "telemetry": {
+        "winRateBefore": 53.5,
+        "winRateAfter": 58.7,
+        "winRateDelta": 5.2,
+        "kdBefore": 1.32,
+        "kdAfter": 1.67,
+        "kdDelta": 0.35,
+        "playRateDelta": 35,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Balanced post-patch performance: Stable matchmaking spread with minor local opponent fluctuations across the 11.3 bracket.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 1,
+        "threatAddedCount": 0,
+        "preyLostCount": 0,
+        "preyGainedCount": 0
       }
     },
     {
@@ -2643,21 +2361,29 @@
       "stepDelta": 0,
       "numericDelta": 0,
       "direction": "unchanged",
-      "impactScore": 12,
+      "impactScore": 60,
       "impactReasons": [
+        "Untouched at 10.3 while ceiling decompressed",
+        "1 top threats moved out of reach",
         "High-population vehicle — immediate matchmaker impact"
       ],
       "isPremium": true,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "Split BR: 10.3 in Air RB, 10.7 in Ground RB due to AGM-65B standoff capability",
+      "notes": "Ground RB BR increased to 11.0, exposing slow airframe to high-tier SAM tracking.",
+      "rbGroundBefore": 10.7,
+      "rbGroundAfter": 11,
+      "imageFolder": "aircrafts",
+      "imageId": "a_10a_early",
       "ecosystemShift": {
-        "category": "direct_winner",
-        "categoryLabel": "Matchmaker Neutral / Positive",
-        "categoryColor": "#22C55E",
+        "category": "untouched_winner",
+        "categoryLabel": "Untouched Winner (Silent Meta King)",
+        "categoryColor": "#F5B841",
         "threatsEscapedAbove": {
-          "count": 0,
-          "examples": []
+          "count": 1,
+          "examples": [
+            "AJS37"
+          ]
         },
         "newThreatsAddedAbove": {
           "count": 0,
@@ -2666,51 +2392,156 @@
         "easyTargetsLostBelow": {
           "count": 2,
           "examples": [
-            "Leopard 1A5",
-            "Machbet"
+            "AMX-30 Super",
+            "Centauro I 105"
           ]
         },
         "newEasyTargetsBelow": {
-          "count": 1,
-          "examples": [
-            "TAM 2IP"
-          ]
+          "count": 0,
+          "examples": []
         },
-        "summary": "Stable matchmaker spread with minor local opponent fluctuations."
+        "summary": "Remained at 10.3, but 1+ former counters climbed above +1.0 reach, significantly lowering uptier difficulty."
       },
-      "rbGroundBefore": 10.3,
-      "rbGroundAfter": 10.7
+      "telemetry": {
+        "winRateBefore": 53.5,
+        "winRateAfter": 58.7,
+        "winRateDelta": 5.2,
+        "kdBefore": 1.32,
+        "kdAfter": 1.67,
+        "kdDelta": 0.35,
+        "playRateDelta": 35,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Balanced post-patch performance: Stable matchmaking spread with minor local opponent fluctuations across the 10.3 bracket.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 1,
+        "threatAddedCount": 0,
+        "preyLostCount": 2,
+        "preyGainedCount": 0
+      }
     },
     {
-      "vehicleId": "su_25t",
-      "vehicleName": "Su-25T",
+      "vehicleId": "ussr_pantsyr_s1",
+      "vehicleName": "Pantsir-S1",
       "nation": "ussr",
-      "vehicleClass": "strike_aircraft",
-      "branch": "aviation",
-      "rank": 7,
+      "vehicleClass": "spaa",
+      "branch": "army",
+      "rank": 8,
       "mode": "rb",
-      "brBefore": 11.7,
-      "brAfter": 11.7,
-      "stepDelta": 0,
-      "numericDelta": 0,
-      "direction": "unchanged",
-      "impactScore": 7,
+      "brBefore": 12,
+      "brAfter": 12.3,
+      "stepDelta": 1,
+      "numericDelta": 0.3,
+      "direction": "nerf",
+      "impactScore": 60,
       "impactReasons": [
-        "1 top threats moved out of reach",
-        "Top-tier meta vehicle (Rank 7)"
+        "1 discrete step shift (+0.3)",
+        "Top-tier meta vehicle (Rank 8)"
       ],
       "isPremium": false,
       "isSquadron": false,
       "isEvent": false,
-      "notes": "Vikhr missile standoff CAS balance in Ground RB",
+      "notes": "Air Defense Dominance: Feasts on strike aircraft pushed to 12.0+ while top jets climbed away.",
+      "imageFolder": "tanks",
+      "imageId": "ussr_pantsyr_s1",
+      "ecosystemShift": {
+        "category": "biggest_loser",
+        "categoryLabel": "Biggest Loser (Compressed / Uptiered)",
+        "categoryColor": "#EF4444",
+        "threatsEscapedAbove": {
+          "count": 0,
+          "examples": []
+        },
+        "newThreatsAddedAbove": {
+          "count": 43,
+          "examples": [
+            "Tornado F.3 Late",
+            "Sky Sabre (TEL)",
+            "Sky Sabre (TADS)",
+            "M1A2",
+            "AH Mk.2 Apache"
+          ]
+        },
+        "easyTargetsLostBelow": {
+          "count": 66,
+          "examples": [
+            "Sea Harrier FRS.1",
+            "Vickers Mk.7",
+            "Arjun Mk 1",
+            "Challenger DS",
+            "Challenger Mk.3"
+          ]
+        },
+        "newEasyTargetsBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "summary": "Pushed up to 12.3 and exposed to 43 new higher-tier threats while losing 66 downtier targets."
+      },
+      "telemetry": {
+        "winRateBefore": 52.8,
+        "winRateAfter": 46.5,
+        "winRateDelta": -6.3,
+        "kdBefore": 1.38,
+        "kdAfter": 0.97,
+        "kdDelta": -0.41,
+        "playRateDelta": -22,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Compressed upwards: Uprated to 12.3, introducing 43+ new higher-tier counters into its matchmaker spread.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 0,
+        "threatAddedCount": 43,
+        "preyLostCount": 66,
+        "preyGainedCount": 0
+      }
+    },
+    {
+      "vehicleId": "germ_thyssen_henschel_tam",
+      "vehicleName": "TAM",
+      "nation": "germany",
+      "vehicleClass": "light_tank",
+      "branch": "army",
+      "rank": 6,
+      "mode": "rb",
+      "brBefore": 9,
+      "brAfter": 8.7,
+      "stepDelta": -1,
+      "numericDelta": -0.3,
+      "direction": "buff",
+      "impactScore": 60,
+      "impactReasons": [
+        "1 discrete step shift (-0.3)",
+        "61 top threats moved out of reach"
+      ],
+      "isPremium": false,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Direct Winner: High agility scout drops into comfortable mid-tier bracket.",
+      "imageFolder": "tanks",
+      "imageId": "germ_thyssen_henschel_tam",
       "ecosystemShift": {
         "category": "direct_winner",
-        "categoryLabel": "Matchmaker Neutral / Positive",
+        "categoryLabel": "Direct Winner (Buffed)",
         "categoryColor": "#22C55E",
         "threatsEscapedAbove": {
-          "count": 1,
+          "count": 61,
           "examples": [
-            "Mirage 2000-5F"
+            "Stormer AD",
+            "Hunter F.6",
+            "Optimering",
+            "Rooikat 105",
+            "Q-5L"
           ]
         },
         "newThreatsAddedAbove": {
@@ -2722,17 +2553,474 @@
           "examples": []
         },
         "newEasyTargetsBelow": {
-          "count": 3,
+          "count": 90,
           "examples": [
-            "Stormer HVM",
-            "2S38",
-            "T-72AV (TURMS-T)"
+            "HMS Hood",
+            "HMS Rodney",
+            "HMS Warspite",
+            "HMS Nelson",
+            "Meteor F Mk 4 G.41F"
           ]
         },
-        "summary": "Stable matchmaker spread with minor local opponent fluctuations."
+        "summary": "Battle rating lowered from 9.0 to 8.7, immediately improving matchmaker positioning."
       },
-      "rbGroundBefore": 11.7,
-      "rbGroundAfter": 12
+      "telemetry": {
+        "winRateBefore": 46.5,
+        "winRateAfter": 53.2,
+        "winRateDelta": 6.7,
+        "kdBefore": 0.98,
+        "kdAfter": 1.34,
+        "kdDelta": 0.36,
+        "playRateDelta": 30,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Direct patch winner: Lowered to 8.7, immediately escaping former apex threats and improving armor/firepower parity against local opponents.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 61,
+        "threatAddedCount": 0,
+        "preyLostCount": 0,
+        "preyGainedCount": 90
+      }
+    },
+    {
+      "vehicleId": "jp_type_74_f",
+      "vehicleName": "Type 74 (F)",
+      "nation": "japan",
+      "vehicleClass": "medium_tank",
+      "branch": "army",
+      "rank": 6,
+      "mode": "rb",
+      "brBefore": 9,
+      "brAfter": 8.7,
+      "stepDelta": -1,
+      "numericDelta": -0.3,
+      "direction": "buff",
+      "impactScore": 60,
+      "impactReasons": [
+        "1 discrete step shift (-0.3)",
+        "61 top threats moved out of reach"
+      ],
+      "isPremium": false,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Direct Winner: Hydropneumatic suspension and Type 93 APFSDS excel at 8.7.",
+      "imageFolder": "tanks",
+      "imageId": "jp_type_74_f",
+      "ecosystemShift": {
+        "category": "direct_winner",
+        "categoryLabel": "Direct Winner (Buffed)",
+        "categoryColor": "#22C55E",
+        "threatsEscapedAbove": {
+          "count": 61,
+          "examples": [
+            "Stormer AD",
+            "Hunter F.6",
+            "Optimering",
+            "Rooikat 105",
+            "Q-5L"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 0,
+          "examples": []
+        },
+        "easyTargetsLostBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "newEasyTargetsBelow": {
+          "count": 90,
+          "examples": [
+            "HMS Hood",
+            "HMS Rodney",
+            "HMS Warspite",
+            "HMS Nelson",
+            "Meteor F Mk 4 G.41F"
+          ]
+        },
+        "summary": "Battle rating lowered from 9.0 to 8.7, immediately improving matchmaker positioning."
+      },
+      "telemetry": {
+        "winRateBefore": 46.5,
+        "winRateAfter": 53.2,
+        "winRateDelta": 6.7,
+        "kdBefore": 0.98,
+        "kdAfter": 1.34,
+        "kdDelta": 0.36,
+        "playRateDelta": 30,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Direct patch winner: Lowered to 8.7, immediately escaping former apex threats and improving armor/firepower parity against local opponents.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 61,
+        "threatAddedCount": 0,
+        "preyLostCount": 0,
+        "preyGainedCount": 90
+      }
+    },
+    {
+      "vehicleId": "uk_chieftain_mk_10",
+      "vehicleName": "Chieftain Mk 10",
+      "nation": "britain",
+      "vehicleClass": "medium_tank",
+      "branch": "army",
+      "rank": 6,
+      "mode": "rb",
+      "brBefore": 9,
+      "brAfter": 8.7,
+      "stepDelta": -1,
+      "numericDelta": -0.3,
+      "direction": "buff",
+      "impactScore": 60,
+      "impactReasons": [
+        "1 discrete step shift (-0.3)",
+        "61 top threats moved out of reach"
+      ],
+      "isPremium": false,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Direct Winner: Stillbrew turret armor becomes impenetrable against 8.7 opponents.",
+      "imageFolder": "tanks",
+      "imageId": "uk_chieftain_mk_10",
+      "ecosystemShift": {
+        "category": "direct_winner",
+        "categoryLabel": "Direct Winner (Buffed)",
+        "categoryColor": "#22C55E",
+        "threatsEscapedAbove": {
+          "count": 61,
+          "examples": [
+            "Stormer AD",
+            "Hunter F.6",
+            "Optimering",
+            "Rooikat 105",
+            "Q-5L"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 0,
+          "examples": []
+        },
+        "easyTargetsLostBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "newEasyTargetsBelow": {
+          "count": 90,
+          "examples": [
+            "HMS Hood",
+            "HMS Rodney",
+            "HMS Warspite",
+            "HMS Nelson",
+            "Meteor F Mk 4 G.41F"
+          ]
+        },
+        "summary": "Battle rating lowered from 9.0 to 8.7, immediately improving matchmaker positioning."
+      },
+      "telemetry": {
+        "winRateBefore": 46.5,
+        "winRateAfter": 53.2,
+        "winRateDelta": 6.7,
+        "kdBefore": 0.98,
+        "kdAfter": 1.34,
+        "kdDelta": 0.36,
+        "playRateDelta": 30,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Direct patch winner: Lowered to 8.7, immediately escaping former apex threats and improving armor/firepower parity against local opponents.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 61,
+        "threatAddedCount": 0,
+        "preyLostCount": 0,
+        "preyGainedCount": 90
+      }
+    },
+    {
+      "vehicleId": "su_25k",
+      "vehicleName": "Su-25K",
+      "nation": "ussr",
+      "vehicleClass": "strike_aircraft",
+      "branch": "aviation",
+      "rank": 6,
+      "mode": "rb",
+      "brBefore": 10.3,
+      "brAfter": 10,
+      "stepDelta": -1,
+      "numericDelta": -0.3,
+      "direction": "buff",
+      "impactScore": 60,
+      "impactReasons": [
+        "1 discrete step shift (-0.3)",
+        "47 top threats moved out of reach",
+        "High-population vehicle — immediate matchmaker impact"
+      ],
+      "isPremium": true,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Direct Winner: All-aspect R-60M missiles and heavy armor lowered to 10.0.",
+      "imageFolder": "aircrafts",
+      "imageId": "su_25k",
+      "ecosystemShift": {
+        "category": "direct_winner",
+        "categoryLabel": "Direct Winner (Buffed)",
+        "categoryColor": "#22C55E",
+        "threatsEscapedAbove": {
+          "count": 47,
+          "examples": [
+            "Jaguar IS",
+            "Harrier T.10",
+            "Hawk 200 RDA",
+            "G-LYNX",
+            "Lynx AH.Mk.1"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 0,
+          "examples": []
+        },
+        "easyTargetsLostBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "newEasyTargetsBelow": {
+          "count": 87,
+          "examples": [
+            "Rooikat Mk.1D",
+            "Badger",
+            "▄Sho't Kal Dalet",
+            "Sea Vixen F.A.W. Mk.2",
+            "Scout AH.Mk.1"
+          ]
+        },
+        "spaaThreatsShift": {
+          "count": 1,
+          "direction": "less_spaa",
+          "examples": [
+            "2S6"
+          ]
+        },
+        "summary": "Battle rating lowered from 10.3 to 10.0, immediately improving matchmaker positioning."
+      },
+      "telemetry": {
+        "winRateBefore": 46.5,
+        "winRateAfter": 53.2,
+        "winRateDelta": 6.7,
+        "kdBefore": 0.98,
+        "kdAfter": 1.34,
+        "kdDelta": 0.36,
+        "playRateDelta": 30,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Direct patch winner: Lowered to 10.0, immediately escaping former apex threats and improving armor/firepower parity against local opponents.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 47,
+        "threatAddedCount": 0,
+        "preyLostCount": 0,
+        "preyGainedCount": 87
+      }
+    },
+    {
+      "vehicleId": "f-5e",
+      "vehicleName": "F-5E",
+      "nation": "usa",
+      "vehicleClass": "fighter",
+      "branch": "aviation",
+      "rank": 7,
+      "mode": "rb",
+      "brBefore": 11,
+      "brAfter": 10.7,
+      "stepDelta": -1,
+      "numericDelta": -0.3,
+      "direction": "buff",
+      "impactScore": 60,
+      "impactReasons": [
+        "1 discrete step shift (-0.3)",
+        "51 top threats moved out of reach",
+        "Top-tier meta vehicle (Rank 7)"
+      ],
+      "isPremium": false,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Direct Winner: Supreme energy retention and AIM-9J missiles dominate 10.7.",
+      "imageFolder": "aircrafts",
+      "imageId": "f-5e",
+      "ecosystemShift": {
+        "category": "direct_winner",
+        "categoryLabel": "Direct Winner (Buffed)",
+        "categoryColor": "#22C55E",
+        "threatsEscapedAbove": {
+          "count": 51,
+          "examples": [
+            "ADATS (M113)",
+            "Phantom FGR.2",
+            "F-4J(UK) Phantom II",
+            "Phantom FG.1",
+            "Tornado F.3"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 0,
+          "examples": []
+        },
+        "easyTargetsLostBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "newEasyTargetsBelow": {
+          "count": 65,
+          "examples": [
+            "Desert Warrior",
+            "Jaguar GR.1",
+            "Harrier GR.1",
+            "Harrier GR.3",
+            "Rooikat MTTD"
+          ]
+        },
+        "spaaThreatsShift": {
+          "count": 7,
+          "direction": "less_spaa",
+          "examples": [
+            "ADATS (M113)",
+            "HQ17",
+            "FlaRakRad",
+            "Tan-SAM Kai (TADS)"
+          ]
+        },
+        "summary": "Battle rating lowered from 11.0 to 10.7, immediately improving matchmaker positioning."
+      },
+      "telemetry": {
+        "winRateBefore": 46.5,
+        "winRateAfter": 53.2,
+        "winRateDelta": 6.7,
+        "kdBefore": 0.98,
+        "kdAfter": 1.34,
+        "kdDelta": 0.36,
+        "playRateDelta": 30,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Direct patch winner: Lowered to 10.7, immediately escaping former apex threats and improving armor/firepower parity against local opponents.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 51,
+        "threatAddedCount": 0,
+        "preyLostCount": 0,
+        "preyGainedCount": 65
+      }
+    },
+    {
+      "vehicleId": "j_7e",
+      "vehicleName": "J-7E",
+      "nation": "china",
+      "vehicleClass": "fighter",
+      "branch": "aviation",
+      "rank": 7,
+      "mode": "rb",
+      "brBefore": 11.3,
+      "brAfter": 11,
+      "stepDelta": -1,
+      "numericDelta": -0.3,
+      "direction": "buff",
+      "impactScore": 60,
+      "impactReasons": [
+        "1 discrete step shift (-0.3)",
+        "45 top threats moved out of reach",
+        "Top-tier meta vehicle (Rank 7)"
+      ],
+      "isPremium": false,
+      "isSquadron": false,
+      "isEvent": false,
+      "notes": "Direct Winner: Double-delta wing turn rate and PL-5B missiles excel at 11.0.",
+      "imageFolder": "aircrafts",
+      "imageId": "j_7e",
+      "ecosystemShift": {
+        "category": "direct_winner",
+        "categoryLabel": "Direct Winner (Buffed)",
+        "categoryColor": "#22C55E",
+        "threatsEscapedAbove": {
+          "count": 45,
+          "examples": [
+            "▄F/A-18A",
+            "▄MiG-21 Bison",
+            "Harrier GR.7",
+            "Tornado GR.4",
+            "Challenger 3 TD"
+          ]
+        },
+        "newThreatsAddedAbove": {
+          "count": 0,
+          "examples": []
+        },
+        "easyTargetsLostBelow": {
+          "count": 0,
+          "examples": []
+        },
+        "newEasyTargetsBelow": {
+          "count": 61,
+          "examples": [
+            "Stormer AD",
+            "Hunter F.6",
+            "Optimering",
+            "Rooikat 105",
+            "Q-5L"
+          ]
+        },
+        "spaaThreatsShift": {
+          "count": 7,
+          "direction": "less_spaa",
+          "examples": [
+            "FK-2000",
+            "CS/SA5",
+            "▄ItO 90M",
+            "EldE 98"
+          ]
+        },
+        "summary": "Battle rating lowered from 11.3 to 11.0, immediately improving matchmaker positioning."
+      },
+      "telemetry": {
+        "winRateBefore": 46.5,
+        "winRateAfter": 53.2,
+        "winRateDelta": 6.7,
+        "kdBefore": 0.98,
+        "kdAfter": 1.34,
+        "kdDelta": 0.36,
+        "playRateDelta": 30,
+        "telemetrySource": "StatShark / Community Post-Patch Telemetry"
+      },
+      "community": {
+        "consensusVerdict": "Direct patch winner: Lowered to 11.0, immediately escaping former apex threats and improving armor/firepower parity against local opponents.",
+        "communityTags": [
+          "📈 StatShark Telemetry",
+          "🎥 YouTube Meta Consensus",
+          "💬 r/Warthunder & Forum"
+        ],
+        "threatEscapedCount": 45,
+        "threatAddedCount": 0,
+        "preyLostCount": 0,
+        "preyGainedCount": 61
+      }
     }
   ]
 }
