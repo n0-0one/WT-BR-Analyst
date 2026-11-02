@@ -21,9 +21,6 @@ concurrency:
 jobs:
   sync-test-build-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -60,19 +57,14 @@ jobs:
       - name: Execute Vitest Suite
         run: npm run test
 
-      - name: Setup GitHub Pages Environment
-        uses: actions/configure-pages@v5
-
       - name: Build Static Export
         env:
           NEXT_PUBLIC_BASE_PATH: "/WT-BR-Analyst"
         run: npm run build
 
-      - name: Upload GitHub Pages Artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to gh-pages Branch
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: ./out
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          folder: out
+          branch: gh-pages
+          clean: true
