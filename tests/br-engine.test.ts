@@ -12,10 +12,11 @@ import {
 } from "../src/lib/br-engine";
 
 describe("Discrete Battle Rating Engine (br-engine)", () => {
-  it("should have exactly 40 discrete steps from 1.0 to 14.0", () => {
-    expect(WT_BR_VALUES).toHaveLength(40);
+  it("should have exactly 43 discrete steps from 1.0 to 15.0", () => {
+    expect(WT_BR_VALUES).toHaveLength(43);
     expect(WT_BR_VALUES[0]).toBe(1.0);
     expect(WT_BR_VALUES[39]).toBe(14.0);
+    expect(WT_BR_VALUES[42]).toBe(15.0);
     // Spot check key intermediate values
     expect(WT_BR_VALUES).toContain(5.7);
     expect(WT_BR_VALUES).toContain(6.7);
@@ -25,6 +26,8 @@ describe("Discrete Battle Rating Engine (br-engine)", () => {
     expect(WT_BR_VALUES).toContain(10.3);
     expect(WT_BR_VALUES).toContain(11.7);
     expect(WT_BR_VALUES).toContain(12.0);
+    expect(WT_BR_VALUES).toContain(13.0);
+    expect(WT_BR_VALUES).toContain(13.7);
   });
 
   it("converts economicRank to Battle Rating correctly", () => {

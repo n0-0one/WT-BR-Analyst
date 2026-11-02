@@ -1,13 +1,12 @@
 /**
  * Discrete Battle Rating Step Math Engine
- * In War Thunder, BRs follow 40 discrete steps (economicRank 0 to 39):
- * 1.0, 1.3, 1.7, 2.0, 2.3, 2.7, 3.0, ..., 13.7, 14.0.
+ * In War Thunder, BRs follow discrete steps (economicRank 0 to 42):
+ * 1.0, 1.3, 1.7, 2.0, ..., 13.7, 14.0, 14.3, 14.7, 15.0.
  */
 
-// Generate the 40 discrete standard War Thunder BR values exactly
 export const WT_BR_VALUES: readonly number[] = (() => {
   const values: number[] = [];
-  for (let rank = 0; rank <= 39; rank++) {
+  for (let rank = 0; rank <= 42; rank++) {
     const whole = Math.floor(rank / 3) + 1;
     const remainder = rank % 3;
     let br: number;
@@ -24,11 +23,11 @@ export const WT_BR_VALUES: readonly number[] = (() => {
 })();
 
 /**
- * Maps game internal economicRank (0..39) to exact War Thunder Battle Rating.
+ * Maps game internal economicRank (0..42) to exact War Thunder Battle Rating.
  */
 export function economicRankToBR(rank: number): number {
   if (rank < 0) return WT_BR_VALUES[0] ?? 1.0;
-  if (rank >= WT_BR_VALUES.length) return WT_BR_VALUES[WT_BR_VALUES.length - 1] ?? 14.0;
+  if (rank >= WT_BR_VALUES.length) return WT_BR_VALUES[WT_BR_VALUES.length - 1] ?? 15.0;
   return WT_BR_VALUES[rank] ?? 1.0;
 }
 
@@ -40,7 +39,6 @@ export function brToEconomicRank(br: number): number {
   const exactIndex = WT_BR_VALUES.indexOf(rounded);
   if (exactIndex !== -1) return exactIndex;
 
-  // Fallback to closest match
   let closestIndex = 0;
   let minDiff = Math.abs(WT_BR_VALUES[0]! - rounded);
   for (let i = 1; i < WT_BR_VALUES.length; i++) {
@@ -55,11 +53,6 @@ export function brToEconomicRank(br: number): number {
 
 /**
  * Calculates step delta using index differences in WT_BR_VALUES.
- * Example:
- * 7.0 -> 7.3 = +1
- * 7.3 -> 7.7 = +1
- * 7.0 -> 7.7 = +2
- * 10.3 -> 10.0 = -1
  */
 export function getBRStepDelta(brBefore: number, brAfter: number): number {
   const indexBefore = brToEconomicRank(brBefore);
@@ -68,15 +61,14 @@ export function getBRStepDelta(brBefore: number, brAfter: number): number {
 }
 
 /**
- * Returns raw numeric delta rounded to 1 decimal place (e.g. +0.3, -0.4).
+ * Returns raw numeric delta rounded to 1 decimal place.
  */
 export function getNumericDelta(brBefore: number, brAfter: number): number {
   return Number((brAfter - brBefore).toFixed(1));
 }
 
 /**
- * Checks if a vehicle is within standard War Thunder 1.0 BR matchmaker spread:
- * vehicleBR <= targetBR && (targetBR - vehicleBR) <= 1.0
+ * Checks if vehicle is within standard War Thunder 1.0 matchmaker spread.
  */
 export function isVehicleInSpread(vehicleBR: number, targetBR: number): boolean {
   const roundedVehicle = Number(vehicleBR.toFixed(1));
@@ -85,14 +77,24 @@ export function isVehicleInSpread(vehicleBR: number, targetBR: number): boolean 
 }
 
 /**
- * Formats BR to clean standard string, e.g. 10.0, 7.3, 11.7
+ * Formats decimal BR (e.g. 10.3, 11.7).
  */
 export function formatBR(br: number): string {
   return br.toFixed(1);
 }
 
 /**
- * Formats delta badge, e.g. "+1 STEP", "-2 STEPS", "NO CHANGE"
+ * Formats split Air and Ground RB ratings (e.g. "12.7 (Air) / 11.7 (Gnd)").
+ */
+export function formatSplitBR(airBR: number, groundBR?: number): string {
+  if (groundBR !== undefined && Number(groundBR.toFixed(1)) !== Number(airBR.toFixed(1))) {
+    return `${airBR.toFixed(1)} Air / ${groundBR.toFixed(1)} Gnd`;
+  }
+  return airBR.toFixed(1);
+}
+
+/**
+ * Formats step count badge (e.g. "+1 STEP", "-2 STEPS").
  */
 export function formatStepBadge(stepDelta: number): string {
   if (stepDelta === 0) return "UNCHANGED";
@@ -102,11 +104,10 @@ export function formatStepBadge(stepDelta: number): string {
 }
 
 /**
- * Returns the matchmaker range [min, max] a lineup at targetBR can see (±1.0 BR).
+ * Returns the matchmaker range [min, max] that a lineup or vehicle sees (±1.0 BR).
  */
 export function getMatchmakerRange(targetBR: number): { downtierMin: number; target: number; uptierMax: number } {
   const targetRank = brToEconomicRank(targetBR);
-  // In War Thunder, ±1.0 BR is exactly 3 discrete steps (e.g. 10.3 down to 9.3 = 3 steps, up to 11.3 = 3 steps)
   const minRank = Math.max(0, targetRank - 3);
   const maxRank = Math.min(WT_BR_VALUES.length - 1, targetRank + 3);
 

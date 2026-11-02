@@ -1,4 +1,4 @@
-export type GameMode = "ab" | "rb" | "sb";
+export type GameMode = "ab" | "rb" | "sb" | "rbGround";
 
 export type Nation =
   | "usa"
@@ -22,7 +22,9 @@ export type VehicleClass =
   | "strike_aircraft"
   | "attacker"
   | "bomber"
-  | "helicopter";
+  | "helicopter"
+  | "bluewater"
+  | "coastal";
 
 export type VehicleBranch = "aviation" | "army" | "helicopters" | "fleet";
 
@@ -31,7 +33,12 @@ export interface Vehicle {
   name: string;
   nation: Nation;
   rank: number;
-  br: Record<GameMode, number>;
+  br: {
+    ab: number;
+    rb: number;
+    sb: number;
+    rbGround?: number; // Ground RB specific BR for aircraft
+  };
   vehicleClass: VehicleClass;
   branch: VehicleBranch;
   isPremium?: boolean;
@@ -42,6 +49,33 @@ export interface Vehicle {
 }
 
 export type BRChangeDirection = "buff" | "nerf" | "unchanged";
+
+export type EcosystemCategory =
+  | "direct_winner"
+  | "buff_in_disguise"
+  | "untouched_winner"
+  | "biggest_loser";
+
+export interface EcosystemThreatDetail {
+  count: number;
+  examples: string[];
+}
+
+export interface EcosystemShift {
+  category: EcosystemCategory;
+  categoryLabel: string;
+  categoryColor: string;
+  threatsEscapedAbove: EcosystemThreatDetail;
+  newThreatsAddedAbove: EcosystemThreatDetail;
+  easyTargetsLostBelow: EcosystemThreatDetail;
+  newEasyTargetsBelow: EcosystemThreatDetail;
+  spaaThreatsShift?: {
+    count: number;
+    direction: "more_spaa" | "less_spaa" | "neutral";
+    examples: string[];
+  };
+  summary: string;
+}
 
 export interface BRChange {
   vehicleId: string;
@@ -62,6 +96,9 @@ export interface BRChange {
   isSquadron?: boolean;
   isEvent?: boolean;
   notes?: string;
+  rbGroundBefore?: number;
+  rbGroundAfter?: number;
+  ecosystemShift?: EcosystemShift;
 }
 
 export interface PatchMetadata {
@@ -88,9 +125,12 @@ export interface LineupEvaluation {
   targetBR: number;
   status: "survives" | "weakened" | "shifted" | "broken";
   statusMessage: string;
+  survivalReason: string;
+  nerfedVehicles: BRChange[];
   droppedVehicles: Vehicle[];
   newReinforcements: Vehicle[];
   survivingVehicles: Vehicle[];
+  recommendedReplacements: Vehicle[];
   allLineupVehicles: Vehicle[];
   simulatedMaxBR?: number;
   simulatedUptierMax?: number;
@@ -105,15 +145,27 @@ export interface LineupRoleCheck {
   hasCAS: boolean;
 }
 
+export interface LineupSlot {
+  slotRole: string;
+  roleLabel: string;
+  vehicle: Vehicle;
+}
+
 export interface OptimalLineup {
   nation: Nation;
   mode: GameMode;
   targetBR: number;
+  effectiveBR: number;
+  hasCASGroundBRSplit: boolean;
   score: number;
+  synergyScore: number;
   groundVehicles: Vehicle[];
   casVehicles: Vehicle[];
+  slots: LineupSlot[];
+  matchmakerRange: { min: number; max: number };
   roleCompleteness: LineupRoleCheck;
   anchorDensity: number;
   patchMomentum: number;
   strengths: string[];
+  summary: string;
 }

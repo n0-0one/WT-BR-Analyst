@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { calculateImpactScore } from "../src/lib/impact-scorer";
+import { calculateImpactScore, analyzeMatchmakerShift } from "../src/lib/impact-scorer";
 import { Vehicle } from "../src/types";
 
 describe("Impact Scorer Engine (impact-scorer)", () => {
@@ -82,5 +82,58 @@ describe("Impact Scorer Engine (impact-scorer)", () => {
     // 2-step shift (e.g. 10.3 to 11.0)
     const res = calculateImpactScore(dummyVehicles[4]!, 10.3, 11.0, "rb", dummyVehicles);
     expect(res.reasons.some((r) => r.includes("2-step BR adjustment"))).toBe(true);
+  });
+
+  it("identifies direct winner when vehicle drops in BR", () => {
+    const shift = analyzeMatchmakerShift(dummyVehicles[0]!, 9.3, 9.0, "rb", dummyVehicles);
+    expect(shift.category).toBe("direct_winner");
+    expect(shift.categoryLabel).toContain("Direct Winner");
+  });
+
+  it("identifies biggest loser when vehicle rises in BR", () => {
+    const shift = analyzeMatchmakerShift(dummyVehicles[0]!, 9.3, 9.7, "rb", dummyVehicles);
+    expect(shift.category).toBe("biggest_loser");
+    expect(shift.categoryLabel).toContain("Biggest Loser");
+  });
+
+  it("identifies untouched winner when top-tier ceiling decompresses", () => {
+    const vehicles: Vehicle[] = [
+      {
+        id: "germ_leopard_2a5",
+        name: "Leopard 2A5",
+        nation: "germany",
+        rank: 7,
+        br: { ab: 11.7, rb: 11.7, sb: 11.7 },
+        vehicleClass: "medium_tank",
+        branch: "army",
+      },
+      {
+        id: "germ_leopard_2a7v",
+        name: "Leopard 2A7V",
+        nation: "germany",
+        rank: 8,
+        br: { ab: 12.7, rb: 12.7, sb: 12.7 },
+        vehicleClass: "medium_tank",
+        branch: "army",
+      },
+    ];
+
+    // 2A7V moved from 12.7 to 13.0, escaping 2A5's 11.7 reach (11.7 + 1.0 = 12.7)
+    const changesMap = new Map([
+      ["germ_leopard_2a7v", { brBefore: 12.7, brAfter: 13.0 }],
+    ]);
+
+    const shift = analyzeMatchmakerShift(
+      vehicles[0]!,
+      11.7,
+      11.7,
+      "rb",
+      vehicles,
+      changesMap
+    );
+
+    expect(shift.category).toBe("untouched_winner");
+    expect(shift.threatsEscapedAbove.count).toBe(1);
+    expect(shift.threatsEscapedAbove.examples).toContain("Leopard 2A7V");
   });
 });

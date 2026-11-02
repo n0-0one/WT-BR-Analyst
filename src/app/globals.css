@@ -5,51 +5,88 @@
 :root {
   --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-space-mono: 'Space Mono', 'JetBrains Mono', monospace;
-  --font-dot: 'DotGothic16', monospace;
 }
 
 body {
-  background-color: #000000;
+  background-color: #11161D;
   color: #FFFFFF;
   font-family: var(--font-inter);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Custom Nothing OS Scrollbars */
+/* Authentic War Thunder Hangar scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #11161D;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #27272A;
-  border-radius: 9999px;
+  background: #2E4259;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3F3F46;
+  background: #4A6B8F;
 }
 
-/* Subtle dot-grid utilities */
-.bg-dot-matrix {
-  background-image: radial-gradient(#27272a 1.2px, transparent 1.2px);
-  background-size: 16px 16px;
+/* War Thunder Slot Cards */
+.wt-slot-regular {
+  background: linear-gradient(180deg, #1F2D3D 0%, #18222E 100%);
+  border: 1px solid #2E4259;
+}
+.wt-slot-regular:hover {
+  border-color: #3B82F6;
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.25);
 }
 
-.bg-dot-matrix-dense {
-  background-image: radial-gradient(#27272a 1px, transparent 1px);
-  background-size: 10px 10px;
+.wt-slot-premium {
+  background: linear-gradient(180deg, #3A2E14 0%, #261E0D 100%);
+  border: 1px solid #D49B27;
+}
+.wt-slot-premium:hover {
+  border-color: #F5B841;
+  box-shadow: 0 0 16px rgba(245, 184, 65, 0.3);
 }
 
-/* Glass panel */
-.nothing-glass {
-  background: rgba(18, 18, 20, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.wt-slot-squadron {
+  background: linear-gradient(180deg, #193322 0%, #112217 100%);
+  border: 1px solid #2E6F40;
+}
+.wt-slot-squadron:hover {
+  border-color: #4ADE80;
+  box-shadow: 0 0 16px rgba(74, 222, 128, 0.3);
+}
+
+.wt-slot-event {
+  background: linear-gradient(180deg, #2E1D2B 0%, #1D141C 100%);
+  border: 1px solid #6E3B64;
+}
+.wt-slot-event:hover {
+  border-color: #A855F7;
+  box-shadow: 0 0 16px rgba(168, 85, 247, 0.3);
+}
+
+/* War Thunder "To Battle!" Amber Button */
+.wt-btn-battle {
+  background: linear-gradient(180deg, #FF8A00 0%, #E65100 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  border: 1px solid #FFA726;
+  box-shadow: 0 2px 8px rgba(230, 81, 0, 0.4);
+}
+.wt-btn-battle:hover {
+  background: linear-gradient(180deg, #FFA726 0%, #F57C00 100%);
+  box-shadow: 0 4px 16px rgba(230, 81, 0, 0.6);
+}
+
+/* Glass & Panel styling */
+.wt-panel {
+  background-color: #171E27;
+  border: 1px solid #2E4259;
 }

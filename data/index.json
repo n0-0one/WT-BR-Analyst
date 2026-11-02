@@ -1,14 +1,14 @@
 {
   "latestPatchId": "latest-patch",
-  "lastUpdated": "2026-11-02T16:30:44.364Z",
+  "lastUpdated": "2026-11-02T18:39:59.268Z",
   "patches": [
     {
       "id": "latest-patch",
-      "title": "Planned Battle Rating Changes — Decompression & Lineup Rebalance",
+      "title": "Planned Battle Rating Changes & Top-Tier Decompression Wave",
       "date": "2026-11-02",
-      "totalChanges": 34,
-      "buffs": 9,
-      "nerfs": 25
+      "totalChanges": 47,
+      "buffs": 6,
+      "nerfs": 35
     }
   ]
 }

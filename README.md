@@ -1,6 +1,6 @@
-# WT // NOTHING — War Thunder Battle Rating & Lineup Intelligence
+# WAR THUNDER // BR ANALYST — Battle Rating & Lineup Intelligence
 
-> Pure Nothing OS minimalism meets authoritative, datamine-verified War Thunder Battle Rating analytics.
+> Authoritative, datamine-verified War Thunder Battle Rating Ecosystem Analyzer & Lineup Intelligence Platform.
 
 🌐 **Live Application:** [https://n0-0one.github.io/WT-BR-Analyst/](https://n0-0one.github.io/WT-BR-Analyst/)
 
@@ -8,71 +8,103 @@
 
 ## Overview
 
-**WT // NOTHING** (WT BR Analyst) is an autonomous tactical intelligence platform engineered for War Thunder players. Instead of messy military radar clutter or guessed statistics, it brings pure Nothing Phone / Nothing OS 3.0 industrial design to the game's battle rating economy.
+**WAR THUNDER // BR ANALYST** is a tactical intelligence web application built for War Thunder players. Designed with an authentic **War Thunder Hangar & Research Tree** visual design system, it provides deep mathematical insights into Gaijin's Battle Rating decompressions, matchmaker shifts, opponent threat pools, and lineup preservation.
 
-The platform provides mathematically exact 40-step discrete Battle Rating analysis, matchmaker black hole gravitational tracking, anchor-preserving lineup survival checks, and combined arms lineup building across all 10 in-game nations (USA, Germany, USSR, Great Britain, Japan, China, Italy, France, Sweden, and Israel).
+Powered by a complete database of **3,389 vehicles** ingested directly from official datamined game files (`wpcost.blkx` and `units.csv`), the platform analyzes true matchmaking dynamics across all 10 in-game nations (USA, Germany, USSR, Great Britain, Japan, China, Italy, France, Sweden, and Israel) and across all game modes (Realistic, Arcade, Simulator).
 
 ---
 
 ## Key Features
 
-- **Discrete BR Step Engine:** War Thunder Battle Ratings do not follow continuous decimal math—they move in 40 discrete steps (`economicRank` 0 to 39 from 1.0 to 14.0). All calculations compute true step index differences (e.g. 7.0 &rarr; 7.3 is +1 step; 7.3 &rarr; 7.7 is also +1 step; 7.0 &rarr; 7.7 is +2 steps).
-- **Matchmaker Black Hole & Impact Scorer:** Ranks every patch shift from 0 to 100. Pinpoints high-population brackets (3.7, 5.7, 6.7, 8.7, 10.3, 11.7, 13.0) that pull `-1.0 BR` vehicles into constant full uptiers, instantly distinguishing true Meta Winners (escaping a black hole) from Meta Losers (dragged into one).
-- **Anchor-Preserving Lineup Survival Checker:** When vehicles in your 10.3 or 9.0 lineup get nerfed to a higher BR, experienced players drop the nerfed vehicle rather than dragging four lower-tier tanks into harsh uptiers. The engine classifies lineups into *Survives*, *Weakened*, *Shifted*, or *Broken*.
-- **"What If I Keep Nerfed Vehicles?" Simulator:** Toggleable simulator mode revealing how retaining nerfed vehicles shifts your squad's matchmaking ceiling and exposes your surviving roster to severe full uptiers.
-- **Combined Arms Optimal Lineup Builder:** Synthesizes the highest-scoring Ground roster (MBTs, Light Scouts, SPAA, and Tank Destroyers) paired with Close Air Support (CAS strike aircraft, fighters, and attack helicopters) within optimal BR spreads.
-- **Pure Nothing OS 3.0 Aesthetic:** Pitch-black OLED background (`#000000`), bento card surfaces (`#121214`), subtle dot-matrix patterns, pill controls, monospace telemetry typography, and signature Nothing Red (`#D71921`) accents.
+### 1. Authentic War Thunder Hangar & Tech-Tree UI
+- **Hangar Deep Slate Palette:** `#11161D` primary background with elevated `#171E27` and `#1E2733` panels and `#2E4259` borders.
+- **Crew Slot Cards:** Realistic vehicle slots with custom borders for Tech Tree (`#2E4259`), Premium Gold (`#D49B27`), Squadron Green (`#2E6F40`), and Event Plum (`#6E3B64`).
+- **War Thunder Action Amber CTA:** `#E65100` to `#F57C00` button gradients and Golden Eagle `#F5B841` highlights.
+- **Roman Numerals:** Authentic Rank badges (`Rank I` through `Rank VIII`).
+
+### 2. Matchmaker Ecosystem Analyzer (Video-Style Infographics)
+- **4 Analytical Categories:**
+  - 🟢 **Direct Winners:** Vehicles receiving direct BR reductions with improved matchmaking.
+  - 🔷 **Buffs in Disguise (Decompression Kings):** Vehicles whose BR increased (e.g. 11.7 &rarr; 12.0), but who won because the ceiling decompressed to 12.7 / 13.3, pushing dozens of apex predators completely out of reach.
+  - 👑 **Untouched Winners:** Vehicles with unchanged BRs while the bracket above them moved up.
+  - 🔴 **Biggest Losers:** Vehicles compressed or uprated into new hostile threat brackets.
+- **Matchmaker Window Bar:** Visual representation of `[Floor -1.0 BR] ◄── [Vehicle BR] ──► [Ceiling +1.0 BR]` tracking exact numbers of escaped threats, added threats, lost prey, and gained prey.
+- **Matchmaker Inspector Modal:** Click any vehicle to inspect its full specs, official Wiki link, and complete opponent threat pool.
+- **Ground RB Aircraft Split BR Support:** Explicitly models separate Air RB and Ground RB battle ratings (e.g., A-10A Early at 10.3 Air RB vs. 10.7 Ground RB).
+
+### 3. Full ~3,389 Vehicle Tech-Tree Browser
+- Browse the entire War Thunder roster across all 10 nations and 4 branches (Army, Aviation, Helicopters, Fleet).
+- Filter by Nation, Branch, Rank (I–VIII), and Slot Type (Tech Tree, Premium, Squadron, Event).
+- Butter-smooth 60 FPS client pagination (36 per page) and instant live search.
+
+### 4. Interactive Decompression & Density Heatmap
+- Visualizes vehicle distribution and decompression shifts across all 43 discrete Battle Rating steps (1.0 to 15.0).
+- Hover over any BR bucket to inspect vehicle counts and active patch shifts.
+
+### 5. Lineup Survival Checker & BR Drag Simulator
+- Analyzes whether your preset (e.g., USSR 10.3 or Germany 6.7) survives a patch without unwanted uptiers.
+- **"What If I Keep Nerfed Vehicles?" Simulator:** Reveals the true cost of keeping an uprated vehicle—dragging lower-tier tanks into severe uptiers against apex predators.
+- **Recommended Lineup Replacements:** Automatically identifies in-bracket alternatives from the 3,389-vehicle database to rescue broken lineups.
+
+### 6. Combined Arms Lineup Builder
+- Synthesizes optimal Ground + CAS lineups (MBTs, Light Tanks / Scouts, SPAA / Air Defense, and Strike Aircraft).
+- Accounts for separate Ground RB aircraft ratings and evaluates combined arms synergy (0–100 score).
 
 ---
 
-## How Data Stays Accurate (Zero Hallucinations)
+## Automated Multi-Source Pipeline (Zero Hallucinations)
 
-Data integrity is handled autonomously:
+Data is synchronized automatically through a multi-tier pipeline:
 
-1. **Official Game Datamine Verification:** Vehicle parameters and economic ranks are extracted directly from `gszabi99/War-Thunder-Datamine` (`char.vromfs.bin_u/config/wpcost.blkx` and `lang.vromfs.bin_u/lang/units.csv`).
-2. **Planned Changes Scraper:** Planned BR adjustments are sourced from official War Thunder Forum announcements and Gaijin's published spreadsheets.
-3. **Autonomous 6-Hour Pipeline:** A GitHub Actions workflow (`.github/workflows/autonomous-sync-deploy.yml`) runs every 6 hours, re-syncs datasets, executes the full Vitest suite, builds the static export, and deploys directly to GitHub Pages.
+1. **`scripts/sync-all-vehicles.ts`:**
+   - Ingests raw `wpcost.blkx` (3,471 raw entities) from `gszabi99/War-Thunder-Datamine`.
+   - Ingests localized English names and vehicle roles from `units.csv` (4,000+ entries).
+   - Generates verified `data/vehicles.json` containing 3,389 playable vehicles with exact AB, RB, SB, and Ground RB split ratings.
+2. **`scripts/scrape-forum.ts`:**
+   - Scrapes official Gaijin forum announcements (`Planned Battle Rating Changes`).
+   - Cross-references vehicle IDs against `data/vehicles.json` using exact keys and fuzzy resolvers.
+   - Computes pre-patch vs. post-patch ecosystem shifts using `src/lib/impact-scorer.ts`.
+3. **Autonomous GitHub Actions (`.github/workflows/autonomous-sync-deploy.yml`):**
+   - Runs every 6 hours (`cron: '0 */6 * * *'`), on every push to `main`, and via manual dispatch.
+   - Re-syncs data, runs Vitest tests, builds the static export, and deploys to `gh-pages`.
 
 ---
 
-## Architecture & Tech Stack
+## Project Structure
 
 ```text
 ├── .github/workflows/
-│   └── autonomous-sync-deploy.yml   # 6h cron sync, vitest, and GitHub Pages deployment
+│   └── autonomous-sync-deploy.yml   # 6h cron sync, test suite & GitHub Pages deploy
 ├── data/
-│   ├── vehicles.json                # Verified vehicle database across all 10 nations
-│   ├── index.json                   # Patch index metadata
-│   └── br-changes/latest-patch.json # Enriched BR adjustments with impact scoring
-├── public/
-│   ├── .nojekyll                    # Ensures GitHub Pages serves _next/ assets
-│   └── placeholders/                # Minimal Nothing OS dot-matrix SVG silhouettes
+│   ├── vehicles.json                # Complete 3,389 verified vehicle database
+│   ├── index.json                   # Patch metadata
+│   └── br-changes/latest-patch.json # Enriched BR adjustments with ecosystem shifts
 ├── scripts/
-│   ├── sync-wt-data.ts              # Datamine sync pipeline
-│   └── scrape-br-changes.ts         # Forum & spreadsheet BR scraper
+│   ├── sync-all-vehicles.ts         # Datamine ingestion script (wpcost.blkx + units.csv)
+│   └── scrape-forum.ts              # Forum scraping and ecosystem analysis script
 ├── src/
 │   ├── types/                       # Strict TypeScript interfaces
 │   ├── lib/
-│   │   ├── br-engine.ts             # 40-step discrete BR math & matchmaker spread logic
-│   │   ├── impact-scorer.ts         # Black hole gravity & winner/loser ranking engine
+│   │   ├── br-engine.ts             # 43-step discrete BR math & split rating helpers
+│   │   ├── impact-scorer.ts         # Matchmaker ecosystem analyzer (threats & categories)
 │   │   ├── lineup-engine.ts         # Lineup survival & combined arms builder
-│   │   └── data-loader.ts           # Type-safe build & client data provider
+│   │   ├── constants.ts             # Nations, branches, Roman numerals, CDN image resolvers
+│   │   └── data-loader.ts           # Type-safe vehicle & patch data provider
 │   ├── components/
-│   │   ├── layout/                  # Floating pill header, footer
-│   │   ├── ui/                      # Bento cards, telemetry gauges, segmented pills
-│   │   ├── vehicles/                # Vehicle cards, image fallback, filter bars
-│   │   ├── lineups/                 # Lineup survival view, builder view, simulator toggle
-│   │   └── diff/                    # Raw changelog diff comparison table
-│   └── app/                         # Next.js 14 App Router routes & static pages
+│   │   ├── layout/                  # WTHeader (Hangar nav & mode switcher), Footer
+│   │   ├── vehicles/                # VehicleSlotCard (standard/premium/squadron/event)
+│   │   ├── infographics/            # HeatmapWidget, MatchmakerWindowBar, MatchmakerInspectorModal
+│   │   └── views/                   # 5 primary analytical views (Overview, Winners/Losers, Tech-Tree, Lineups, Changelog)
+│   └── app/                         # Next.js 14 App Router routes & static export pages
 └── tests/
-    ├── br-engine.test.ts            # Discrete step and index math unit tests
-    ├── impact-scorer.test.ts        # Gravity and score validation
-    └── lineup-engine.test.ts        # Survival classification & combined arms builder tests
+    ├── br-engine.test.ts            # Discrete step index tests (1.0 to 15.0)
+    ├── impact-scorer.test.ts        # Ecosystem shift & category classification tests
+    └── lineup-engine.test.ts        # Lineup survival & Ground RB split rating tests
 ```
 
 ---
 
-## Local Development
+## Local Development & Testing
 
 ```bash
 # Clone the repository
@@ -82,14 +114,14 @@ cd WT-BR-Analyst
 # Install dependencies
 npm install
 
-# Run verified data synchronization
+# Run verified data ingestion
 npm run sync-data
 npm run scrape-changes
 
-# Run unit tests
+# Run automated Vitest suite
 npm run test
 
-# Launch development server
+# Launch local development server
 npm run dev
 ```
 
@@ -97,10 +129,15 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## Static Production Build
+## Production Build
 
 ```bash
+# Build static export into /out
 npm run build
 ```
 
-The static HTML/CSS/JS export is generated in the `out/` directory, ready to be hosted on any static web host or GitHub Pages.
+---
+
+## License
+
+MIT License. War Thunder vehicle names, assets, and statistics are property of Gaijin Entertainment.

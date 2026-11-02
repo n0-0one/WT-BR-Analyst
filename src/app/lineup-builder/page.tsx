@@ -1,70 +1,52 @@
 "use client";
 
-import React, { Suspense, useState, useEffect } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
-import { GameMode, Nation } from "@/types";
+import React, { useState } from "react";
+import { GameMode, Vehicle } from "@/types";
 import { allVehicles, latestPatch } from "@/lib/data-loader";
-import { ActiveTab, NothingHeader } from "@/components/layout/NothingHeader";
+import { WTHeader, WTTab } from "@/components/layout/WTHeader";
 import { Footer } from "@/components/layout/Footer";
-import { LineupBuilderView } from "@/components/lineups/LineupBuilderView";
+import { LineupBuilderView } from "@/components/views/LineupBuilderView";
+import { MatchmakerInspectorModal } from "@/components/infographics/MatchmakerInspectorModal";
+import { useRouter } from "next/navigation";
 
-function LineupBuilderContent() {
+export default function LineupBuilderPage() {
   const router = useRouter();
-  const searchParams = useSearchParams();
-
   const [activeMode, setActiveMode] = useState<GameMode>("rb");
-  const [initialNation, setInitialNation] = useState<Nation>("germany");
-  const [initialBR, setInitialBR] = useState<number>(10.3);
+  const [inspectorVehicle, setInspectorVehicle] = useState<Vehicle | null>(null);
 
-  useEffect(() => {
-    const modeParam = searchParams.get("mode") as GameMode | null;
-    const nationParam = searchParams.get("nation") as Nation | null;
-    const brParam = searchParams.get("br");
-
-    if (modeParam && ["rb", "ab", "sb"].includes(modeParam)) setActiveMode(modeParam);
-    if (nationParam) setInitialNation(nationParam);
-    if (brParam && !isNaN(Number(brParam))) setInitialBR(Number(brParam));
-  }, [searchParams]);
-
-  const handleTabChange = (tab: ActiveTab) => {
+  const handleTabChange = (tab: WTTab) => {
     if (tab === "lineup-builder") return;
     router.push(`/?view=${tab}`);
   };
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col justify-between selection:bg-nothing-red selection:text-white">
+    <div className="min-h-screen bg-[#11161D] text-slate-100 flex flex-col justify-between selection:bg-[#E65100] selection:text-white">
       <div>
-        <NothingHeader
+        <WTHeader
           activeTab="lineup-builder"
           onTabChange={handleTabChange}
           activeMode={activeMode}
           onModeChange={setActiveMode}
+          totalVehiclesCount={allVehicles.length}
         />
-        <main className="max-w-7xl mx-auto px-4 sm:px-8 w-full">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 w-full pt-6 pb-12">
           <LineupBuilderView
             vehicles={allVehicles}
             changes={latestPatch.changes}
             activeMode={activeMode}
-            initialNation={initialNation}
-            initialBR={initialBR}
+            onSelectVehicle={setInspectorVehicle}
           />
         </main>
       </div>
+
+      <MatchmakerInspectorModal
+        vehicle={inspectorVehicle}
+        activeMode={activeMode}
+        allVehicles={allVehicles}
+        onClose={() => setInspectorVehicle(null)}
+      />
+
       <Footer />
     </div>
-  );
-}
-
-export default function LineupBuilderPage() {
-  return (
-    <Suspense
-      fallback={
-        <div className="min-h-screen bg-black flex items-center justify-center font-mono text-xs text-zinc-500">
-          INITIALIZING COMBINED ARMS BUILDER...
-        </div>
-      }
-    >
-      <LineupBuilderContent />
-    </Suspense>
   );
 }

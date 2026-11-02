@@ -18,20 +18,21 @@ const spaceMono = Space_Mono({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#000000",
+  themeColor: "#11161D",
 };
 
 export const metadata: Metadata = {
-  title: "WT // NOTHING — War Thunder Battle Rating & Lineup Intelligence",
+  title: "WAR THUNDER // BR ANALYST — Ecosystem, Matchmaker & Lineup Intelligence",
   description:
-    "Autonomous, datamine-verified War Thunder Battle Rating Intelligence platform. Track patch decompressions, matchmaker black holes, and anchor-preserving lineup survival in pure Nothing OS minimalism.",
+    "Authoritative War Thunder Battle Rating Ecosystem Analyzer. Track decompression waves, threats escaped vs added, Ground RB split BRs, 3,380+ vehicles across 10 nations, and lineup survival.",
   keywords: [
     "War Thunder",
     "Battle Rating",
     "BR Changes",
     "Lineup Builder",
-    "Matchmaker Black Holes",
-    "Nothing OS",
+    "Lineup Survival",
+    "Matchmaker Decompression",
+    "Ground RB Split BR",
     "Datamine",
   ],
   authors: [{ name: "WT BR Analyst Team" }],
@@ -47,12 +48,8 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
-          rel="stylesheet"
-        />
       </head>
-      <body className="bg-black text-white min-h-screen selection:bg-nothing-red selection:text-white">
+      <body className="bg-[#11161D] text-slate-100 min-h-screen selection:bg-[#E65100] selection:text-white">
         {children}
       </body>
     </html>

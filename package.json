@@ -1,7 +1,7 @@
 {
   "name": "wt-br-analyst",
-  "version": "1.0.0",
-  "description": "WT // NOTHING - War Thunder Battle Rating & Lineup Intelligence Platform",
+  "version": "2.0.0",
+  "description": "War Thunder Battle Rating & Lineup Intelligence Platform - Decompression & Ecosystem Analyzer",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,8 +9,10 @@
     "lint": "next lint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "sync-data": "tsx scripts/sync-wt-data.ts",
-    "scrape-changes": "tsx scripts/scrape-br-changes.ts"
+    "sync-data": "tsx scripts/sync-all-vehicles.ts",
+    "scrape-changes": "tsx scripts/scrape-forum.ts",
+    "sync-wt-data": "tsx scripts/sync-all-vehicles.ts",
+    "scrape-br-changes": "tsx scripts/scrape-forum.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

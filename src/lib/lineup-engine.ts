@@ -113,15 +113,36 @@ export function evaluateLineupSurvival(
     simulatedExposedVehicles = survivingVehicles;
   }
 
+  // Nerfed patch changes for this lineup
+  const nerfedVehicles = patchChanges.filter(
+    (c) =>
+      c.nation === nation &&
+      c.mode === mode &&
+      c.direction === "nerf" &&
+      c.brBefore <= roundedTarget &&
+      c.brAfter > roundedTarget
+  );
+
+  // Recommended replacements at exact targetBR from vehicles not already in surviving
+  const survivingIds = new Set(survivingVehicles.map((v) => v.id));
+  const recommendedReplacements = nationVehicles.filter(
+    (v) =>
+      !survivingIds.has(v.id) &&
+      Number((v.br[mode] ?? 0).toFixed(1)) === roundedTarget
+  ).slice(0, 6);
+
   return {
     nation,
     mode,
     targetBR: roundedTarget,
     status,
     statusMessage,
+    survivalReason: statusMessage,
+    nerfedVehicles,
     droppedVehicles,
     newReinforcements,
     survivingVehicles,
+    recommendedReplacements,
     allLineupVehicles: [...survivingVehicles, ...newReinforcements],
     simulatedMaxBR,
     simulatedUptierMax,
@@ -163,7 +184,8 @@ export function buildOptimalLineup(
   const casClasses = new Set(["fighter", "strike_aircraft", "attacker", "helicopter"]);
   const casCandidates = nationVehicles.filter((v) => {
     if (!casClasses.has(v.vehicleClass)) return false;
-    const br = Number((v.br[mode] ?? 0).toFixed(1));
+    // For Ground RB, use split rbGround if present
+    const br = Number(((mode === "rb" && v.br.rbGround !== undefined ? v.br.rbGround : v.br[mode]) ?? 0).toFixed(1));
     return br <= roundedTarget && Number((roundedTarget - br).toFixed(1)) <= 0.7;
   });
 
@@ -174,9 +196,11 @@ export function buildOptimalLineup(
     return b.rank - a.rank;
   });
 
-  // Sort CAS candidates by BR descending, then rank descending
+  // Sort CAS candidates by effective Ground RB BR descending, then rank descending
   casCandidates.sort((a, b) => {
-    const brDiff = (b.br[mode] ?? 0) - (a.br[mode] ?? 0);
+    const aBR = (mode === "rb" && a.br.rbGround !== undefined ? a.br.rbGround : a.br[mode]) ?? 0;
+    const bBR = (mode === "rb" && b.br.rbGround !== undefined ? b.br.rbGround : b.br[mode]) ?? 0;
+    const brDiff = bBR - aBR;
     if (brDiff !== 0) return brDiff;
     return b.rank - a.rank;
   });
@@ -258,7 +282,6 @@ export function buildOptimalLineup(
   }
 
   // Compute composite score (0-100)
-  // Role points (up to 40)
   let score = 0;
   if (roleCheck.hasMBT) score += 10;
   if (roleCheck.hasSPAA) score += 10;
@@ -266,16 +289,21 @@ export function buildOptimalLineup(
   if (roleCheck.hasCAS) score += 8;
   if (roleCheck.hasTD) score += 4;
 
-  // Anchor density points (up to 30)
   score += Math.min(30, anchorCount * 8);
-
-  // Depth points (up to 20): 5+ vehicles = 20 pts
   score += Math.min(20, totalLineup.length * 3);
-
-  // Patch momentum (up to 10)
   score += Math.max(-10, Math.min(10, patchMomentum * 5));
 
   const finalScore = Math.max(10, Math.min(100, score));
+
+  // Check Ground RB split ratings among CAS vehicles
+  const hasCASGroundBRSplit = mode === "rb" && selectedCAS.some((c) => c.br.rbGround !== undefined && c.br.rbGround !== c.br.rb);
+
+  // Effective Lineup BR: max BR across all ground and CAS vehicles
+  const vehicleEffectiveBRs = [
+    ...selectedGround.map((v) => v.br[mode] ?? 0),
+    ...selectedCAS.map((v) => (mode === "rb" && v.br.rbGround !== undefined ? v.br.rbGround : v.br[mode]) ?? 0),
+  ];
+  const effectiveBR = vehicleEffectiveBRs.length > 0 ? Math.max(...vehicleEffectiveBRs) : roundedTarget;
 
   // Strengths analysis
   const strengths: string[] = [];
@@ -291,20 +319,90 @@ export function buildOptimalLineup(
   if (roleCheck.hasCAS) {
     strengths.push(`Air Superiority & CAS: ${selectedCAS.length} multirole aircraft ready`);
   }
+  if (hasCASGroundBRSplit) {
+    strengths.push("Aircraft Ground RB Rating: Tailored for combined arms matchmaker balance");
+  }
   if (patchMomentum > 0) {
     strengths.push(`Patch Momentum: Boosted by ${patchMomentum} newly buffed vehicle(s)`);
   }
+
+  // Slots construction
+  const slots: OptimalLineup["slots"] = [];
+  let mbtCount = 0;
+  for (const v of selectedGround) {
+    if ((v.vehicleClass === "medium_tank" || v.vehicleClass === "heavy_tank") && mbtCount < 2) {
+      mbtCount++;
+      slots.push({
+        slotRole: `mbt_${mbtCount}`,
+        roleLabel: `Main Battle Tank ${mbtCount}`,
+        vehicle: v,
+      });
+    } else if (v.vehicleClass === "light_tank" && !slots.some((s) => s.slotRole === "light_scout")) {
+      slots.push({
+        slotRole: "light_scout",
+        roleLabel: "Light Tank / Scout",
+        vehicle: v,
+      });
+    } else if (v.vehicleClass === "spaa" && !slots.some((s) => s.slotRole === "spaa_sam")) {
+      slots.push({
+        slotRole: "spaa_sam",
+        roleLabel: "SPAA / Air Defense",
+        vehicle: v,
+      });
+    } else {
+      slots.push({
+        slotRole: `support_${slots.length + 1}`,
+        roleLabel: "Support Vehicle",
+        vehicle: v,
+      });
+    }
+  }
+
+  for (const c of selectedCAS) {
+    if (c.vehicleClass === "helicopter" && !slots.some((s) => s.slotRole === "helicopter")) {
+      slots.push({
+        slotRole: "helicopter",
+        roleLabel: "Attack Helicopter",
+        vehicle: c,
+      });
+    } else if (!slots.some((s) => s.slotRole === "cas_aircraft")) {
+      slots.push({
+        slotRole: "cas_aircraft",
+        roleLabel: "CAS Strike Aircraft",
+        vehicle: c,
+      });
+    } else {
+      slots.push({
+        slotRole: `air_support_${slots.length + 1}`,
+        roleLabel: "Air Superiority Fighter",
+        vehicle: c,
+      });
+    }
+  }
+
+  const matchmakerRange = {
+    min: Number(Math.max(1.0, effectiveBR - 1.0).toFixed(1)),
+    max: Number((effectiveBR + 1.0).toFixed(1)),
+  };
+
+  const summary = `Tactically balanced ${formatBR(effectiveBR)} lineup with ${selectedGround.length} ground armor and ${selectedCAS.length} air support units.`;
 
   return {
     nation,
     mode,
     targetBR: roundedTarget,
+    effectiveBR,
+    hasCASGroundBRSplit,
     score: finalScore,
+    synergyScore: finalScore,
     groundVehicles: selectedGround,
     casVehicles: selectedCAS,
+    slots,
+    matchmakerRange,
     roleCompleteness: roleCheck,
     anchorDensity: anchorCount,
     patchMomentum,
     strengths,
+    summary,
   };
 }

@@ -120,4 +120,36 @@ describe("Lineup Engine (lineup-engine)", () => {
     expect(optimal.score).toBeGreaterThanOrEqual(50);
     expect(optimal.strengths.length).toBeGreaterThan(0);
   });
+
+  it("respects Ground RB separate aircraft ratings (rbGround)", () => {
+    const splitVehicles: Vehicle[] = [
+      {
+        id: "us_m1_abrams",
+        name: "M1 Abrams",
+        nation: "usa",
+        rank: 7,
+        br: { ab: 10.3, rb: 10.3, sb: 10.3 },
+        vehicleClass: "medium_tank",
+        branch: "army",
+      },
+      {
+        id: "us_a_10a_early",
+        name: "A-10A Early",
+        nation: "usa",
+        rank: 6,
+        br: { ab: 10.3, rb: 10.3, sb: 10.3, rbGround: 10.7 }, // 10.3 Air RB but 10.7 Ground RB!
+        vehicleClass: "strike_aircraft",
+        branch: "aviation",
+      },
+    ];
+
+    // Building a 10.3 Ground RB lineup: A-10A is 10.7 in Ground RB, so it exceeds 10.3!
+    const lineup = buildOptimalLineup("usa", "rb", 10.3, splitVehicles, []);
+    expect(lineup.casVehicles.some((c) => c.id === "us_a_10a_early")).toBe(false);
+
+    // But at 10.7 Ground RB, A-10A should be included and flag hasCASGroundBRSplit!
+    const lineup107 = buildOptimalLineup("usa", "rb", 10.7, splitVehicles, []);
+    expect(lineup107.casVehicles.some((c) => c.id === "us_a_10a_early")).toBe(true);
+    expect(lineup107.hasCASGroundBRSplit).toBe(true);
+  });
 });
