@@ -4,14 +4,14 @@
   "patches": [
     {
       "id": "latest-patch",
-      "title": "Custom Battle Rating for Aircraft: More Freedom For Your Vehicles!",
-      "date": "2026-11-03",
-      "forumUrl": "https://forum.warthunder.com/t/custom-battle-rating-for-aircraft-more-freedom-for-your-vehicles/361362",
+      "title": "Increasing the Maximum Battle Rating of Ground Vehicles and Helicopters",
+      "date": "2026-11-04",
+      "forumUrl": "https://forum.warthunder.com/t/increasing-the-maximum-battle-rating-of-ground-vehicles-and-helicopters/277544",
       "verifiedVehiclesCount": 3354,
       "totalChangesCount": 34,
       "buffsCount": 8,
       "nerfsCount": 22,
-      "syncedAt": "2026-11-03T22:55:27.142Z"
+      "syncedAt": "2026-11-04T04:54:25.639Z"
     }
   ]
 }
