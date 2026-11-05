@@ -5007,6 +5007,26 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/uk_destroyer_battle_cadiz"
   },
   {
+    "id": "uk_cruiser_danae_class",
+    "name": "HMS Danae",
+    "nation": "britain",
+    "rank": 3,
+    "br": {
+      "ab": 4.7,
+      "rb": 4.7,
+      "sb": 4.7
+    },
+    "vehicleClass": "bluewater",
+    "branch": "fleet",
+    "imageFolder": "ships",
+    "imageId": "uk_cruiser_danae_class",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/uk_cruiser_danae_class.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/uk_cruiser_danae_class"
+  },
+  {
     "id": "typhoon_mk1b",
     "name": "Typhoon Mk Ib",
     "nation": "britain",
