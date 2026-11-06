@@ -33115,26 +33115,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/it_cruiser_bolzano"
   },
   {
-    "id": "it_destroyer_audace",
-    "name": "Audace",
-    "nation": "italy",
-    "rank": 4,
-    "br": {
-      "ab": 5.7,
-      "rb": 5.7,
-      "sb": 5.7
-    },
-    "vehicleClass": "bluewater",
-    "branch": "fleet",
-    "imageFolder": "ships",
-    "imageId": "it_destroyer_audace",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/it_destroyer_audace.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/it_destroyer_audace"
-  },
-  {
     "id": "g_55_serie1",
     "name": "G.55 serie 1",
     "nation": "italy",
@@ -33233,6 +33213,26 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/it_cruiser_montecuccoli.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/it_cruiser_montecuccoli"
+  },
+  {
+    "id": "it_destroyer_audace",
+    "name": "Audace",
+    "nation": "italy",
+    "rank": 4,
+    "br": {
+      "ab": 5.3,
+      "rb": 5.3,
+      "sb": 5.3
+    },
+    "vehicleClass": "bluewater",
+    "branch": "fleet",
+    "imageFolder": "ships",
+    "imageId": "it_destroyer_audace",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/it_destroyer_audace.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/it_destroyer_audace"
   },
   {
     "id": "fw_190f_8_hungary",
