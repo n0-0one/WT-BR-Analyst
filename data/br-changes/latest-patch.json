@@ -1,14 +1,14 @@
 {
   "metadata": {
     "id": "latest-patch",
-    "title": "Planned Technical Works on 11.11.2026",
+    "title": "Custom Battle Rating for Aircraft: More Freedom For Your Vehicles!",
     "date": "2026-11-11",
-    "forumUrl": "https://forum.warthunder.com/t/planned-technical-works-on-11-11-2026/364009",
+    "forumUrl": "https://forum.warthunder.com/t/custom-battle-rating-for-aircraft-more-freedom-for-your-vehicles/361362",
     "verifiedVehiclesCount": 3355,
     "totalChangesCount": 34,
     "buffsCount": 8,
     "nerfsCount": 22,
-    "syncedAt": "2026-11-11T04:46:40.676Z"
+    "syncedAt": "2026-11-11T13:36:09.414Z"
   },
   "changes": [
     {
@@ -258,13 +258,13 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 46,
+          "count": 44,
           "examples": [
             "Jaguar IS",
             "Harrier T.10",
             "Hawk 200 RDA",
-            "G-LYNX",
-            "Lynx AH.Mk.1"
+            "J-7E",
+            "J-8B"
           ]
         },
         "newEasyTargetsBelow": {
@@ -297,7 +297,7 @@
         ],
         "threatEscapedCount": 24,
         "threatAddedCount": 21,
-        "preyLostCount": 46,
+        "preyLostCount": 44,
         "preyGainedCount": 0
       }
     },
@@ -351,13 +351,13 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 46,
+          "count": 44,
           "examples": [
             "Jaguar IS",
             "Harrier T.10",
             "Hawk 200 RDA",
-            "G-LYNX",
-            "Lynx AH.Mk.1"
+            "J-7E",
+            "J-8B"
           ]
         },
         "newEasyTargetsBelow": {
@@ -390,7 +390,7 @@
         ],
         "threatEscapedCount": 24,
         "threatAddedCount": 21,
-        "preyLostCount": 46,
+        "preyLostCount": 44,
         "preyGainedCount": 0
       }
     },
@@ -444,13 +444,13 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 46,
+          "count": 44,
           "examples": [
             "Jaguar IS",
             "Harrier T.10",
             "Hawk 200 RDA",
-            "G-LYNX",
-            "Lynx AH.Mk.1"
+            "J-7E",
+            "J-8B"
           ]
         },
         "newEasyTargetsBelow": {
@@ -483,7 +483,7 @@
         ],
         "threatEscapedCount": 24,
         "threatAddedCount": 21,
-        "preyLostCount": 46,
+        "preyLostCount": 44,
         "preyGainedCount": 0
       }
     },
@@ -530,7 +530,7 @@
           ]
         },
         "newThreatsAddedAbove": {
-          "count": 41,
+          "count": 38,
           "examples": [
             "Sea Harrier FA 2",
             "Challenger 2E",
@@ -540,13 +540,13 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 67,
+          "count": 68,
           "examples": [
             "Jaguar GR.1A",
-            "Buccaneer S.2B",
             "Sea Harrier FRS.1 (e)",
             "Hawk 200",
-            "Stormer HVM"
+            "Stormer HVM",
+            "▄Osa-AK"
           ]
         },
         "newEasyTargetsBelow": {
@@ -578,8 +578,8 @@
           "💬 r/Warthunder & Forum"
         ],
         "threatEscapedCount": 25,
-        "threatAddedCount": 41,
-        "preyLostCount": 67,
+        "threatAddedCount": 38,
+        "preyLostCount": 68,
         "preyGainedCount": 0
       }
     },
@@ -625,7 +625,7 @@
           ]
         },
         "newThreatsAddedAbove": {
-          "count": 41,
+          "count": 38,
           "examples": [
             "Sea Harrier FA 2",
             "Challenger 2E",
@@ -635,13 +635,13 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 67,
+          "count": 68,
           "examples": [
             "Jaguar GR.1A",
-            "Buccaneer S.2B",
             "Sea Harrier FRS.1 (e)",
             "Hawk 200",
-            "Stormer HVM"
+            "Stormer HVM",
+            "▄Osa-AK"
           ]
         },
         "newEasyTargetsBelow": {
@@ -673,8 +673,8 @@
           "💬 r/Warthunder & Forum"
         ],
         "threatEscapedCount": 25,
-        "threatAddedCount": 41,
-        "preyLostCount": 67,
+        "threatAddedCount": 38,
+        "preyLostCount": 68,
         "preyGainedCount": 0
       }
     },
@@ -721,7 +721,7 @@
           ]
         },
         "newThreatsAddedAbove": {
-          "count": 41,
+          "count": 38,
           "examples": [
             "Sea Harrier FA 2",
             "Challenger 2E",
@@ -731,13 +731,13 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 67,
+          "count": 68,
           "examples": [
             "Jaguar GR.1A",
-            "Buccaneer S.2B",
             "Sea Harrier FRS.1 (e)",
             "Hawk 200",
-            "Stormer HVM"
+            "Stormer HVM",
+            "▄Osa-AK"
           ]
         },
         "newEasyTargetsBelow": {
@@ -769,8 +769,8 @@
           "💬 r/Warthunder & Forum"
         ],
         "threatEscapedCount": 25,
-        "threatAddedCount": 41,
-        "preyLostCount": 67,
+        "threatAddedCount": 38,
+        "preyLostCount": 68,
         "preyGainedCount": 0
       }
     },
@@ -816,7 +816,7 @@
           ]
         },
         "newThreatsAddedAbove": {
-          "count": 41,
+          "count": 38,
           "examples": [
             "Sea Harrier FA 2",
             "Challenger 2E",
@@ -826,13 +826,13 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 67,
+          "count": 68,
           "examples": [
             "Jaguar GR.1A",
-            "Buccaneer S.2B",
             "Sea Harrier FRS.1 (e)",
             "Hawk 200",
-            "Stormer HVM"
+            "Stormer HVM",
+            "▄Osa-AK"
           ]
         },
         "newEasyTargetsBelow": {
@@ -864,8 +864,8 @@
           "💬 r/Warthunder & Forum"
         ],
         "threatEscapedCount": 25,
-        "threatAddedCount": 41,
-        "preyLostCount": 67,
+        "threatAddedCount": 38,
+        "preyLostCount": 68,
         "preyGainedCount": 0
       }
     },
@@ -911,7 +911,7 @@
           ]
         },
         "newThreatsAddedAbove": {
-          "count": 41,
+          "count": 38,
           "examples": [
             "Sea Harrier FA 2",
             "Challenger 2E",
@@ -921,13 +921,13 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 67,
+          "count": 68,
           "examples": [
             "Jaguar GR.1A",
-            "Buccaneer S.2B",
             "Sea Harrier FRS.1 (e)",
             "Hawk 200",
-            "Stormer HVM"
+            "Stormer HVM",
+            "▄Osa-AK"
           ]
         },
         "newEasyTargetsBelow": {
@@ -959,8 +959,8 @@
           "💬 r/Warthunder & Forum"
         ],
         "threatEscapedCount": 25,
-        "threatAddedCount": 41,
-        "preyLostCount": 67,
+        "threatAddedCount": 38,
+        "preyLostCount": 68,
         "preyGainedCount": 0
       }
     },
@@ -1171,7 +1171,7 @@
           "examples": []
         },
         "newThreatsAddedAbove": {
-          "count": 90,
+          "count": 86,
           "examples": [
             "Sea Harrier FA 2",
             "Challenger 2E",
@@ -1181,13 +1181,13 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 123,
+          "count": 130,
           "examples": [
             "Jaguar GR.1A",
-            "Buccaneer S.2B",
             "Sea Harrier FRS.1 (e)",
             "Hawk 200",
-            "Stormer HVM"
+            "Stormer HVM",
+            "▄Osa-AK"
           ]
         },
         "newEasyTargetsBelow": {
@@ -1229,8 +1229,8 @@
           "💬 r/Warthunder & Forum"
         ],
         "threatEscapedCount": 0,
-        "threatAddedCount": 90,
-        "preyLostCount": 123,
+        "threatAddedCount": 86,
+        "preyLostCount": 130,
         "preyGainedCount": 0
       }
     },
@@ -1271,23 +1271,23 @@
           "examples": []
         },
         "newThreatsAddedAbove": {
-          "count": 47,
+          "count": 46,
           "examples": [
             "CF-188A",
             "JAS39C",
-            "Wildcat HMA2",
             "▄M1A1 SA",
-            "ZTZ99A"
+            "ZTZ99A",
+            "VT4"
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 56,
+          "count": 62,
           "examples": [
             "TTD",
+            "G-LYNX",
+            "Lynx AH.Mk.1",
             "Rapier",
-            "FV4030/3",
-            "ZTZ96A",
-            "QN506"
+            "FV4030/3"
           ]
         },
         "newEasyTargetsBelow": {
@@ -1329,8 +1329,8 @@
           "💬 r/Warthunder & Forum"
         ],
         "threatEscapedCount": 0,
-        "threatAddedCount": 47,
-        "preyLostCount": 56,
+        "threatAddedCount": 46,
+        "preyLostCount": 62,
         "preyGainedCount": 0
       }
     },
@@ -1371,7 +1371,7 @@
           "examples": []
         },
         "newThreatsAddedAbove": {
-          "count": 84,
+          "count": 81,
           "examples": [
             "Tornado F.3 Late",
             "Sky Sabre (TEL)",
@@ -1381,7 +1381,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 132,
+          "count": 131,
           "examples": [
             "Sea Harrier FRS.1",
             "Vickers Mk.7",
@@ -1429,8 +1429,8 @@
           "💬 r/Warthunder & Forum"
         ],
         "threatEscapedCount": 0,
-        "threatAddedCount": 84,
-        "preyLostCount": 132,
+        "threatAddedCount": 81,
+        "preyLostCount": 131,
         "preyGainedCount": 0
       }
     },
@@ -1471,10 +1471,10 @@
           "count": 16,
           "examples": [
             "Jaguar GR.1A",
-            "Buccaneer S.2B",
             "Sea Harrier FRS.1 (e)",
             "Hawk 200",
-            "Stormer HVM"
+            "Stormer HVM",
+            "▄Osa-AK"
           ]
         },
         "easyTargetsLostBelow": {
@@ -1558,10 +1558,10 @@
           "count": 16,
           "examples": [
             "Jaguar GR.1A",
-            "Buccaneer S.2B",
             "Sea Harrier FRS.1 (e)",
             "Hawk 200",
-            "Stormer HVM"
+            "Stormer HVM",
+            "▄Osa-AK"
           ]
         },
         "easyTargetsLostBelow": {
@@ -1644,10 +1644,10 @@
           "count": 16,
           "examples": [
             "Jaguar GR.1A",
-            "Buccaneer S.2B",
             "Sea Harrier FRS.1 (e)",
             "Hawk 200",
-            "Stormer HVM"
+            "Stormer HVM",
+            "▄Osa-AK"
           ]
         },
         "easyTargetsLostBelow": {
@@ -1711,7 +1711,7 @@
       "impactReasons": [
         "1 discrete step shift (-0.3)",
         "Escapes 10.3 matchmaker black hole — avoids constant full uptiers",
-        "56 top threats moved out of reach",
+        "62 top threats moved out of reach",
         "High-population vehicle — immediate matchmaker impact"
       ],
       "isPremium": true,
@@ -1725,13 +1725,13 @@
         "categoryLabel": "Direct Winner (Buffed)",
         "categoryColor": "#22C55E",
         "threatsEscapedAbove": {
-          "count": 56,
+          "count": 62,
           "examples": [
             "TTD",
+            "G-LYNX",
+            "Lynx AH.Mk.1",
             "Rapier",
-            "FV4030/3",
-            "ZTZ96A",
-            "QN506"
+            "FV4030/3"
           ]
         },
         "newThreatsAddedAbove": {
@@ -1771,7 +1771,7 @@
           "🎥 YouTube Meta Consensus",
           "💬 r/Warthunder & Forum"
         ],
-        "threatEscapedCount": 56,
+        "threatEscapedCount": 62,
         "threatAddedCount": 0,
         "preyLostCount": 0,
         "preyGainedCount": 86
@@ -1794,7 +1794,7 @@
       "impactReasons": [
         "1 discrete step shift (-0.3)",
         "Escapes 10.3 matchmaker black hole — avoids constant full uptiers",
-        "56 top threats moved out of reach"
+        "62 top threats moved out of reach"
       ],
       "isPremium": false,
       "isSquadron": false,
@@ -1807,13 +1807,13 @@
         "categoryLabel": "Direct Winner (Buffed)",
         "categoryColor": "#22C55E",
         "threatsEscapedAbove": {
-          "count": 56,
+          "count": 62,
           "examples": [
             "TTD",
+            "G-LYNX",
+            "Lynx AH.Mk.1",
             "Rapier",
-            "FV4030/3",
-            "ZTZ96A",
-            "QN506"
+            "FV4030/3"
           ]
         },
         "newThreatsAddedAbove": {
@@ -1853,7 +1853,7 @@
           "🎥 YouTube Meta Consensus",
           "💬 r/Warthunder & Forum"
         ],
-        "threatEscapedCount": 56,
+        "threatEscapedCount": 62,
         "threatAddedCount": 0,
         "preyLostCount": 0,
         "preyGainedCount": 86
@@ -1900,7 +1900,7 @@
           ]
         },
         "newThreatsAddedAbove": {
-          "count": 41,
+          "count": 38,
           "examples": [
             "Sea Harrier FA 2",
             "Challenger 2E",
@@ -1910,13 +1910,13 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 67,
+          "count": 68,
           "examples": [
             "Jaguar GR.1A",
-            "Buccaneer S.2B",
             "Sea Harrier FRS.1 (e)",
             "Hawk 200",
-            "Stormer HVM"
+            "Stormer HVM",
+            "▄Osa-AK"
           ]
         },
         "newEasyTargetsBelow": {
@@ -1936,15 +1936,15 @@
         "telemetrySource": "StatShark / Community Post-Patch Telemetry"
       },
       "community": {
-        "consensusVerdict": "Compressed upwards: Uprated to 12.0, introducing 41+ new higher-tier counters into its matchmaker spread.",
+        "consensusVerdict": "Compressed upwards: Uprated to 12.0, introducing 38+ new higher-tier counters into its matchmaker spread.",
         "communityTags": [
           "📈 StatShark Telemetry",
           "🎥 YouTube Meta Consensus",
           "💬 r/Warthunder & Forum"
         ],
         "threatEscapedCount": 4,
-        "threatAddedCount": 41,
-        "preyLostCount": 67,
+        "threatAddedCount": 38,
+        "preyLostCount": 68,
         "preyGainedCount": 0
       }
     },
@@ -1992,7 +1992,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 92,
+          "count": 93,
           "examples": [
             "ADATS (M113)",
             "Phantom FGR.2",
@@ -2005,7 +2005,7 @@
           "count": 0,
           "examples": []
         },
-        "summary": "Pushed up to 13.3 and exposed to 23 new higher-tier threats while losing 92 downtier targets."
+        "summary": "Pushed up to 13.3 and exposed to 23 new higher-tier threats while losing 93 downtier targets."
       },
       "telemetry": {
         "winRateBefore": 52.8,
@@ -2026,7 +2026,7 @@
         ],
         "threatEscapedCount": 0,
         "threatAddedCount": 23,
-        "preyLostCount": 92,
+        "preyLostCount": 93,
         "preyGainedCount": 0
       }
     },
@@ -2074,7 +2074,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 92,
+          "count": 93,
           "examples": [
             "ADATS (M113)",
             "Phantom FGR.2",
@@ -2087,7 +2087,7 @@
           "count": 0,
           "examples": []
         },
-        "summary": "Pushed up to 13.3 and exposed to 23 new higher-tier threats while losing 92 downtier targets."
+        "summary": "Pushed up to 13.3 and exposed to 23 new higher-tier threats while losing 93 downtier targets."
       },
       "telemetry": {
         "winRateBefore": 52.8,
@@ -2108,7 +2108,7 @@
         ],
         "threatEscapedCount": 0,
         "threatAddedCount": 23,
-        "preyLostCount": 92,
+        "preyLostCount": 93,
         "preyGainedCount": 0
       }
     },
@@ -2156,7 +2156,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 92,
+          "count": 93,
           "examples": [
             "ADATS (M113)",
             "Phantom FGR.2",
@@ -2169,7 +2169,7 @@
           "count": 0,
           "examples": []
         },
-        "summary": "Pushed up to 13.3 and exposed to 23 new higher-tier threats while losing 92 downtier targets."
+        "summary": "Pushed up to 13.3 and exposed to 23 new higher-tier threats while losing 93 downtier targets."
       },
       "telemetry": {
         "winRateBefore": 52.8,
@@ -2190,7 +2190,7 @@
         ],
         "threatEscapedCount": 0,
         "threatAddedCount": 23,
-        "preyLostCount": 92,
+        "preyLostCount": 93,
         "preyGainedCount": 0
       }
     },
@@ -2238,7 +2238,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 92,
+          "count": 93,
           "examples": [
             "ADATS (M113)",
             "Phantom FGR.2",
@@ -2251,7 +2251,7 @@
           "count": 0,
           "examples": []
         },
-        "summary": "Pushed up to 13.3 and exposed to 23 new higher-tier threats while losing 92 downtier targets."
+        "summary": "Pushed up to 13.3 and exposed to 23 new higher-tier threats while losing 93 downtier targets."
       },
       "telemetry": {
         "winRateBefore": 52.8,
@@ -2272,7 +2272,7 @@
         ],
         "threatEscapedCount": 0,
         "threatAddedCount": 23,
-        "preyLostCount": 92,
+        "preyLostCount": 93,
         "preyGainedCount": 0
       }
     },
@@ -2468,7 +2468,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 66,
+          "count": 64,
           "examples": [
             "Sea Harrier FRS.1",
             "Vickers Mk.7",
@@ -2481,7 +2481,7 @@
           "count": 0,
           "examples": []
         },
-        "summary": "Pushed up to 12.3 and exposed to 43 new higher-tier threats while losing 66 downtier targets."
+        "summary": "Pushed up to 12.3 and exposed to 43 new higher-tier threats while losing 64 downtier targets."
       },
       "telemetry": {
         "winRateBefore": 52.8,
@@ -2502,7 +2502,7 @@
         ],
         "threatEscapedCount": 0,
         "threatAddedCount": 43,
-        "preyLostCount": 66,
+        "preyLostCount": 64,
         "preyGainedCount": 0
       }
     },
@@ -2765,7 +2765,7 @@
       "impactScore": 60,
       "impactReasons": [
         "1 discrete step shift (-0.3)",
-        "47 top threats moved out of reach",
+        "45 top threats moved out of reach",
         "High-population vehicle — immediate matchmaker impact"
       ],
       "isPremium": true,
@@ -2779,13 +2779,13 @@
         "categoryLabel": "Direct Winner (Buffed)",
         "categoryColor": "#22C55E",
         "threatsEscapedAbove": {
-          "count": 47,
+          "count": 45,
           "examples": [
             "Jaguar IS",
             "Harrier T.10",
             "Hawk 200 RDA",
-            "G-LYNX",
-            "Lynx AH.Mk.1"
+            "J-7E",
+            "J-8B"
           ]
         },
         "newThreatsAddedAbove": {
@@ -2797,7 +2797,7 @@
           "examples": []
         },
         "newEasyTargetsBelow": {
-          "count": 87,
+          "count": 88,
           "examples": [
             "Rooikat Mk.1D",
             "Badger",
@@ -2832,10 +2832,10 @@
           "🎥 YouTube Meta Consensus",
           "💬 r/Warthunder & Forum"
         ],
-        "threatEscapedCount": 47,
+        "threatEscapedCount": 45,
         "threatAddedCount": 0,
         "preyLostCount": 0,
-        "preyGainedCount": 87
+        "preyGainedCount": 88
       }
     },
     {
@@ -2854,7 +2854,7 @@
       "impactScore": 60,
       "impactReasons": [
         "1 discrete step shift (-0.3)",
-        "51 top threats moved out of reach",
+        "52 top threats moved out of reach",
         "Top-tier meta vehicle (Rank 7)"
       ],
       "isPremium": false,
@@ -2868,7 +2868,7 @@
         "categoryLabel": "Direct Winner (Buffed)",
         "categoryColor": "#22C55E",
         "threatsEscapedAbove": {
-          "count": 51,
+          "count": 52,
           "examples": [
             "ADATS (M113)",
             "Phantom FGR.2",
@@ -2886,13 +2886,13 @@
           "examples": []
         },
         "newEasyTargetsBelow": {
-          "count": 65,
+          "count": 68,
           "examples": [
+            "Buccaneer S.2B",
             "Desert Warrior",
             "Jaguar GR.1",
             "Harrier GR.1",
-            "Harrier GR.3",
-            "Rooikat MTTD"
+            "Harrier GR.3"
           ]
         },
         "spaaThreatsShift": {
@@ -2924,10 +2924,10 @@
           "🎥 YouTube Meta Consensus",
           "💬 r/Warthunder & Forum"
         ],
-        "threatEscapedCount": 51,
+        "threatEscapedCount": 52,
         "threatAddedCount": 0,
         "preyLostCount": 0,
-        "preyGainedCount": 65
+        "preyGainedCount": 68
       }
     },
     {
@@ -2946,7 +2946,7 @@
       "impactScore": 60,
       "impactReasons": [
         "1 discrete step shift (-0.3)",
-        "45 top threats moved out of reach",
+        "43 top threats moved out of reach",
         "Top-tier meta vehicle (Rank 7)"
       ],
       "isPremium": false,
@@ -2960,7 +2960,7 @@
         "categoryLabel": "Direct Winner (Buffed)",
         "categoryColor": "#22C55E",
         "threatsEscapedAbove": {
-          "count": 45,
+          "count": 43,
           "examples": [
             "▄F/A-18A",
             "▄MiG-21 Bison",
@@ -3016,7 +3016,7 @@
           "🎥 YouTube Meta Consensus",
           "💬 r/Warthunder & Forum"
         ],
-        "threatEscapedCount": 45,
+        "threatEscapedCount": 43,
         "threatAddedCount": 0,
         "preyLostCount": 0,
         "preyGainedCount": 61

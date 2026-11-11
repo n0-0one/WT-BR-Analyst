@@ -367,26 +367,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/ah_64e_britain"
   },
   {
-    "id": "aw_159",
-    "name": "Wildcat HMA2",
-    "nation": "britain",
-    "rank": 7,
-    "br": {
-      "ab": 12.7,
-      "rb": 12.7,
-      "sb": 10.7
-    },
-    "vehicleClass": "helicopter",
-    "branch": "helicopters",
-    "imageFolder": "aircrafts",
-    "imageId": "aw_159",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/aw_159.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/aw_159"
-  },
-  {
     "id": "uk_m1a1_aim_abrams",
     "name": "▄M1A1 SA",
     "nation": "britain",
@@ -509,6 +489,26 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/tornado_f3.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/tornado_f3"
+  },
+  {
+    "id": "aw_159",
+    "name": "Wildcat HMA2",
+    "nation": "britain",
+    "rank": 7,
+    "br": {
+      "ab": 12,
+      "rb": 12,
+      "sb": 12
+    },
+    "vehicleClass": "helicopter",
+    "branch": "helicopters",
+    "imageFolder": "aircrafts",
+    "imageId": "aw_159",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/aw_159.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/aw_159"
   },
   {
     "id": "uk_challenger_II_yt_cup_2019",
@@ -855,27 +855,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/jaguar_gr1a"
   },
   {
-    "id": "buccaneer_s2b",
-    "name": "Buccaneer S.2B",
-    "nation": "britain",
-    "rank": 7,
-    "br": {
-      "ab": 10.7,
-      "rb": 10.7,
-      "sb": 10.7,
-      "rbGround": 11.7
-    },
-    "vehicleClass": "strike_aircraft",
-    "branch": "aviation",
-    "imageFolder": "aircrafts",
-    "imageId": "buccaneer_s2b",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/buccaneer_s2b.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/buccaneer_s2b"
-  },
-  {
     "id": "harrier_frs1_early",
     "name": "Sea Harrier FRS.1 (e)",
     "nation": "britain",
@@ -1098,6 +1077,27 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/uk_stormer_air_defence"
   },
   {
+    "id": "buccaneer_s2b",
+    "name": "Buccaneer S.2B",
+    "nation": "britain",
+    "rank": 7,
+    "br": {
+      "ab": 9.7,
+      "rb": 9.7,
+      "sb": 9.7,
+      "rbGround": 11
+    },
+    "vehicleClass": "strike_aircraft",
+    "branch": "aviation",
+    "imageFolder": "aircrafts",
+    "imageId": "buccaneer_s2b",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/buccaneer_s2b.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/buccaneer_s2b"
+  },
+  {
     "id": "uk_desert_warrior",
     "name": "Desert Warrior",
     "nation": "britain",
@@ -1178,46 +1178,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/ah_2_rooivalk"
   },
   {
-    "id": "g_lynx",
-    "name": "G-LYNX",
-    "nation": "britain",
-    "rank": 6,
-    "br": {
-      "ab": 11.3,
-      "rb": 11.3,
-      "sb": 10
-    },
-    "vehicleClass": "helicopter",
-    "branch": "helicopters",
-    "imageFolder": "aircrafts",
-    "imageId": "g_lynx",
-    "isPremium": true,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/g_lynx.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/g_lynx"
-  },
-  {
-    "id": "lynx_ah_mk1",
-    "name": "Lynx AH.Mk.1",
-    "nation": "britain",
-    "rank": 6,
-    "br": {
-      "ab": 11.3,
-      "rb": 11.3,
-      "sb": 10
-    },
-    "vehicleClass": "helicopter",
-    "branch": "helicopters",
-    "imageFolder": "aircrafts",
-    "imageId": "lynx_ah_mk1",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/lynx_ah_mk1.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/lynx_ah_mk1"
-  },
-  {
     "id": "super_hind_mk3",
     "name": "Superhind",
     "nation": "britain",
@@ -1236,6 +1196,46 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/super_hind_mk3.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/super_hind_mk3"
+  },
+  {
+    "id": "g_lynx",
+    "name": "G-LYNX",
+    "nation": "britain",
+    "rank": 6,
+    "br": {
+      "ab": 10.3,
+      "rb": 10.3,
+      "sb": 10.3
+    },
+    "vehicleClass": "helicopter",
+    "branch": "helicopters",
+    "imageFolder": "aircrafts",
+    "imageId": "g_lynx",
+    "isPremium": true,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/g_lynx.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/g_lynx"
+  },
+  {
+    "id": "lynx_ah_mk1",
+    "name": "Lynx AH.Mk.1",
+    "nation": "britain",
+    "rank": 6,
+    "br": {
+      "ab": 10.3,
+      "rb": 10.3,
+      "sb": 10.3
+    },
+    "vehicleClass": "helicopter",
+    "branch": "helicopters",
+    "imageFolder": "aircrafts",
+    "imageId": "lynx_ah_mk1",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/lynx_ah_mk1.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/lynx_ah_mk1"
   },
   {
     "id": "uk_tracked_rapier",
@@ -9557,9 +9557,9 @@
     "nation": "china",
     "rank": 6,
     "br": {
-      "ab": 12.3,
-      "rb": 12.3,
-      "sb": 10.3
+      "ab": 11,
+      "rb": 11,
+      "sb": 11
     },
     "vehicleClass": "helicopter",
     "branch": "helicopters",
@@ -9577,9 +9577,9 @@
     "nation": "china",
     "rank": 6,
     "br": {
-      "ab": 12.3,
-      "rb": 12.3,
-      "sb": 10.3
+      "ab": 11,
+      "rb": 11,
+      "sb": 11
     },
     "vehicleClass": "helicopter",
     "branch": "helicopters",
@@ -9590,26 +9590,6 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/z_19e.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/z_19e"
-  },
-  {
-    "id": "z_9wa",
-    "name": "Z-9WA",
-    "nation": "china",
-    "rank": 6,
-    "br": {
-      "ab": 11.3,
-      "rb": 11.3,
-      "sb": 9.7
-    },
-    "vehicleClass": "helicopter",
-    "branch": "helicopters",
-    "imageFolder": "aircrafts",
-    "imageId": "z_9wa",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/z_9wa.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/z_9wa"
   },
   {
     "id": "mi_35m_pakistan",
@@ -9632,26 +9612,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/mi_35m_pakistan"
   },
   {
-    "id": "ah_1w_china",
-    "name": "AH-1W",
-    "nation": "china",
-    "rank": 6,
-    "br": {
-      "ab": 11,
-      "rb": 11,
-      "sb": 10.7
-    },
-    "vehicleClass": "helicopter",
-    "branch": "helicopters",
-    "imageFolder": "aircrafts",
-    "imageId": "ah_1w_china",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/ah_1w_china.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/ah_1w_china"
-  },
-  {
     "id": "oh_58d_china",
     "name": "OH-58D",
     "nation": "china",
@@ -9670,6 +9630,46 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/oh_58d_china.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/oh_58d_china"
+  },
+  {
+    "id": "z_9wa",
+    "name": "Z-9WA",
+    "nation": "china",
+    "rank": 6,
+    "br": {
+      "ab": 10.3,
+      "rb": 10.3,
+      "sb": 10.3
+    },
+    "vehicleClass": "helicopter",
+    "branch": "helicopters",
+    "imageFolder": "aircrafts",
+    "imageId": "z_9wa",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/z_9wa.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/z_9wa"
+  },
+  {
+    "id": "ah_1w_china",
+    "name": "AH-1W",
+    "nation": "china",
+    "rank": 6,
+    "br": {
+      "ab": 10.3,
+      "rb": 10.3,
+      "sb": 10.3
+    },
+    "vehicleClass": "helicopter",
+    "branch": "helicopters",
+    "imageFolder": "aircrafts",
+    "imageId": "ah_1w_china",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/ah_1w_china.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/ah_1w_china"
   },
   {
     "id": "q_5a",
@@ -9753,6 +9753,26 @@
     "isEvent": true,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/f_6c_pakistan.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/f_6c_pakistan"
+  },
+  {
+    "id": "z_9w",
+    "name": "Z-9W",
+    "nation": "china",
+    "rank": 6,
+    "br": {
+      "ab": 9.7,
+      "rb": 9.7,
+      "sb": 9.7
+    },
+    "vehicleClass": "helicopter",
+    "branch": "helicopters",
+    "imageFolder": "aircrafts",
+    "imageId": "z_9w",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/z_9w.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/z_9w"
   },
   {
     "id": "cn_ztz_96",
@@ -9919,26 +9939,6 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/q_5_early.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/q_5_early"
-  },
-  {
-    "id": "z_9w",
-    "name": "Z-9W",
-    "nation": "china",
-    "rank": 6,
-    "br": {
-      "ab": 9.3,
-      "rb": 9.3,
-      "sb": 8.7
-    },
-    "vehicleClass": "helicopter",
-    "branch": "helicopters",
-    "imageFolder": "aircrafts",
-    "imageId": "z_9w",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/z_9w.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/z_9w"
   },
   {
     "id": "cn_type_69_2g",
@@ -13116,26 +13116,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/tiger_had_block2_france"
   },
   {
-    "id": "tiger_hac_france",
-    "name": "EC-665 Tiger HAC",
-    "nation": "france",
-    "rank": 7,
-    "br": {
-      "ab": 13,
-      "rb": 13,
-      "sb": 11.7
-    },
-    "vehicleClass": "helicopter",
-    "branch": "helicopters",
-    "imageFolder": "aircrafts",
-    "imageId": "tiger_hac_france",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/tiger_hac_france.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/tiger_hac_france"
-  },
-  {
     "id": "mirage_f1c_200",
     "name": "Mirage F1C-200",
     "nation": "france",
@@ -13217,26 +13197,6 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/ah_64d_netherlands.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/ah_64d_netherlands"
-  },
-  {
-    "id": "tiger_had_france",
-    "name": "EC-665 Tiger HAD",
-    "nation": "france",
-    "rank": 7,
-    "br": {
-      "ab": 11.3,
-      "rb": 11.3,
-      "sb": 10.7
-    },
-    "vehicleClass": "helicopter",
-    "branch": "helicopters",
-    "imageFolder": "aircrafts",
-    "imageId": "tiger_had_france",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/tiger_had_france.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/tiger_had_france"
   },
   {
     "id": "fr_msc",
@@ -13422,6 +13382,46 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/mirage_3e.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/mirage_3e"
+  },
+  {
+    "id": "tiger_had_france",
+    "name": "EC-665 Tiger HAD",
+    "nation": "france",
+    "rank": 7,
+    "br": {
+      "ab": 10.7,
+      "rb": 10.7,
+      "sb": 10.7
+    },
+    "vehicleClass": "helicopter",
+    "branch": "helicopters",
+    "imageFolder": "aircrafts",
+    "imageId": "tiger_had_france",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/tiger_had_france.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/tiger_had_france"
+  },
+  {
+    "id": "tiger_hac_france",
+    "name": "EC-665 Tiger HAC",
+    "nation": "france",
+    "rank": 7,
+    "br": {
+      "ab": 10.7,
+      "rb": 10.7,
+      "sb": 10.7
+    },
+    "vehicleClass": "helicopter",
+    "branch": "helicopters",
+    "imageFolder": "aircrafts",
+    "imageId": "tiger_hac_france",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/tiger_hac_france.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/tiger_hac_france"
   },
   {
     "id": "super_etendard_97",
@@ -28545,26 +28545,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/ah_64d_i_saraph"
   },
   {
-    "id": "ah_60_iaf",
-    "name": "AH-60",
-    "nation": "israel",
-    "rank": 7,
-    "br": {
-      "ab": 13,
-      "rb": 13,
-      "sb": 10.7
-    },
-    "vehicleClass": "helicopter",
-    "branch": "helicopters",
-    "imageFolder": "aircrafts",
-    "imageId": "ah_60_iaf",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/ah_60_iaf.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/ah_60_iaf"
-  },
-  {
     "id": "kfir_c7",
     "name": "Kfir C.7",
     "nation": "israel",
@@ -28828,6 +28808,26 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/kfir_canard.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/kfir_canard"
+  },
+  {
+    "id": "ah_60_iaf",
+    "name": "AH-60",
+    "nation": "israel",
+    "rank": 7,
+    "br": {
+      "ab": 11.3,
+      "rb": 11.3,
+      "sb": 10.7
+    },
+    "vehicleClass": "helicopter",
+    "branch": "helicopters",
+    "imageFolder": "aircrafts",
+    "imageId": "ah_60_iaf",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/ah_60_iaf.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/ah_60_iaf"
   },
   {
     "id": "il_hunter_afv",
@@ -30714,26 +30714,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/aw_249_pre_serie"
   },
   {
-    "id": "a_129_d",
-    "name": "AH-129D",
-    "nation": "italy",
-    "rank": 7,
-    "br": {
-      "ab": 13,
-      "rb": 13,
-      "sb": 11.7
-    },
-    "vehicleClass": "helicopter",
-    "branch": "helicopters",
-    "imageFolder": "aircrafts",
-    "imageId": "a_129_d",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/a_129_d.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/a_129_d"
-  },
-  {
     "id": "tornado_adv",
     "name": "Tornado ADV",
     "nation": "italy",
@@ -31001,24 +30981,24 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/tornado_ids_it_mod95"
   },
   {
-    "id": "a_129_cbt",
-    "name": "A129CBT",
+    "id": "a_129_d",
+    "name": "AH-129D",
     "nation": "italy",
     "rank": 7,
     "br": {
       "ab": 11.3,
       "rb": 11.3,
-      "sb": 9.7
+      "sb": 11.3
     },
     "vehicleClass": "helicopter",
     "branch": "helicopters",
     "imageFolder": "aircrafts",
-    "imageId": "a_129_cbt",
+    "imageId": "a_129_d",
     "isPremium": false,
     "isSquadron": false,
     "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/a_129_cbt.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/a_129_cbt"
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/a_129_d.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/a_129_d"
   },
   {
     "id": "it_freccia",
@@ -31287,6 +31267,26 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/mig-21_mf_hungary"
   },
   {
+    "id": "a_129_cbt",
+    "name": "A129CBT",
+    "nation": "italy",
+    "rank": 7,
+    "br": {
+      "ab": 10.3,
+      "rb": 10.3,
+      "sb": 9.7
+    },
+    "vehicleClass": "helicopter",
+    "branch": "helicopters",
+    "imageFolder": "aircrafts",
+    "imageId": "a_129_cbt",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/a_129_cbt.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/a_129_cbt"
+  },
+  {
     "id": "it_dardo_vcc",
     "name": "Dardo",
     "nation": "italy",
@@ -31388,26 +31388,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/f-104g_italy"
   },
   {
-    "id": "a_129_a",
-    "name": "A-129 International (p)",
-    "nation": "italy",
-    "rank": 6,
-    "br": {
-      "ab": 11,
-      "rb": 11,
-      "sb": 9.7
-    },
-    "vehicleClass": "helicopter",
-    "branch": "helicopters",
-    "imageFolder": "aircrafts",
-    "imageId": "a_129_a",
-    "isPremium": true,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/a_129_a.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/a_129_a"
-  },
-  {
     "id": "t_129_atak",
     "name": "T129",
     "nation": "italy",
@@ -31426,6 +31406,26 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/t_129_atak.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/t_129_atak"
+  },
+  {
+    "id": "a_129_a",
+    "name": "A-129 International (p)",
+    "nation": "italy",
+    "rank": 6,
+    "br": {
+      "ab": 10.3,
+      "rb": 10.3,
+      "sb": 9.7
+    },
+    "vehicleClass": "helicopter",
+    "branch": "helicopters",
+    "imageFolder": "aircrafts",
+    "imageId": "a_129_a",
+    "isPremium": true,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/a_129_a.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/a_129_a"
   },
   {
     "id": "mi_24v_hungary",
@@ -36637,7 +36637,7 @@
       "ab": 13,
       "rb": 13,
       "sb": 13,
-      "rbGround": 12.7
+      "rbGround": 12
     },
     "vehicleClass": "fighter",
     "branch": "aviation",
@@ -43291,7 +43291,7 @@
       "ab": 13,
       "rb": 13,
       "sb": 13,
-      "rbGround": 12
+      "rbGround": 12.3
     },
     "vehicleClass": "fighter",
     "branch": "aviation",
@@ -43811,27 +43811,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/saab_j35xs"
   },
   {
-    "id": "saab_f35_wdns",
-    "name": "Saab F-35",
-    "nation": "sweden",
-    "rank": 7,
-    "br": {
-      "ab": 10.3,
-      "rb": 10.3,
-      "sb": 10.3,
-      "rbGround": 10
-    },
-    "vehicleClass": "strike_aircraft",
-    "branch": "aviation",
-    "imageFolder": "aircrafts",
-    "imageId": "saab_f35_wdns",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/saab_f35_wdns.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/saab_f35_wdns"
-  },
-  {
     "id": "saab_j35j",
     "name": "J35J",
     "nation": "sweden",
@@ -43932,6 +43911,27 @@
     "isEvent": true,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/tanks/sw_patria_amv_ctcv_105.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/sw_patria_amv_ctcv_105"
+  },
+  {
+    "id": "saab_f35_wdns",
+    "name": "Saab F-35",
+    "nation": "sweden",
+    "rank": 7,
+    "br": {
+      "ab": 9.7,
+      "rb": 9.7,
+      "sb": 9.7,
+      "rbGround": 9.3
+    },
+    "vehicleClass": "strike_aircraft",
+    "branch": "aviation",
+    "imageFolder": "aircrafts",
+    "imageId": "saab_f35_wdns",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/saab_f35_wdns.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/saab_f35_wdns"
   },
   {
     "id": "mi_28a_sweden",
@@ -48605,26 +48605,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/ah_64a_peten"
   },
   {
-    "id": "ah_1w",
-    "name": "AH-1W",
-    "nation": "usa",
-    "rank": 6,
-    "br": {
-      "ab": 11,
-      "rb": 11,
-      "sb": 10.7
-    },
-    "vehicleClass": "helicopter",
-    "branch": "helicopters",
-    "imageFolder": "aircrafts",
-    "imageId": "ah_1w",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/ah_1w.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/ah_1w"
-  },
-  {
     "id": "oh_58d",
     "name": "OH-58D",
     "nation": "usa",
@@ -48665,27 +48645,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/ah_6m"
   },
   {
-    "id": "a_10a_early",
-    "name": "A-10A",
-    "nation": "usa",
-    "rank": 6,
-    "br": {
-      "ab": 10,
-      "rb": 10.3,
-      "sb": 10.7,
-      "rbGround": 11
-    },
-    "vehicleClass": "strike_aircraft",
-    "branch": "aviation",
-    "imageFolder": "aircrafts",
-    "imageId": "a_10a_early",
-    "isPremium": true,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/a_10a_early.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/a_10a_early"
-  },
-  {
     "id": "f8u-2",
     "name": "F8U-2",
     "nation": "usa",
@@ -48705,6 +48664,26 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/f8u-2.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/f8u-2"
+  },
+  {
+    "id": "ah_1w",
+    "name": "AH-1W",
+    "nation": "usa",
+    "rank": 6,
+    "br": {
+      "ab": 10.3,
+      "rb": 10.3,
+      "sb": 10.3
+    },
+    "vehicleClass": "helicopter",
+    "branch": "helicopters",
+    "imageFolder": "aircrafts",
+    "imageId": "ah_1w",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/ah_1w.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/ah_1w"
   },
   {
     "id": "m4a1",
@@ -49153,27 +49132,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/f-104a"
   },
   {
-    "id": "f3h-2",
-    "name": "F3H-2",
-    "nation": "usa",
-    "rank": 6,
-    "br": {
-      "ab": 9.3,
-      "rb": 9.3,
-      "sb": 9.3,
-      "rbGround": 8.7
-    },
-    "vehicleClass": "fighter",
-    "branch": "aviation",
-    "imageFolder": "aircrafts",
-    "imageId": "f3h-2",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/f3h-2.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/f3h-2"
-  },
-  {
     "id": "f_106a_1972",
     "name": "F-106A",
     "nation": "usa",
@@ -49276,6 +49234,27 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/f4d_1"
   },
   {
+    "id": "a_10a_early",
+    "name": "A-10A",
+    "nation": "usa",
+    "rank": 6,
+    "br": {
+      "ab": 8.7,
+      "rb": 9,
+      "sb": 9.3,
+      "rbGround": 9.7
+    },
+    "vehicleClass": "strike_aircraft",
+    "branch": "aviation",
+    "imageFolder": "aircrafts",
+    "imageId": "a_10a_early",
+    "isPremium": true,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/a_10a_early.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/a_10a_early"
+  },
+  {
     "id": "f11f_1_late",
     "name": "F11F-1",
     "nation": "usa",
@@ -49295,6 +49274,27 @@
     "isEvent": true,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/f11f_1_late.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/f11f_1_late"
+  },
+  {
+    "id": "f3h-2",
+    "name": "F3H-2",
+    "nation": "usa",
+    "rank": 6,
+    "br": {
+      "ab": 9,
+      "rb": 9,
+      "sb": 9,
+      "rbGround": 8.3
+    },
+    "vehicleClass": "fighter",
+    "branch": "aviation",
+    "imageFolder": "aircrafts",
+    "imageId": "f3h-2",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/f3h-2.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/f3h-2"
   },
   {
     "id": "f_102a_late",
@@ -57690,7 +57690,7 @@
       "ab": 12,
       "rb": 11.3,
       "sb": 11.7,
-      "rbGround": 12
+      "rbGround": 11.7
     },
     "vehicleClass": "strike_aircraft",
     "branch": "aviation",
@@ -57741,6 +57741,26 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/mi_8amtsh_vn.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/mi_8amtsh_vn"
+  },
+  {
+    "id": "mi_35p",
+    "name": "Mi-35P",
+    "nation": "ussr",
+    "rank": 7,
+    "br": {
+      "ab": 11.3,
+      "rb": 11.3,
+      "sb": 11.3
+    },
+    "vehicleClass": "helicopter",
+    "branch": "helicopters",
+    "imageFolder": "aircrafts",
+    "imageId": "mi_35p",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/mi_35p.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/mi_35p"
   },
   {
     "id": "ussr_t_72b3_2011",
@@ -57989,26 +58009,6 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/mig_27k.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/mig_27k"
-  },
-  {
-    "id": "mi_35p",
-    "name": "Mi-35P",
-    "nation": "ussr",
-    "rank": 7,
-    "br": {
-      "ab": 11,
-      "rb": 11,
-      "sb": 10.3
-    },
-    "vehicleClass": "helicopter",
-    "branch": "helicopters",
-    "imageFolder": "aircrafts",
-    "imageId": "mi_35p",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/mi_35p.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/mi_35p"
   },
   {
     "id": "ussr_object_292",
