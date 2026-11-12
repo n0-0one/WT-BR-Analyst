@@ -7973,6 +7973,26 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/uk_daimler_mk_2"
   },
   {
+    "id": "spad_13",
+    "name": "SPAD S.XIII",
+    "nation": "britain",
+    "rank": 1,
+    "br": {
+      "ab": 1,
+      "rb": 1,
+      "sb": 1
+    },
+    "vehicleClass": "fighter",
+    "branch": "aviation",
+    "imageFolder": "aircrafts",
+    "imageId": "spad_13",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/spad_13.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/spad_13"
+  },
+  {
     "id": "hp_12",
     "name": "H.P.12",
     "nation": "britain",
@@ -18204,26 +18224,6 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/fr_vtb13.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/fr_vtb13"
-  },
-  {
-    "id": "spad_13",
-    "name": "SPAD S.XIII",
-    "nation": "france",
-    "rank": 1,
-    "br": {
-      "ab": 1,
-      "rb": 1,
-      "sb": 1
-    },
-    "vehicleClass": "fighter",
-    "branch": "aviation",
-    "imageFolder": "aircrafts",
-    "imageId": "spad_13",
-    "isPremium": false,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/spad_13.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/spad_13"
   },
   {
     "id": "v_156_f",
