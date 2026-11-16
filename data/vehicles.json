@@ -52636,6 +52636,26 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/us_ashville_class_douglas"
   },
   {
+    "id": "us_pce_842_class",
+    "name": "PCE-842",
+    "nation": "usa",
+    "rank": 4,
+    "br": {
+      "ab": 4,
+      "rb": 4,
+      "sb": 4
+    },
+    "vehicleClass": "coastal",
+    "branch": "fleet",
+    "imageFolder": "ships",
+    "imageId": "us_pce_842_class",
+    "isPremium": true,
+    "isSquadron": false,
+    "isEvent": true,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/us_pce_842_class.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/us_pce_842_class"
+  },
+  {
     "id": "xa_38",
     "name": "XA-38",
     "nation": "usa",
