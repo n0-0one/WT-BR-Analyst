@@ -7993,6 +7993,26 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/spad_13"
   },
   {
+    "id": "spad_13_event",
+    "name": "SPAD S.XIII",
+    "nation": "britain",
+    "rank": 1,
+    "br": {
+      "ab": 1,
+      "rb": 1,
+      "sb": 1
+    },
+    "vehicleClass": "fighter",
+    "branch": "aviation",
+    "imageFolder": "aircrafts",
+    "imageId": "spad_13_event",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/aircrafts/spad_13_event.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/spad_13_event"
+  },
+  {
     "id": "hp_12",
     "name": "H.P.12",
     "nation": "britain",
