@@ -59293,10 +59293,9 @@
     "nation": "ussr",
     "rank": 6,
     "br": {
-      "ab": 9.7,
+      "ab": 9.3,
       "rb": 9,
-      "sb": 9,
-      "rbGround": 10.3
+      "sb": 9
     },
     "vehicleClass": "strike_aircraft",
     "branch": "aviation",
