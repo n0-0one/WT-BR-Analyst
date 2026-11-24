@@ -23844,6 +23844,26 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/germ_destroyer_class1942_z51"
   },
   {
+    "id": "germ_sub_type_21",
+    "name": "Type XXI",
+    "nation": "germany",
+    "rank": 3,
+    "br": {
+      "ab": 4.7,
+      "rb": 4.7,
+      "sb": 4.7
+    },
+    "vehicleClass": "bluewater",
+    "branch": "fleet",
+    "imageFolder": "ships",
+    "imageId": "germ_sub_type_21",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/germ_sub_type_21.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/germ_sub_type_21"
+  },
+  {
     "id": "p-47d_luftwaffe",
     "name": "▀P-47D",
     "nation": "germany",
@@ -25148,26 +25168,6 @@
     "isEvent": true,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/germ_destroyer_class1924_jaguar1941.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/germ_destroyer_class1924_jaguar1941"
-  },
-  {
-    "id": "germ_sub_type_7",
-    "name": "Type VII",
-    "nation": "germany",
-    "rank": 2,
-    "br": {
-      "ab": 3.7,
-      "rb": 3.7,
-      "sb": 3.7
-    },
-    "vehicleClass": "bluewater",
-    "branch": "fleet",
-    "imageFolder": "ships",
-    "imageId": "germ_sub_type_7",
-    "isPremium": true,
-    "isSquadron": false,
-    "isEvent": false,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/germ_sub_type_7.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/germ_sub_type_7"
   },
   {
     "id": "ju-87d-5",
@@ -52656,26 +52656,6 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/us_ashville_class_douglas"
   },
   {
-    "id": "us_pce_842_class",
-    "name": "PCE-842",
-    "nation": "usa",
-    "rank": 4,
-    "br": {
-      "ab": 4,
-      "rb": 4,
-      "sb": 4
-    },
-    "vehicleClass": "coastal",
-    "branch": "fleet",
-    "imageFolder": "ships",
-    "imageId": "us_pce_842_class",
-    "isPremium": true,
-    "isSquadron": false,
-    "isEvent": true,
-    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/us_pce_842_class.png",
-    "wikiUrl": "https://wiki.warthunder.com/unit/us_pce_842_class"
-  },
-  {
     "id": "xa_38",
     "name": "XA-38",
     "nation": "usa",
@@ -52815,6 +52795,26 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/us_tucumcari_pgh2.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/us_tucumcari_pgh2"
+  },
+  {
+    "id": "us_pce_842_class",
+    "name": "PCE-842",
+    "nation": "usa",
+    "rank": 4,
+    "br": {
+      "ab": 3,
+      "rb": 3,
+      "sb": 3
+    },
+    "vehicleClass": "coastal",
+    "branch": "fleet",
+    "imageFolder": "ships",
+    "imageId": "us_pce_842_class",
+    "isPremium": true,
+    "isSquadron": false,
+    "isEvent": true,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/us_pce_842_class.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/us_pce_842_class"
   },
   {
     "id": "us_t86",
@@ -53557,6 +53557,26 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/us_destroyer_fletcher_cowell.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/us_destroyer_fletcher_cowell"
+  },
+  {
+    "id": "us_sub_tang",
+    "name": "Type Tang",
+    "nation": "usa",
+    "rank": 3,
+    "br": {
+      "ab": 4.7,
+      "rb": 4.7,
+      "sb": 4.7
+    },
+    "vehicleClass": "bluewater",
+    "branch": "fleet",
+    "imageFolder": "ships",
+    "imageId": "us_sub_tang",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/ships/us_sub_tang.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/us_sub_tang"
   },
   {
     "id": "p-47d",
