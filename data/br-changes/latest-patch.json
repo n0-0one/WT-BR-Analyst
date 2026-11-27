@@ -2,13 +2,13 @@
   "metadata": {
     "id": "latest-patch",
     "title": "Custom Battle Rating for Aircraft: More Freedom For Your Vehicles!",
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "forumUrl": "https://forum.warthunder.com/t/custom-battle-rating-for-aircraft-more-freedom-for-your-vehicles/361362",
-    "verifiedVehiclesCount": 3358,
+    "verifiedVehiclesCount": 3360,
     "totalChangesCount": 34,
     "buffsCount": 8,
     "nerfsCount": 22,
-    "syncedAt": "2026-11-26T16:25:50.341Z"
+    "syncedAt": "2026-11-27T01:30:19.569Z"
   },
   "changes": [
     {
@@ -540,7 +540,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 68,
+          "count": 70,
           "examples": [
             "Jaguar GR.1A",
             "Sea Harrier FRS.1 (e)",
@@ -579,7 +579,7 @@
         ],
         "threatEscapedCount": 25,
         "threatAddedCount": 38,
-        "preyLostCount": 68,
+        "preyLostCount": 70,
         "preyGainedCount": 0
       }
     },
@@ -635,7 +635,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 68,
+          "count": 70,
           "examples": [
             "Jaguar GR.1A",
             "Sea Harrier FRS.1 (e)",
@@ -674,7 +674,7 @@
         ],
         "threatEscapedCount": 25,
         "threatAddedCount": 38,
-        "preyLostCount": 68,
+        "preyLostCount": 70,
         "preyGainedCount": 0
       }
     },
@@ -731,7 +731,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 68,
+          "count": 70,
           "examples": [
             "Jaguar GR.1A",
             "Sea Harrier FRS.1 (e)",
@@ -770,7 +770,7 @@
         ],
         "threatEscapedCount": 25,
         "threatAddedCount": 38,
-        "preyLostCount": 68,
+        "preyLostCount": 70,
         "preyGainedCount": 0
       }
     },
@@ -826,7 +826,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 68,
+          "count": 70,
           "examples": [
             "Jaguar GR.1A",
             "Sea Harrier FRS.1 (e)",
@@ -865,7 +865,7 @@
         ],
         "threatEscapedCount": 25,
         "threatAddedCount": 38,
-        "preyLostCount": 68,
+        "preyLostCount": 70,
         "preyGainedCount": 0
       }
     },
@@ -921,7 +921,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 68,
+          "count": 70,
           "examples": [
             "Jaguar GR.1A",
             "Sea Harrier FRS.1 (e)",
@@ -960,7 +960,7 @@
         ],
         "threatEscapedCount": 25,
         "threatAddedCount": 38,
-        "preyLostCount": 68,
+        "preyLostCount": 70,
         "preyGainedCount": 0
       }
     },
@@ -1181,7 +1181,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 130,
+          "count": 132,
           "examples": [
             "Jaguar GR.1A",
             "Sea Harrier FRS.1 (e)",
@@ -1230,7 +1230,7 @@
         ],
         "threatEscapedCount": 0,
         "threatAddedCount": 86,
-        "preyLostCount": 130,
+        "preyLostCount": 132,
         "preyGainedCount": 0
       }
     },
@@ -1381,7 +1381,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 131,
+          "count": 133,
           "examples": [
             "Sea Harrier FRS.1",
             "Vickers Mk.7",
@@ -1430,7 +1430,7 @@
         ],
         "threatEscapedCount": 0,
         "threatAddedCount": 81,
-        "preyLostCount": 131,
+        "preyLostCount": 133,
         "preyGainedCount": 0
       }
     },
@@ -1910,7 +1910,7 @@
           ]
         },
         "easyTargetsLostBelow": {
-          "count": 68,
+          "count": 70,
           "examples": [
             "Jaguar GR.1A",
             "Sea Harrier FRS.1 (e)",
@@ -1944,7 +1944,7 @@
         ],
         "threatEscapedCount": 4,
         "threatAddedCount": 38,
-        "preyLostCount": 68,
+        "preyLostCount": 70,
         "preyGainedCount": 0
       }
     },

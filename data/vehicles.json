@@ -48121,6 +48121,26 @@
     "wikiUrl": "https://wiki.warthunder.com/unit/m16a4"
   },
   {
+    "id": "us_m16a4_standard",
+    "name": "M16a4 Standard",
+    "nation": "usa",
+    "rank": 7,
+    "br": {
+      "ab": 10.7,
+      "rb": 10.7,
+      "sb": 10.7
+    },
+    "vehicleClass": "medium_tank",
+    "branch": "army",
+    "imageFolder": "tanks",
+    "imageId": "us_m16a4_standard",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/tanks/us_m16a4_standard.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/us_m16a4_standard"
+  },
+  {
     "id": "fn_scar",
     "name": "Scar",
     "nation": "usa",
@@ -58350,6 +58370,26 @@
     "isEvent": false,
     "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/tanks/ak_74m.png",
     "wikiUrl": "https://wiki.warthunder.com/unit/ak_74m"
+  },
+  {
+    "id": "ussr_ak_74m_standard",
+    "name": "Ak 74m Standard",
+    "nation": "ussr",
+    "rank": 7,
+    "br": {
+      "ab": 10.7,
+      "rb": 10.7,
+      "sb": 10.7
+    },
+    "vehicleClass": "medium_tank",
+    "branch": "army",
+    "imageFolder": "tanks",
+    "imageId": "ussr_ak_74m_standard",
+    "isPremium": false,
+    "isSquadron": false,
+    "isEvent": false,
+    "imageUrl": "https://raw.githubusercontent.com/gszabi99/War-Thunder-Datamine/master/tex.vromfs.bin_u/tanks/ussr_ak_74m_standard.png",
+    "wikiUrl": "https://wiki.warthunder.com/unit/ussr_ak_74m_standard"
   },
   {
     "id": "nt_su_24m",
